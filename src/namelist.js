@@ -11,13 +11,9 @@ render()
 {
   return (
     <div>
-      <h2 style={{marginLeft: 20, textDecoration: "underline"}}>Render a Simple List:</h2>
-      <ul>
-        {this.state.list.map(item => (
-          <li>{item}</li>
-        ))}
-      </ul>
-    </div>
-  )
+      {this.state.list.map(item => (
+        <li>{item}</li>
+      ))}
+     </div>
+  )}
 }
-  }
