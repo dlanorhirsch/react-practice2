@@ -8,7 +8,9 @@ import {NameList } from "./namelist";
 import {Addresses} from "./address";
 import {AddressForm} from "./addressform";
 import {CardList} from "./cards";
-import {MasterForm} from "./wizzard";
+
+import {Carousel} from './carousel';
+
 
 // import data file once sass is installed
 
@@ -59,7 +61,7 @@ class Counter extends React.Component{
           <Container>
             <Row>
               <h2 class="mr-20">Simple  Counter:</h2>
-              <p>The first excercise is a simple counter.  There are many examples and tutorials available including this one from www.freecodecamp.org.  They provide excellent excercises for learning React.  This counter is based on their tutorial.  This is the first one I created after reviewing the turorial.</p>
+              <p>The first excercise is a simple counter.  There are many examples and tutorials available including this one from www.freecodecamp.org.  They provide excellent excercises for learning React.  This counter is based on their tutorial.  This is the first one I created after reviewing the tutorial.</p>
                 <button class="btn btn-primary" style={{height: 40, width: 120, margin: 10}} onClick={this.increment}>Increment</button>
                 <button class="btn btn-primary" style={{height: 40, width: 120, margin: 10}} onClick={this.decrement}>Decrement</button>
                 <button class="btn btn-primary" style={{height: 40, width: 120, margin: 10}} onClick={this.reset}>Reset</button>
@@ -92,13 +94,19 @@ class Counter extends React.Component{
               <CardList />
             </Container>
             <Container>
-              <Row>
+              
             <h2>Creating a Search Wizard</h2>
             <p>This example was again taken from hackernoon.com (link above).  This excercise helped me become familiar with React fragments <a href="https://reactjs.org/docs/react-api.html#reactfragment">(see React Fragments)</a>.</p>
-              <MasterForm />
+             
+              
+            </Container>
+            <Container>
+            <h2>Rendering A Bootstrap Carousel</h2>
+              <p>This is a bit tricky.  One needs to be mindful of .....</p>
+              <Row>
+                <Carousel/>
               </Row>
             </Container>
-
 
             </Row>
           </Container>

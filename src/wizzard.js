@@ -152,4 +152,3 @@ const Step3 = (props) => {
     </div>
   )
 }
-export {MasterForm};
