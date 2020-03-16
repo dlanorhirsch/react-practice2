@@ -9,7 +9,7 @@ import {Addresses} from "./address";
 import {AddressForm} from "./addressform";
 import {CardList} from "./cards";
 
-import {Carousel} from './carousel';
+import {CarouselDemo} from './carousel';
 
 
 // import data file once sass is installed
@@ -102,9 +102,9 @@ class Counter extends React.Component{
             </Container>
             <Container>
             <h2>Rendering A Bootstrap Carousel</h2>
-              <p>This is a bit tricky.  One needs to be mindful of .....</p>
+              <p>This was a most interesting process.  I started out trying to create a bootstrap carousel using code from their website.  I was having trouble getting it to work.  I started searching for tutorials and examples and I learned A LOT!  There are many ways to create a carousel (sometimes referred to as a slider).  The degree of dificulty with each approach varies significantly.  An example would be React Slick found here <a href="https://react-slick.neostack.com">(see React Slick @ neostack.com).</a>  Another one I found (and chose to use) was another npm package called "React Responsive Carousel."  It simplifies the process of creating a carousel tremendously, but continues to provide lots of options for control.  It litterally took minutes to put together.  Here is a link <a href="https://www.npmjs.com/package/react-responsive-carousel">(React Responsive Carousel ).</a></p>
               <Row>
-                <Carousel/>
+                <CarouselDemo/>
               </Row>
             </Container>
 

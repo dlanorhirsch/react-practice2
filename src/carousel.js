@@ -1,30 +1,30 @@
 import React from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
-
-export class Carousel extends React.Component{
+export class CarouselDemo extends React.Component{
   render(){
     return(
-      <div id="carouselControls" className="carousel slide" data-ride="carousel">
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="d-block img-fluid" src="https://source.unsplash.com/random/600x249/?architecture" alt=""/>       
-            </div>
-            <div className="carousel-item">
-              <img className="d-block img-fluid" src="https://source.unsplash.com/random/600x250/?architecture" alt=""/>       
-            </div> 
-            <div className="carousel-item">
-              <img className="d-block img-fluid" src="https://source.unsplash.com/random/600x251/?architecture" alt=""/>       
-            </div>  
-          </div>
-          <a className="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
-          </a>
-          <a className="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
-          </a>
-      </div>
+      <Carousel autoPlay infiniteLoop showArrows={true}>
+        <div>
+          <img src="https://source.unsplash.com/random/800x449/?architecture" alt=""/>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/random/800x450/?architecture" alt=""/>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/random/800x451/?architecture" alt=""/>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/random/800x452/?architecture" alt=""/>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/random/800x448/?architecture" alt=""/>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/random/800x453/?architecture" alt=""/>
+        </div>
+      </Carousel>
     )
   }
 }
