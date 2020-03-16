@@ -7,6 +7,8 @@ import "./index.css";
 import {NameList } from "./namelist";
 import {Addresses} from "./address";
 import {AddressForm} from "./addressform";
+import {CardList} from "./cards";
+import {MasterForm} from "./wizzard";
 
 // import data file once sass is installed
 
@@ -52,6 +54,7 @@ class Counter extends React.Component{
           <header class="jumbotron text-center p-5">
           
             <h1><img src="/React.png" alt="" class="logo"></img>My React Practice Exercises</h1>
+            
           </header>
           <Container>
             <Row>
@@ -83,7 +86,20 @@ class Counter extends React.Component{
                 <AddressForm/>
               </Row>
             </Container>
-            
+            <Container>
+            <h2>Rendering a List of Cards</h2>
+            <p>This excercise was not too difficult.  This excercise is from Nathan Sebhastian at Hackernoon.com <a href="https://hackernoon.com/hands-on-projects-to-learn-the-basics-of-react-3a06726514a8">(link)</a>.  It is well written and easy to follow.  However, I had difficult with the import/export.  Eventually I rewrote the functions as functional expressions and assigned the functions to variables.  I was then able to export the variable.  This was a helpful excercise in applying props.  It also became clearer to me that it is the parent component that is exported and imported.</p>
+              <CardList />
+            </Container>
+            <Container>
+              <Row>
+            <h2>Creating a Search Wizard</h2>
+            <p>This example was again taken from hackernoon.com (link above).  This excercise helped me become familiar with React fragments <a href="https://reactjs.org/docs/react-api.html#reactfragment">(see React Fragments)</a>.</p>
+              <MasterForm />
+              </Row>
+            </Container>
+
+
             </Row>
           </Container>
         </div>
