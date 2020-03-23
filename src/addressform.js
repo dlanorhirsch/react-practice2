@@ -43,8 +43,8 @@ export class AddressForm extends React.Component{
           display: "block"
           }}
           onSubmit={this.handleSubmit}>Enter Name and Address:
-          <div class="container">
-            <div class="col">  
+          <div className="container">
+            <div className="col">  
               <label>
                 <input
                   style={styles}

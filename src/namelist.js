@@ -11,8 +11,8 @@ render()
 {
   return (
     <div>
-      {this.state.list.map(item => (
-        <li>{item}</li>
+      {this.state.list.map((item, index) => (
+        <li key={index}>{item}</li>
       ))}
      </div>
   )}

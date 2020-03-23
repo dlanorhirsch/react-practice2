@@ -8,9 +8,10 @@ import {NameList } from "./namelist";
 import {Addresses} from "./address";
 import {AddressForm} from "./addressform";
 import {CardList} from "./cards";
-
+import {MasterForm} from './wizard';
 import {CarouselDemo} from './carousel';
-
+import {TodoApp} from './todolist';
+import {TodoList} from './todolist2';
 
 // import data file once sass is installed
 
@@ -53,18 +54,18 @@ class Counter extends React.Component{
 
       return (
         <div>
-          <header class="jumbotron text-center p-5">
+          <header className="jumbotron text-center p-5">
           
-            <h1><img src="/React.png" alt="" class="logo"></img>My React Practice Exercises</h1>
+            <h1><img src="/React.png" alt="" className="logo"></img>My React Practice Exercises</h1>
             
           </header>
           <Container>
             <Row>
-              <h2 class="mr-20">Simple  Counter:</h2>
+              <h2 className="mr-20">Simple  Counter:</h2>
               <p>The first excercise is a simple counter.  There are many examples and tutorials available including this one from www.freecodecamp.org.  They provide excellent excercises for learning React.  This counter is based on their tutorial.  This is the first one I created after reviewing the tutorial.</p>
-                <button class="btn btn-primary" style={{height: 40, width: 120, margin: 10}} onClick={this.increment}>Increment</button>
-                <button class="btn btn-primary" style={{height: 40, width: 120, margin: 10}} onClick={this.decrement}>Decrement</button>
-                <button class="btn btn-primary" style={{height: 40, width: 120, margin: 10}} onClick={this.reset}>Reset</button>
+                <button className="btn btn-primary" style={{height: 40, width: 120, margin: 10}} onClick={this.increment}>Increment</button>
+                <button className="btn btn-primary" style={{height: 40, width: 120, margin: 10}} onClick={this.decrement}>Decrement</button>
+                <button className="btn btn-primary" style={{height: 40, width: 120, margin: 10}} onClick={this.reset}>Reset</button>
                 <h2 style={{fontSize: 24, margin: 20}}>Current Count: {this.state.count}</h2>
               <hr></hr>
             <Container>
@@ -95,9 +96,9 @@ class Counter extends React.Component{
             </Container>
             <Container>
               
-            <h2>Creating a Search Wizard</h2>
+            <h2>Creating a Search Wizard (under development)</h2>
             <p>This example was again taken from hackernoon.com (link above).  This excercise helped me become familiar with React fragments <a href="https://reactjs.org/docs/react-api.html#reactfragment">(see React Fragments)</a>.</p>
-             
+             <MasterForm />
               
             </Container>
             <Container>
@@ -107,8 +108,16 @@ class Counter extends React.Component{
                 <CarouselDemo/>
               </Row>
             </Container>
-
+            <Container>
+              <h2>Hooks example here.</h2>
+              <TodoApp />
+            </Container>
             </Row>
+            <Container>
+              <TodoList/>
+            </Container>
+
+
           </Container>
         </div>
       )
