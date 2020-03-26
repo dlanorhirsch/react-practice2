@@ -23,16 +23,19 @@ code {
   width: 10%;
   margin-right: 50px;
 }
+/* ==============  TODO LISTS ================ */
 .todoapp {
   background: #0069d9;
   padding: 30px;
-  height: 50vh;
+  height: 60vh;
+  width: 50%;
+  
 }
 .todo-list {
   background: #e8e8e8;
   border-radius: 4px;
   padding: 5px;
-  max-width: 400px;
+  max-width: 400px auto;
 }
 .todo {
   background: #fff;
