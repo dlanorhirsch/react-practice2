@@ -46,6 +46,7 @@ export class TodoList extends React.Component{
             >Add Todo</button>
         </form>
         </div>  
+        <a href="https://github.com/dlanorhirsch/react-examples/blob/master/src/todolist-classes.js" style={{color: "white"}}>(Source code for classes example.)</a>
     </div>
     )}
   }

@@ -50,7 +50,7 @@ class Counter extends React.Component{
       return (
         <div>
           <header className="jumbotron text-center p-5">
-            <h1><img src="/React.png" alt="" className="logo"></img>My React Practice Exercises</h1>
+            <h1><img src="/React.png" alt="" className="logo"></img>React Practice Exercises</h1>
           </header>
           <Container>
             <Row>
@@ -106,7 +106,7 @@ class Counter extends React.Component{
             </Container>
             {/* ------------------------------- */}
             <Container>
-              <h2>React Forms</h2>
+              <h2>React Forms/Todo Lists</h2>
               <p>This is an excercise in the creation of  forms using older and newer coding methods.  There form below are identical in appearance.  However, the example on the left using hooks while the example on the right uses classes and state.</p>
               <Row>
               

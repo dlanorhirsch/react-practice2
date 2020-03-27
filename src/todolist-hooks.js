@@ -66,7 +66,7 @@ return (
       <TodoForm addTodo={addTodo} />
       
     </div>
-    <a href="https://github.com/dlanorhirsch/react-examples/blob/master/src/todolist.js">Source code for hooks example.</a>
+    <a href="https://github.com/dlanorhirsch/react-examples/blob/master/src/todolist.js" style={{color: "white"}}>(Source code for hooks example.)</a>
   </div>
 )
 
