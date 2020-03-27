@@ -31,7 +31,7 @@ export class AddressForm extends React.Component{
     const styles = {
       display: "flex",
       fontSize: 18,
-      margin: 5
+      margin: 10
      
     }
     return (

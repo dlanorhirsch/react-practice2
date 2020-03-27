@@ -72,7 +72,7 @@ nextButton(){
     return (
       
       <React.Fragment>
-        <h1>A Wizard Form!</h1>
+        <h3>A Wizard Form!</h3>
         <p>Step {this.state.currentStep}</p>
 
         <form onSubmit={this.handleSubmit}> 
