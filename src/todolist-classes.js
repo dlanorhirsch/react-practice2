@@ -29,7 +29,7 @@ export class TodoList extends React.Component{
         <h5 style={{color: "white"}}>This is an example using classes and state.</h5>
       <div className="todo-list">{this.state.todos.map((todo,index) => 
         
-          <li class="todo" key={index}>{todo}</li>
+          <li className="todo" key={index}>{todo}</li>
         
       
     )}

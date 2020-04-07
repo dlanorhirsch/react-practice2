@@ -4,8 +4,8 @@ export class Addresses extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      addresses: [{id: 1, fname: "Ronald ", lname: "Hirschauer", street: "146 Carpenter St, #2", city: "Providence ", st: "RI", zip: " 02903"},
-                {id:2, fname: "Robert ", lname: "Hirschauer", street: "2 Huron Dr", city: "Tuckertown ", st: "NJ", zip: " 99999"},
+      addresses: [{id: 1, fname: "Ronald ", lname: "McPherson", street: "120 Carpenter St, #5", city: "Providence ", st: "RI", zip: " 02916"},
+                {id:2, fname: "Robert ", lname: "Smith", street: "2 Hurricane Dr", city: "Tuckertown ", st: "NJ", zip: " 99999"},
                 {id: 3, fname: "George ", lname: "Washington", street: "1776 Independence Way", city: "Mount Vernon ", st: "NY", zip: " 11111"},
                 {id: 4, fname: "Bilbo ", lname: "Biggins", street: "Round Door Dr", city: "Hobbiton ", st: "The Shire", zip: "unk"},
                 {id: 5, fname: "Albert ", lname: "Morrison", street: "232 Adelaide Ave", city: "Providence ", st: "RI", zip: " 02907"},

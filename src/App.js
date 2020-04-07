@@ -13,6 +13,7 @@ import {MasterForm} from './wizard';
 import {CarouselDemo} from './carousel';
 import {TodoApp} from './todolist-hooks';
 import {TodoList} from './todolist-classes';
+import {PracticeData} from './userdata';
 
 
 
@@ -34,7 +35,7 @@ export class Application extends React.Component{
             <Container>
               <Row>
                 <h3>2. Render a Simple List:</h3>
-                <p>After watching many React tutorials and completing the freecodecamp tutorials (an excellent educational resource I might add), I challenged myself to start creating components in React.  Folowing the counter, this simple list was my next effort.</p>
+                <p>After watching many React tutorials and completing the freecodecamp tutorials (an excellent educational resource I might add: <a href="https://www.freecodecamp.org/learn/">https://www.freecodecamp.org/learn/</a>), I challenged myself to start creating components in React.  Folowing the counter, this simple list was my next effort.</p>
                 <ul><NameList/></ul>
               </Row>
             </Container>
@@ -42,7 +43,7 @@ export class Application extends React.Component{
             <Container>
               <Row>
                 <h3>3. Render an Array of Objects:</h3>
-                <p>Then I moved on to rendering arrays.  This presented new challenges; working with arrays in React is a bit more complicated. In this case, I wanted to render an array of addresses.</p>
+                <p>Then I moved on to rendering arrays.  This presented new challenges; working with arrays in React is a bit more complicated. Here is a good reference: <a href="https://reactjs.org/docs/lists-and-keys.html">(React: Lists and Keys)</a> In this case, I wanted to render an array of addresses.  This section also uses in-line JSX styling (<a href="https://reactjs.org/docs/faq-styling.html">Styling and CSS in React).</a></p>
                 <Addresses/>
               </Row>
             </Container>
@@ -50,7 +51,7 @@ export class Application extends React.Component{
             <Container style={{marginTop: "40px"}}>
               <Row>
               <h3>4. Rendering Forms</h3>
-              <p>This challenge revolved around the creation of forms in React (no simple task!).  Actually, rendering the form itself is not difficult, however, updating state requires some additional knowledge.</p>
+              <p>This challenge revolved around the creation of forms in React (no simple task!).  Actually, rendering the form itself is not difficult, however, updating state requires some additional knowledge.  Here is a link to <a href="https://reactjs.org/docs/faq-state.html">Component State.</a></p>
                 <AddressForm/>
               </Row>
             </Container>
@@ -78,7 +79,7 @@ export class Application extends React.Component{
             {/* ------------------------------- */}
             <Container>
               <h3>8. React Forms/Todo Lists</h3>
-              <p>This is an excercise in the creation of  forms using older and newer coding methods.  There form below are identical in appearance.  However, the example on the left using hooks while the example on the right uses classes and state.</p>
+              <p>This is an excercise in the creation of  forms using older and newer coding methods.  There form below are identical in appearance.  However, the example on the left using hooks while the example on the right uses classes and state <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks.</a>.  </p>
               <Row>
               
                 <TodoApp />
@@ -94,7 +95,9 @@ export class Application extends React.Component{
             {/* -------------------------------- */}
             <Container>
               <Row>
-                <div style={{height: "200px"}}> (SPACE HOLDER)</div>
+                <h3>9. Connecting to an Open Source API</h3>
+                <p>Associating an open source API user database to React using "fetch".  Display a list of user information.  (This section was styled with standard CSS).The API accessed is: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users.</a></p>
+                <PracticeData/>
               </Row>
             </Container>
 
