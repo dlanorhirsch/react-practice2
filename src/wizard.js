@@ -106,8 +106,8 @@ function Step1(props) {
   }
   return (
     <div className="form-group">
-      <label htmlFor="email">Email address</label>
-      <input 
+      <label style={{marginLeft: "20px"}}htmlFor="email">Email address</label>
+      <input style={{marginLeft: "20px", width: "380px"}}
       className="form-control"
       id="email"
       type="text"

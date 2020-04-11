@@ -19,27 +19,19 @@ export class Addresses extends React.Component{
       marginLeft: 50,
       marginTop: 5,
       marginBottom: 5
-     
     }
     return (
       <div>
-      
         <div >
             {this.state.addresses.map(address => 
             <div className="addressBox" key={address.id}> 
-            
               <div style={styles}>{address.fname}{address.lname}</div>
               <div style={styles}>{address.street}</div>
               <div style={styles}>{address.city}{address.st}{address.zip}</div>
-          
           </div>
-              
-            
           )}
       </div> 
     </div>
-          
-      
     )
   }
 }

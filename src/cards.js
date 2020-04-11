@@ -3,7 +3,7 @@ import React from 'react';
 //child component
 const Card = (props) => {
   return (
-      <div className="card">
+      <div className="card" style={{marginLeft: "20px"}}>
         <img className="card-img-top"
           src={props.featureImage}
           alt="#" />
@@ -16,7 +16,6 @@ const Card = (props) => {
     </div>
   )
 }
-
 //parent component
 export const CardList = () => {
   return (
@@ -26,14 +25,13 @@ export const CardList = () => {
           title="How To Make Interactive ReactJS Form"
           description="Let's write some interactive form with React"
           link="https://sebhastian.com/interactive-react-form"
-
           />
       </div>
       <div className="col-sm-4">
         <Card featureImage="https://source.unsplash.com/random/600x250/?technology" alt="" 
           title="Practicing with React Components"
           description="Let's have fun creating with React JS"
-          link="https://google.com"
+          link="https://reactjs.org/docs/components-and-props.html"
         />
       </div>
       <div className="col-sm-4">

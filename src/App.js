@@ -22,9 +22,9 @@ export class Application extends React.Component{
   
     render(){
       return (
-        <div>
+        <div className="main-div">
           <header className="jumbotron text-center p-5">
-            <h1><img src="/React.png" alt="" className="logo"></img>React Practice Exercises</h1>
+            <h1><img src="/React.png" alt="" className="logo"></img>React Practice Exercises<img src="/React.png" alt="" className="logo"></img></h1>
           </header>
           <Container>
             <Row>
@@ -82,9 +82,9 @@ export class Application extends React.Component{
               <p>This is an excercise in the creation of  forms using older and newer coding methods.  There form below are identical in appearance.  However, the example on the left using hooks while the example on the right uses classes and state <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks.</a>.  </p>
               <Row>
               
-                <TodoApp />
-
-                <TodoList/>
+                  <TodoApp />
+                  <TodoList/>
+                
               </Row>
             </Container>
           </Row>

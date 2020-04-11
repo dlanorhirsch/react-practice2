@@ -26,15 +26,15 @@ export class TodoList extends React.Component{
   render(){
       return(
         <div className="todoapp">
-        <h5 style={{color: "white"}}>This is an example using classes and state.</h5>
+        <h5 style={{color: "black"}}>This is an example using classes and state.</h5>
       <div className="todo-list">{this.state.todos.map((todo,index) => 
         
-          <li className="todo" key={index}>{todo}</li>
+          <div className="todo" key={index}>{todo}</div>
         
       
     )}
         <form onSubmit={this.handleSubmit}>
-          <input 
+          <input style={{width: "100%"}} 
             id ="todo"
             type="text" 
             name="todo" 
@@ -42,7 +42,7 @@ export class TodoList extends React.Component{
           />
           <button 
             className="btn btn-sm btn-light"
-            style={{marginLeft:  "20px", border:"solid 1px gray"}}
+            style={{border:"solid 1px gray", marginTop:"5px"}}
             >Add Todo</button>
         </form>
         </div>  

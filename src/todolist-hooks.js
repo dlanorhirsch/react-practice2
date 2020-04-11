@@ -20,7 +20,7 @@ function TodoForm({addTodo}) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input 
+      <input style={{width: "100%"}}
         type="text"
         className='input'
         value={value}
@@ -28,7 +28,7 @@ function TodoForm({addTodo}) {
         onChange={e => setValue (e.target.value)} />
         <button 
             className="btn btn-sm btn-light"
-            style={{marginLeft:  "20px", border:"solid 1px gray"}}
+            style={{border:"solid 1px gray", marginTop: "5px"}}
             >Add Todo</button>
     </form>
   )
@@ -58,7 +58,7 @@ const addTodo = text => {
 return (
   
   <div className="todoapp">
-  <h5 style={{color: "white"}}>This is an example using React hooks.</h5>
+  <h5 style={{color: "black"}}>This is an example using React hooks.</h5>
     <div className="todo-list">
       {todos.map((todo, index) => (
         <Todo key={index} index={index} todo={todo} />

@@ -28,10 +28,9 @@ render(){
       return <div>Loading...</div>
     } else {
       return (
-        <div>
-          <div className="listBlock">{
-            data.map(data => (
-              <div key={data.id}>
+        <div className="container-fluid">
+          <div className="row">{
+            data.map(data => <div key={data.id}>
                 
               <div className="list">
                 <li className="header">{data.name}</li>
@@ -51,7 +50,7 @@ render(){
                 
               </div>
               </div>
-            ))}
+            )}
         </div>
         </div>
       );
