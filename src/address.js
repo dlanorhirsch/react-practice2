@@ -18,7 +18,8 @@ export class Addresses extends React.Component{
       fontSize: 18,
       marginLeft: 50,
       marginTop: 5,
-      marginBottom: 5
+      marginBottom: 5,
+      maxWidth: "300px"
     }
     return (
       <div>

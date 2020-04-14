@@ -29,10 +29,7 @@ export class AddressForm extends React.Component{
   
   render(){
     const styles = {
-      display: "flex",
-      fontSize: 18,
       margin: 10
-     
     }
     return (
       <div>
@@ -40,7 +37,8 @@ export class AddressForm extends React.Component{
           fontSize: 18,
           fontWeight: "bold",
           marginLeft: 100,
-          display: "block"
+          display: "block",
+          
           }}
           onSubmit={this.handleSubmit}>Enter Name and Address:
           <div className="container">
