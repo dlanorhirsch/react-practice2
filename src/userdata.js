@@ -11,6 +11,7 @@ export class PracticeData extends React.Component{
     }
   }
 
+
 componentDidMount() {
   fetch('https://jsonplaceholder.typicode.com/users')
   .then(res => res.json())
@@ -19,9 +20,10 @@ componentDidMount() {
       isLoaded: true,
       data: json,
     })
-
   });
-}
+  
+} 
+
 render(){
   var { isLoaded, data } = this.state;
     if(!isLoaded) {
