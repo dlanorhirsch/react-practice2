@@ -106,13 +106,13 @@ function Step1(props) {
   }
   return (
     <div className="form-group">
-      <label style={{marginLeft: "20px"}}htmlFor="email">Email address</label>
+      <label style={{marginLeft: "20px"}} htmlFor="email">Email address</label>
       <input style={{marginLeft: "20px", width: "380px"}}
       className="form-control"
       id="email"
       type="text"
       placeholder="Enter email"
-      value={props.email}  //props from parent
+      defaultValue={props.email}  //props from parent
       onChange={props.handleChange}  //props from parent
       />
     </div>
@@ -130,7 +130,7 @@ function Step2(props){
       id="username"
       type="text"
       placeholder="Enter user name"
-      value={props.username}  //props from parent
+      defaultValue={props.username}  //props from parent
       onChange={props.handleChange}  //props from parent
       />
     </div>
@@ -149,7 +149,7 @@ function Step3(props){
       id="password"
       type="text"
       placeholder="Enter password"
-      value={props.password}  //props from parent
+      defaultValue={props.password}  //props from parent
       onChange={props.handleChange}  //props from parent
       />
     </div>

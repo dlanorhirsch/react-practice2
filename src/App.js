@@ -20,7 +20,7 @@ export class Application extends React.Component{
     return (
       <div className="main-div">
         <header className="jumbotron text-center p-5">
-          <h1><img src="/React.png" alt="" className="logo"></img>React Practice Exercises<img src="/React.png" alt="react logo" className="logo"></img></h1>
+          <h1><img src="/React.png" alt="" className="logo"></img>React Practice Exercises</h1>
         </header>
     <Container>
       <Row>
@@ -101,7 +101,7 @@ export class Application extends React.Component{
       </Row>
     </Container>
     <footer>
-      <div class="copywrite">Copywrite: StackStudio, 2020</div>
+      <div className="copywrite">Copywrite: StackStudio, 2020</div>
     </footer>
   </div>
   )}          

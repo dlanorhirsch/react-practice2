@@ -6,32 +6,35 @@ export class PracticeData extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      data: [],
-      isLoaded: false,
+      data: []
     }
   }
 componentDidMount() {
-  fetch('https://jsonplaceholder.typicode.com/users')
+  fetch('https://jsonplaceholder.typicode.com/users', {signal: this.abortController.signal})
   .then(res => res.json())
   .then(json => {
     this.setState({
-      isLoaded: true,
-      data: json,
+      data: json
+    })
+    .catch(error => {
+      if (error.name === 'AbortError') return;
+      throw error;
     })
   });
 } 
-componentWillUnmount(){
-this.isLoaded = false
-}
+componentWillUnmount = () => this.abortController.abort();
+abortController = new window.AbortController();
+
+
 render(){
-  var { isLoaded, data } = this.state;
-    if(!isLoaded) {
-      return <div>Loading...</div>
-    } else {
+  // var { isLoaded, data } = this.state;
+  //   if(!isLoaded) {
+  //     return <div>Loading...</div>
+  //   } else {
       return (
         <div className="container-fluid">
           <div className="row">{
-            data.map(data => <div key={data.id}>
+            this.state.data.map(data => <div key={data.id}>
                 
               <div className="list">
                 <li className="header">{data.name}</li>
@@ -56,8 +59,9 @@ render(){
         </div>
       );
     }
-}
+  }
 
-}
+
 ReactDOM.render(<PracticeData/>, document.getElementById('root'));
 
+// https://robwise.github.io/blog/cancel-whatwg-fetch-requests-in-react
