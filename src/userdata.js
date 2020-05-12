@@ -1,23 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { useState, useEffect } from 'react';
-
-// export default function useFetch('https://jsonplaceholder.typicode.com/users') {
-//   const [data, setData] = useState([]);
-
-//   async function getData() {
-//     const response = await fetch(url);
-//     const data = await response.json();
-//     setData(data);
-//   }
-//   useEffect(() => {
-//     getData();
-//   }, []);
-//   return data;
-// }
-
-
-
 
 export class PracticeData extends React.Component{
   constructor(props){
