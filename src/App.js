@@ -10,7 +10,7 @@ import {Addresses} from "./address";
 import {AddressForm} from "./addressform";
 import {CardList} from "./cards";
 import {MasterForm} from './wizard';
-import {CarouselDemo} from './carousel';
+import {Carousel} from './carousel2';
 import {TodoApp} from './todolist-hooks';
 import {TodoList} from './todolist-classes';
 import {PracticeData} from './userdata';
@@ -70,11 +70,13 @@ export class Application extends React.Component{
         </Container>
         {/* -------------------------------------- */}
         <Container>
-          <h3>7. Rendering A Bootstrap Carousel</h3>
-          <p>This was a most interesting process.  I started out trying to create a bootstrap carousel using code from their website.  I was having trouble getting it to work.  I started searching for tutorials and examples and I learned A LOT!  There are many ways to create a carousel (sometimes referred to as a slider).  The degree of dificulty with each approach varies significantly.  An example would be React Slick found here <a href="https://react-slick.neostack.com">(see React Slick @ neostack.com).</a>  Another one I found (and chose to use) was another npm package called "React Responsive Carousel."  It simplifies the process of creating a carousel tremendously, but continues to provide lots of options for control.  It litterally took minutes to put together.  Here is a link <a href="https://www.npmjs.com/package/react-responsive-carousel">(React Responsive Carousel ).</a>
+          <h3>7. Rendering A Carousel</h3>
+          <p>This was a interesting process. I tried several approaches.  As a new developer, my ability to modify each approach was limited. The degree of dificulty for each approach varied significantly. I started out trying to create a bootstrap carousel using code from their website. I was having trouble getting it to perform the way I wanted it to.  
+          
+          I started searching for tutorials and examples and I learned a LOT!  There are many ways to create a carousel (sometimes referred to as a slider). My second attempt was using an npm package. This one claimed to be responsive but there were issues with the thumbs at the bottom when resizing to a mobile-size screen (thumbs extended beyond the page). On to the next one! This one performed the best,  and was pretty easy to use.  The npm package can be found here: <a href="https://www.npmjs.com/package/pure-react-carousel">(npm pure-react-carousel).</a>  This is the one I used for the example.  It literally took minutes to put together, and some additional time to modify for this example.  All-in-all, this is a simple and easy to use carousel. Thanks to the folks who created it!
           </p>
-          <Row>
-            <CarouselDemo/>
+          <Row className="carouselParent">
+            <Carousel/>
           </Row>
         </Container>
         {/* -------------------------------------- */}

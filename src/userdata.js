@@ -1,5 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import { useState, useEffect } from 'react';
+
+// export default function useFetch('https://jsonplaceholder.typicode.com/users') {
+//   const [data, setData] = useState([]);
+
+//   async function getData() {
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     setData(data);
+//   }
+//   useEffect(() => {
+//     getData();
+//   }, []);
+//   return data;
+// }
+
+
 
 
 export class PracticeData extends React.Component{
@@ -14,15 +31,15 @@ componentDidMount() {
   fetch('https://jsonplaceholder.typicode.com/users')
   .then(res => res.json())
   .then(json => {
-    this.setState({
+    this.setState({   //triggers a rendering cycle
       isLoaded: true,
       data: json,
     })
-  });
+  })
 } 
-componentWillUnmount(){
-this.isLoaded = false
-}
+// componentWillUnmount(){
+//   this.isLoaded = false
+// }
 render(){
   var { isLoaded, data } = this.state;
     if(!isLoaded) {

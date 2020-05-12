@@ -58,6 +58,14 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+/* carousel2.js */
+.carousel-size {
+  min-width: 500px;
+
+}
+.btn-back, .btn-forward {
+  margin-top: 20px;
+}
 /* userdata.js */
 
 .list {
