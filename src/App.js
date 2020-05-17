@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row} from 'react-bootstrap';
+import {Container, Row} from 'react-bootstrap';
 import "./index.css";
 
 import {Counter} from './counter';
@@ -13,7 +13,7 @@ import {MasterForm} from './wizard';
 import {Carousel} from './carousel2';
 import {TodoApp} from './todolist-hooks';
 import {TodoList} from './todolist-classes';
-import {PracticeData} from './userdata';
+import {People} from './userdata-test-1.js';
 
 export class Application extends React.Component{
   render(){
@@ -97,7 +97,9 @@ export class Application extends React.Component{
           <Row>
             <h3>9. Connecting to an Open Source API</h3>
             <p>Associating an open source API user database to React using "fetch".  Display a list of user information.  (This section was styled with standard CSS).The API accessed is: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users.</a></p>
-            <PracticeData/>
+            
+
+            <People/>
           </Row>
         </Container>  
       </Row>
