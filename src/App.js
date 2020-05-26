@@ -13,7 +13,8 @@ import {MasterForm} from './wizard';
 import {Carousel} from './carousel2';
 import {TodoApp} from './todolist-hooks';
 import {TodoList} from './todolist-classes';
-import {People} from './userdata-test-1.js';
+import {PracticeData} from './userdata';
+import PeopleData from './userdata2.js';
 
 export class Application extends React.Component{
   render(){
@@ -96,12 +97,20 @@ export class Application extends React.Component{
         <Container>
           <Row>
             <h3>9. Connecting to an Open Source API</h3>
-            <p>Associating an open source API user database to React using "fetch".  Display a list of user information.  (This section was styled with standard CSS).The API accessed is: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users.</a></p>
-            
-
-            <People/>
+            <p>Associating an open source API user database to React using "fetch" was the goald of this exercise. The code mounts a group of user data cards to the DOM, using two general methods, lifecycles, and hooks. Initially, I used lifecycle methods to create the first set. The code resulted in a "memory leak" error. After researching the error, I was able to identify the solution. This HackMD details my search and documents my learning process, and includes what I needed to learn in order to resolve the error.<a href="https://hackmd.io/K-R5QPlRRnKR7UB5H3TC6g.com">HackMD</a> The API data came from jsonplaceholder which provides a variety of APIs with which to work, and is maintained by GitHub and is available here: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users.</a> Both version (lifecycle and hooks, were styled using the same standard CSS file by using the same classNames, though the contact is slightly different.</p>
+            <h4>Lifecycle Methods:</h4>
+            <PracticeData />
           </Row>
         </Container>  
+        <Container>
+          <Row>
+          <h3>Hooks / Fetch / Async / Await</h3>
+          <br></br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h4>Hooks Methods:</h4>
+          <PeopleData />
+          </Row>
+        </Container>
       </Row>
     </Container>
     <footer>
