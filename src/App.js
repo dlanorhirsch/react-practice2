@@ -13,7 +13,7 @@ import {MasterForm} from './wizard';
 import {Carousel} from './carousel2';
 import {TodoApp} from './todolist-hooks';
 import {TodoList} from './todolist-classes';
-import {PracticeData} from './userdata';
+// import {PracticeData} from './userdata';
 import PeopleData from './userdata2.js';
 
 export class Application extends React.Component{
@@ -96,19 +96,33 @@ export class Application extends React.Component{
         {/* -------------------------------- */}
         <Container>
           <Row>
-            <h3>9. Connecting to an Open Source API</h3>
-            <p>Associating an open source API user database to React using "fetch" was the goald of this exercise. The code mounts a group of user data cards to the DOM, using two general methods, lifecycles, and hooks. Initially, I used lifecycle methods to create the first set. The code resulted in a "memory leak" error. After researching the error, I was able to identify the solution. This HackMD details my search and documents my learning process, and includes what I needed to learn in order to resolve the error.<a href="https://hackmd.io/K-R5QPlRRnKR7UB5H3TC6g.com">HackMD</a> The API data came from jsonplaceholder which provides a variety of APIs with which to work, and is maintained by GitHub and is available here: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users.</a> Both version (lifecycle and hooks, were styled using the same standard CSS file by using the same classNames, though the contact is slightly different.</p>
-            <h4>Lifecycle Methods:</h4>
-            <PracticeData />
+            <h3>9. Two Examples for Maintaining State in a React Component</h3>
+            <p>Associating an open source API user database to React using <code>fetch()</code> is the goal of this exercise.</p>
+            
+            <p>The code mounts a group of user data cards to the DOM, using two different methods, lifecycles, and hooks.  The API data used in both cases came from typicode's jsonplaceholder API on GitHub: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users.</a> </p>
+            
+            <PeopleData />
+            
+            
+            
+
+            {/* <p>The lifecycle methods used are componentDidMount() and componentDidUnmount(). </p> */}
+            {/* <PracticeData /> */}
           </Row>
         </Container>  
         <Container>
           <Row>
-          <h3>Hooks / Fetch / Async / Await</h3>
-          <br></br>
+            
+            <h4>Lifecycle Methods:</h4>
+            <p>The code resulted in a "memory leak" error. This HackMD details the resolution of this error.<a href="https://hackmd.io/K-R5QPlRRnKR7UB5H3TC6g.com"> HackMD</a> Both version (lifecycle and hooks, were styled using the same standard CSS file by using the same classNames, though the contact is slightly different.</p>
+            <p>Memory leaks...... </p>
+
+            <h4>Hooks / Fetch / Async / Await</h4>
+          
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <h4>Hooks Methods:</h4>
-          <PeopleData />
+          
+          
           </Row>
         </Container>
       </Row>

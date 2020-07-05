@@ -4,6 +4,8 @@ This project was created to practice coding with React.JS. It is a static page b
 
 Create React App was used to create the project see [README-CRA.MD](https://github.com/dlanorhirsch/react-examples/blob/master/README.CRA.MD).
 
+For information about the last part of this project, please see HackMD: 
+
 **Framework:**  Node.JS
 
 **Package Manager**: NPM
