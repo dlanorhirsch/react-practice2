@@ -119,7 +119,7 @@ export class Application extends React.Component{
           <Row>
             <h4>Lifecycle Methods:</h4>
             <p>
-              This section is a discussion of lifecylce methods used, including the discovery of multiple ways of writing the code that was discovered when the "memory leaks" error occured, and the resulting investigation of different code to accomplish the desired goal, and resolve the error.  The "in-depth" investigation of coding alternatives and various methods of error resolution to be discussed at more length in the following HackMD article:<a href="https://hackmd.io/zrKlbybdQ66lz1hRW1qsTA"> Investigation I: Lifecycles, state, hooks and memory leaks.</a> 
+              This section is a discussion of lifecylce methods used, including the discovery of multiple ways of writing the code that was discovered when the "memory leaks" error occured, and the resulting investigation of different code to accomplish the desired goal, and resolve the error.  The "in-depth" investigation of coding alternatives and various methods of error resolution to be discussed at more length in the following HackMD article:<a href="https://hackmd.io/zrKlbybdQ66lz1hRW1qsTA"> Investigations: Lifecycles, state, hooks and memory leaks.</a> 
             </p>
 
           <h4>Hooks Methods:</h4>
