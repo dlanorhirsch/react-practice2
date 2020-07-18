@@ -27,6 +27,8 @@
 
 # Lifecycles, state, hooks and memory leaks.
 
+This post refers to the following code: [react-examples/investigations/hooks-useeffect-fetch](https://github.com/dlanorhirsch/react-examples/tree/6161e4aa2357b549cc5603a6b140399f397d92d5/investigations/hooks-useeffect-fetch).
+
 This post was initiated in response to learning some React concepts including lifecycle methods, state, hooks, including **useEffect, useState** and **useFetch**, in order to capture open source API data as a learning task.  
 
 ## Lifecycle methods involve mounting and unmounting components to the DOM.
