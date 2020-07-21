@@ -70,3 +70,14 @@ button {
   margin-bottom: 2.5em;
   width: 35em;
 }
+.namesTable {
+  border: 1 px black solid;
+  text-align: center;
+  margin-left: 4.5em;
+  margin-bottom: 2em;
+  width: 400px;
+}
+.note {
+  font-size: .8em;
+  font-weight: bold;
+}

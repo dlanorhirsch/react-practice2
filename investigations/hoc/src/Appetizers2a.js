@@ -16,7 +16,7 @@ class Appetizer2a extends Component{
   render(){
     return(
       <div>
-        <button onClick={this.toggle}>{this.state.on ? "Hide" : "Show"} Appetizers </button>
+        <button onClick={this.toggle}>{this.state.on ? "Hide" : "Show"}  </button>
           <div style={{visibility: this.state.on ? "visible" : "hidden"}}>
             <ul className="teasers">
               <li className="items">Stuffed Clams</li>

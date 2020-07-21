@@ -1,20 +1,18 @@
 import React from 'react';
 import './styles.css';
-import {withFavoriteNumber} from "./withFavoriteNumber"
+import {withFavoriteNumber} from "./withFavoriteNumber";
 
-import PCP from "./parent-child-props"
+import PCP from "./parent-child-props";
 
-// import Appetizer2a from "./Appetizers2a"
-// import MainCourse2a from "./MainCourse2a"
+// import Appetizer2a from "./Appetizers2a";
+// import MainCourse2a from "./MainCourse2a";
 
-import Appetizer2b from "./Appetizers2b"
-import MainCourse2b from "./MainCourse2b"
+import Appetizer2b from "./Appetizers2b";
+import MainCourse2b from "./MainCourse2b";
 
-import Appetizer2aCodeEx from "./Appetizer2aCodeEx"
-import Appetizer2bCodeEx from "./Appetizer2bCodeEx"
-
-
-
+import Appetizer2aCodeEx from "./Appetizer2aCodeEx";
+import Appetizer2bCodeEx from "./Appetizer2bCodeEx";
+// import WithTogglerCodeEx from "./WithTogglerCodeEx";
 
 function App(props) { 
   // console.log(props)
@@ -42,7 +40,6 @@ function App(props) {
 
       <h2>Higher Order Component: </h2>
       
-      
       <h3>Ex. 1: Function component, withFavoriteNumber.js</h3>
       <p>This is a simple example that demonstrates the code structure and syntax of a higher order component.</p>
       <h3 style={{color: "#0069d9", marginLeft: "2.5em"}}>My favorite number is: {props.favoriteNumber} </h3>
@@ -55,33 +52,60 @@ function App(props) {
       </p>
       
       <hr></hr>
-      <h3>Ex. 2a: Class components with toggler function, Appetizer2a.js, MainCourse2a.js</h3>
-      <p>This example represents a class component with a toggle button that updates state which in turn hides or shows the appetizer and main course menu items. Both Appetizer2a.js and MainCourse2a.js have their own toggle functions. The example below is the code for Appetizer2a.js. The code for MainCourse2a.js is essentially the same.</p>
+      <h3>Exs. 2a & 2b: Class and Higher Order Components</h3>
+
+      <p>These examples demonstrate two approaches to creating components with React that display and hide menu items as seen below.</p>
+      <p className="note">(NOTE: The file names in these examples end in "..2a" and "..2b".)</p>
+      <table className="namesTable">
+        <tr>
+          <th>Class comps.</th>
+          <th>Class comps. w/HOC</th>
+        </tr>
+        <tr>
+          <td>2a.js</td>
+          <td>2b.js</td>
+        </tr>
+        <tr>
+          <td>MainCourse2a.js</td>
+          <td>MainCourse2b.js</td>
+        </tr>
+      </table>
+
+      <Appetizer2b />
+      {/* Appetizer2b controls the button and display for "Show " */}
+
+      <MainCourse2b />
+      {/* MainCourse2b controls the button and display for "Show MainCourse" */} 
+      <h3>Ex. 2a:</h3>
+      <p>The first example, 2a.js, is a class component with a toggler function tied to a button via an event listener. When the button is clicked, state is updated, and the display is shown or hidden depending on the value of state. Each file has its own toggle function.</p>
+
+      <p className="note">(Note: This example below is for the file Appetizer2a.js. The code for MainCourse2a.js is essentially the same and therefore not displayed.</p>
       
       <Appetizer2aCodeEx />
       {/* Appetizer2aCodeEx controls the button and display for this file. */}
 
       <hr></hr>
-      <h3>Ex. 2b: Class components with higer-order components, Appetizers2b.js, MainCourse2b.js, </h3>
-      <p>In this example, the code in both components ending with "...2a.js" were re-written as a higher order components. Doing so allows for the re-use of the code which provides toggle functionality. A new component called withToggler.js replaces the toggler function in both ...2a.js components, thereby decreasing the amount of code needed. </p>
-      <p>A seperate withToggler.js file is created, and is shared by the other two files via HOC's. This shortens and symplifies the code, and is a common pattern found in React. The results of the code follows:</p>
-      
-      <Appetizer2b />
-      {/* Appetizer2b controls the button and display for "Show Appetizers" */}
+      <h3>Ex. 2b: Class components as higher-order components, 2b.js, MainCourse2b.js, </h3>
 
-      <MainCourse2b />
-      {/* MainCourse2b controls the button and display for "Show MainCourse" */} 
-
+      <p>In this example, the code in 2a was re-written as a higher order component. The toggler function removed. A new toggler component that is accessed by both appetizer and main course components was then created and shared with both files via HOCs. State has been removed from the Appetizer2a component and placed within the withToggler HOC, where state is now maintained. This shortens and symplifies the code, and is a common pattern found in React.</p>
+   
       <Appetizer2bCodeEx />
-      {/* Appetizer2bCodeEx controls the button and display for this file. */}
+      {/* Appetizer2bCodeEx controls the button and display for this example file. */}
+
+      {/* <WithTogglerCodeEx /> */}
+      {/* withTogglerCodeEx controls the button and display for this example file */}
+
+      {/* See note in WithTogglerCodeEx regarding this component, line 27. */}
+      <hr></hr>
+      
     </div>
     </div>
   );
 }
 const favNumbApp = withFavoriteNumber(App)
 export default favNumbApp
-// can also be written as:
 
+// can also be written as:
 // export default withFavoriteNumber(App)
 
 

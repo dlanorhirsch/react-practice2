@@ -6,7 +6,7 @@ import React, {Component} from 'react'
 
 class Toggler extends Component{
   state= {
-    on: false
+    on: true
   }
   toggle = () => {
     this.setState(prevState => {

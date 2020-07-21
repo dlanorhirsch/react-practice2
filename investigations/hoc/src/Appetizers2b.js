@@ -6,7 +6,7 @@ class Appetizer extends Component{
   render(){
     return(
       <div>
-        <button onClick={this.props.toggle}>{this.props.on ? "Hide" : "Show"} Appetizers </button>
+        <button onClick={this.props.toggle}>{this.props.on ? "Hide" : "Show"}  </button>
           <div style={{visibility: this.props.on ? "visible" : "hidden"}}>
             <ul className="teasers">
               <li className="items">Stuffed Clams</li>
