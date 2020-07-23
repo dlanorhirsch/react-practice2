@@ -17,7 +17,7 @@ function Practice() {
           <hr></hr>
         </h4>
         <h4>
-          Funtions: 
+          Functions: 
         </h4>
           
           

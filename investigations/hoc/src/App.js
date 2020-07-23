@@ -24,7 +24,8 @@ function App(props) {
   <div className="investigation-doc">
     <h1>Investigation:</h1>
     <h2>Higher Order Components</h2>
-    <p><strong>Definition:</strong> A function that takes a component as its first argument and returns a new component that wraps the given component,  providing it extra capabilities. Higher order components (HOCs) generally pass properties(props) from one component to another. The code for the following 3 elements are based on a single component passing props. It is helpful to understand how props are passed prior to writing higher HOCs.</p>
+    <p><strong>Definition:</strong> A function that takes a component as its first argument and returns a new component that wraps the given component,  providing it extra capabilities.</p> 
+    <p>Higher order components (HOCs) generally pass properties(props) from one component to another. The code for the following 3 elements are based on a single component passing props. It is helpful to understand how props are passed prior to writing higher HOCs.</p>
     <hr></hr>
     <div style={{marginBottom: "1.5em"}}>
       <h3>Passing props from parent to child component.</h3>
@@ -64,8 +65,8 @@ function App(props) {
           <th>Class comps. w/HOC</th>
         </tr>
         <tr>
-          <td>2a.js</td>
-          <td>2b.js</td>
+          <td>Appetizer2a.js</td>
+          <td>Appetizer2b.js</td>
         </tr>
         <tr>
           <td>MainCourse2a.js</td>
