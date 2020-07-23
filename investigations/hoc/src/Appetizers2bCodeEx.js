@@ -20,7 +20,7 @@ class Appetizer2bCodeEx extends Component {
           style={{marginBottom: "15px"}}
           onClick={this.toggle}>
           {this.state.show ? "Hide" : "Show"}
-          Code Example: 2bCodeEx.js
+          Code Example: Appetizers2bCodeEx.js
         </button>
       <div style={{display: this.state.show ? "block" : "none"}}>
       {/* --------------- begin code exampmle ---------------- */}

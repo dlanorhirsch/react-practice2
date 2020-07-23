@@ -15,7 +15,7 @@ class Appetizer2aCodeEx extends Component {
   render(){
     return (
       <div>
-      <button style={{marginBottom: "15px"}} onClick={this.toggle}>{this.state.show ? "Hide" : "Show"} Code Example: 2aCodeEx.js </button>
+      <button style={{marginBottom: "15px"}} onClick={this.toggle}>{this.state.show ? "Hide" : "Show"} Code Example: Appetizers2aCodeEx.js </button>
         <div style={{display: this.state.show ? "block" : "none"}}>
 
   {/* --------------- begin code exampmle ---------------- */}
