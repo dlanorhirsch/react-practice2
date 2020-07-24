@@ -77,9 +77,7 @@ function App(props) {
         These examples demonstrate two approaches to creating components
         with React that display and hide menu items as seen below.
       </p>
-      <p className="note">
-        (NOTE: The file names in these examples end in"..2a" and "..2b".)
-      </p>
+    
       <table className="namesTable">
         <tr>
           <th>Class comps.</th>
