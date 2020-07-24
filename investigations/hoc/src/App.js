@@ -14,7 +14,6 @@ import Appetizer2aCodeEx from "./Appetizers2aCodeEx";
 import Appetizer2bCodeEx from "./Appetizers2bCodeEx";
 // import WithTogglerCodeEx from "./WithTogglerCodeEx";
 
-import Practice from "./Practice"
 
 function App(props) { 
   // console.log(props)
@@ -141,7 +140,7 @@ function App(props) {
 
       {/* See note in WithTogglerCodeEx regarding this component, line 27. */}
       <hr></hr>
-      <Practice />
+      
     </div>
     </div>
   );
