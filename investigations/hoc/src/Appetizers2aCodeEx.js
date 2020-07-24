@@ -1,7 +1,9 @@
+import Markdown from 'markdown-to-jsx';
 import React from 'react';
 import {Component} from "react"
 
-class Appetizer2aCodeEx extends Component {
+
+class Appetizers2aCodeEx extends Component {
  state = {
    show: false
  }
@@ -15,6 +17,13 @@ class Appetizer2aCodeEx extends Component {
   render(){
     return (
       <div>
+<Markdown>
+# Hello World
+- 1
+- 2      
+- 3
+</Markdown>
+
       <button style={{marginBottom: "15px"}} onClick={this.toggle}>{this.state.show ? "Hide" : "Show"} Code Example: Appetizers2aCodeEx.js </button>
         <div style={{display: this.state.show ? "block" : "none"}}>
 
@@ -57,4 +66,4 @@ class Appetizer2aCodeEx extends Component {
 }
 
 
-export default Appetizer2aCodeEx
+export default Appetizers2aCodeEx
