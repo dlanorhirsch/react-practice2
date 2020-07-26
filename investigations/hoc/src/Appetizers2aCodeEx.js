@@ -1,4 +1,4 @@
-import Markdown from 'markdown-to-jsx';
+// import Markdown from 'markdown-to-jsx';
 import React from 'react';
 import {Component} from "react"
 
@@ -17,13 +17,6 @@ class Appetizers2aCodeEx extends Component {
   render(){
     return (
       <div>
-<Markdown>
-# Hello World
-- 1
-- 2      
-- 3
-</Markdown>
-
       <button style={{marginBottom: "15px"}} onClick={this.toggle}>{this.state.show ? "Hide" : "Show"} Code Example: Appetizers2aCodeEx.js </button>
         <div style={{display: this.state.show ? "block" : "none"}}>
 

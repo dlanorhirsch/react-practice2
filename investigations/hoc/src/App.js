@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles.css';
 import {withFavoriteNumber} from "./withFavoriteNumber";
-
 import PCP from "./parent-child-props";
 
 // import Appetizer2a from "./Appetizers2a";
@@ -14,6 +13,7 @@ import Appetizer2aCodeEx from "./Appetizers2aCodeEx";
 import Appetizer2bCodeEx from "./Appetizers2bCodeEx";
 // import WithTogglerCodeEx from "./WithTogglerCodeEx";
 
+// --------------------------------------------------//
 
 function App(props) { 
   // console.log(props)

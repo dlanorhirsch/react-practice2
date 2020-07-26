@@ -2,7 +2,7 @@ import React from 'react';
 import {Component} from "react"
 import WithTogglerCodeEx from "./WithTogglerCodeEx"
 
-class Appetizer2bCodeEx extends Component {
+class Appetizers2bCodeEx extends Component {
   state = {
    show: false
  }
@@ -54,4 +54,4 @@ class Appetizer2bCodeEx extends Component {
   }
 }
 
-export default Appetizer2bCodeEx
+export default Appetizers2bCodeEx
