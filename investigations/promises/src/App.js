@@ -17,13 +17,15 @@ function App() {
       <p>
         Rending props is generally used and is often preferred over higher order components. It has several advantages...
       </p>
-      {/* ------------------------------------ */}
+      <div>Include code example</div>
+{/* ------------------------------------ */}
       
       <hr></hr>
       <h4>
         A. Passing a string as props: 
       </h4>
       <div className="examples"><Example1 name="Uncle George"/></div>
+      <div>(Include code example)</div>
       <hr></hr>
 {/* ------------------------------------ */}
       <h3>
@@ -33,6 +35,7 @@ function App() {
         <Example1 name={["George", "Joe"]}/>
       </div>
         <div>(Due to the way an array is parsed in React, the name George and Joe are combined in the render. Additional formatting is needed to change this.)</div>
+        <div>(Include code example)</div>
       <hr></hr>
 {/* ------------------------------------ */}
       <h3>
@@ -45,6 +48,7 @@ function App() {
           }
         }/>
       </div>
+      <div>(Include code example)</div>
       <hr></hr>
 {/* ------------------------------------ */}
       <h3>D. Passing a boolean via a function as props:</h3>
@@ -55,6 +59,7 @@ function App() {
           }
         }/>
       </div>  
+      <div>(Include code example)</div>
     </div>   
   )
 }
