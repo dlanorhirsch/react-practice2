@@ -1,12 +1,11 @@
 import React from "react"
 
-function Example3(props) {
-    // console.log(props.name)
-    return (
-      <div>
-        {props.render(true)}
-      </div>
-    )
+function Example2(props) {
+  return (
+    <div>
+      {props.render("Bob")}
+    </div>
+  )
 }
 
-export default Example3
+export default Example2

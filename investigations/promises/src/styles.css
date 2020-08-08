@@ -10,3 +10,14 @@ body {
 .examples {
   color: #2269d9;
 }
+
+.codeExs {
+  font: monospace;
+  font-size: .8em;
+  background: #404045;
+  color: white;
+  padding: .7em;
+  padding-left: 20px;
+  border-radius: 15px;
+  width: 40em;
+}
