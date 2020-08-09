@@ -3,7 +3,7 @@ import React from 'react';
 function FunctionChildCodeEx() {
   return(
     <div>
-      <div className="header-tab">{`FunctionChildCodeEx.js`}</div>
+      <div className="header-tab">{`FunctionChildCode.js`}</div>
       <div className="codeExs">
         <div>{`import React from "react"`}</div>
         <br></br>
