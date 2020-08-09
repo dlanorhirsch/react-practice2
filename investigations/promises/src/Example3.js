@@ -9,3 +9,8 @@ function Example2(props) {
 }
 
 export default Example2
+
+// A. Rendering a string as props
+// B. 
+// C.
+// D.

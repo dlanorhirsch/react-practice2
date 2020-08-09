@@ -18,6 +18,17 @@ body {
   color: white;
   padding: .7em;
   padding-left: 20px;
-  border-radius: 15px;
+  border-radius: 0 15px 15px 15px;
   width: 40em;
+}
+.header-tab {
+  border: 1px solid #404045;
+  height: 1.5em;
+  padding: 8px 0 5px 20px;
+  color: red;
+  border-radius: 15px 15px 0 0; 
+  width: 30%;
+  font-size: .8em;
+  font-weight: bold;
+  background: #dddddf
 }

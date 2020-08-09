@@ -1,12 +1,12 @@
 import React from "react"
 
-function Example4(props) {
+function FunctionChildCode(props) {
     // console.log(props.name)
     return (
       <div>
-        {props.render(true)}
+        {props.render("Bob")}
       </div>
     )
 }
 
-export default Example4
+export default FunctionChildCode
