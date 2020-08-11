@@ -21,31 +21,34 @@ import BooleanChildCodeEx from "./BooleanCodeEx/BooleanChildCodeEx";
 function App() {
   return (
     <div>
-    <h1 className="investigation-doc">Investigation:</h1>
-      <h2>
-        Rending Props
-      </h2>
+    <h1 className="investigation-doc">Investigation: Props</h1>
       <p>
-      This investigation is an excercise in passing various data types as props within components: strings, arrays, booleans and functions. Note that all child files are rendered through one App.js in the react-examples/investigations/render-props repository.
+      This investigation is an excercise in passing various data types as props within components: <strong>strings</strong>, <strong>arrays</strong>, and <strong>functions</strong>. The two function examples pass a string and a boolean respectively. Note that all child files are rendered through one App.js file in the <a href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/promises/src/App.js">react-examples/investigations/render-props/App.js</a>.
       </p>
-      <p>However, for the purposes of this investigation, each example below shows how the App.js file would be written as a stand alone component in App.js. To see the entire App.js file that renders all child components, see <a href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/promises/src/App.js">react-examples/investigations/render-props/App.js</a>.
+      <p>However, for the purposes of this investigation, each example below shows how the App.js file would be written as a stand alone component in App.js. To see the entire App.js file follow the link above.
       </p>
      
 {/* ------------------------------------ */}
 
       <hr></hr>
       <h3>
-        <a href="https://github.com/dlanorhirsch/react-examples/tree/master/investigations/promises/src/StringCodeExs">A. Passing a string as props: </a>
+        Passing a string as props
       </h3>
-      <div>This example renders:</div>
-      <div className="examples"><StringChildCode name="Uncle George!"/></div>
+      <div>
+        This example renders:
+        <div className="examples">
+          <StringChildCode name="Uncle George!"/>
+        </div>
+      </div>
+      
       <AppJsStringCodeEx />
       <br></br>
       <StringChildCodeEx />
+      <br></br>
       <hr></hr>
 {/* ------------------------------------ */}
       <h3>
-        B. Passing an array as props: 
+        Passing an array as props
       </h3>
       <div>This example renders:</div>
       <div className="examples">
@@ -59,7 +62,7 @@ function App() {
       <hr></hr>
 {/* ------------------------------------ */}
       <h3>
-        C. Passing a string via a function as props:
+        <a href="https://github.com/dlanorhirsch/react-examples/tree/master/investigations/promises/src/FunctionCodeEx">Passing a string via a function as props</a>
       </h3>
       <p>
         Rending functions as props is generally used and is often a preferred method to higher order components (HOC's). 
@@ -73,12 +76,13 @@ function App() {
         }/>
         <AppJsFunctionCodeEx />
         <br></br>
-        <FunctionChildCodeEx />
+        <BooleanChildCodeEx />
       </div>
 
       <hr></hr>
 {/* ------------------------------------ */}
-      <h3>D. Passing a boolean via a function as props:</h3>
+      <h3>
+      <a href="https://github.com/dlanorhirsch/react-examples/tree/master/investigations/promises/src/BooleanCodeEx">Passing a boolean via a function as props</a></h3>
       <div>This example renders:</div>
       <div className="examples">
             <BooleanChildCode render={

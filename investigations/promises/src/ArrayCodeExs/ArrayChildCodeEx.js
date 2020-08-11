@@ -3,22 +3,24 @@ import React from 'react';
 function ArrayChildCodeEx() {
   return (
       <div>
-        <div className="header-tab">ArrayChildCode.js</div>
-        <div className = "codeExs">
-          
-          <div>{`import React from "react;`}</div>
-          <br></br>
-          <div>{`function ArrayChildCode(props) {`}</div>
-          <div style={{marginLeft: "1em"}}>{`return(`}</div>
-          <div style={{marginLeft: "2em"}}>{`<div>`}</div>
-          <div style={{marginLeft: "3em"}}>{`<h4>Hi {props.name}</h4>`}</div>
-          <div style={{marginLeft: "2em"}}>{`</div>`}</div>
-          <div style={{marginLeft: "1em"}}>{`)`}</div>
-          <div>{`}`}</div>
-          <br></br>
-          <div>{`export default ArrayChildCodeEx`}</div>
-        </div>
-      </div>
+        <a className="header-tab" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/promises/src/ArrayCodeExs/ArrayChildCode.js">ArrayChildCode.js</a>
+      
+<pre className = "codeExs">{`
+import React from 'react';
+
+function ArrayChildCode(props) {
+  return (
+    <div>
+      <h4>Hi {props.name} </h4>
+    </div>
+  )
+}
+
+export default ArrayChildCode
+
+`}
+</pre>
+</div>  
   )
 }
 

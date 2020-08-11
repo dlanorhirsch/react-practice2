@@ -1,7 +1,6 @@
 import React from "react"
 
 function StringChildCode(props) {
-    // console.log(props.name)
     return <h4>Hi {props.name}</h4>
 }
 

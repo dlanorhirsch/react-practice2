@@ -4,24 +4,24 @@ function AppJsStringCodeEx() {
     return (
       <div>
       <div className="header-tab">App.js (parent)</div>
-        <div className = "codeExs">
-          <div>{`import React from "./react;`}</div>
-          <div>{`import StringChildCode from "./StringChildCode";`}</div>
-          <br></br>
-          <div>{`function App() {`}</div>
-          <div style={{marginLeft: "1em"}}>{`return (`}</div>
-          <div style={{marginLeft: "1em"}}>{`<h4>A. Passing a string as props: </h4>`}</div>
-          <div style={{marginLeft: "2em"}}>{`<div className="examples">`}</div>
-          <div style={{marginLeft: "3em"}}>{`<StringChildCode name = "Uncle George" />`}</div>
-          <div style={{marginLeft: "2em"}}>{`<div>`}</div>
-          <div style={{marginLeft: "1em"}}>{`)`}</div>
-          <div>{`}`}</div>
-          <br></br>
+<pre className = "codeExs">{`
+import React from "react";
+import StringChildCode from "./StringChildCode";
 
-          <div>{`export default App`}</div>
-        </div>
+  function App() {
+    return (
+      <h4>A. Passing a string as props: </h4>
+      <div className="examples">
+        <StringChildCode name = "Uncle George" />
       </div>
-      
+    )
+  }
+
+export default App
+
+`}
+</pre>
+</div>  
     )
 }
 

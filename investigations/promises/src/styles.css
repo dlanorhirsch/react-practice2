@@ -6,29 +6,36 @@ body {
   color: #0069d9;
   width: 700px;
 }
-
+a {
+  color: #609a9f;
+}
 .examples {
   color: #2269d9;
+  border: 1px solid rgb(211, 209, 209);
+  box-shadow: 2px 2px 2px 2px rgba(190, 187, 187, .4);
+  margin: 10px 0 10px 0;
+  width: 20em;
+  height: 3em;
+  text-align: center;
+
+  border-radius: 10px;
 }
 
 .codeExs {
-  font: monospace;
-  font-size: .8em;
+  font-family: 'Roboto Mono', monospace;
+  font-size: .9em;
   background: #404045;
   color: white;
-  padding: .7em;
   padding-left: 20px;
-  border-radius: 0 15px 15px 15px;
+  border-radius: 10px;
   width: 40em;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 .header-tab {
-  border: 1px solid #404045;
-  height: 1.5em;
-  padding: 8px 0 5px 20px;
-  color: red;
-  border-radius: 15px 15px 0 0; 
-  width: 30%;
-  font-size: .8em;
+  border-radius: 15px 15px 15px 15px; 
+  font-size: 1em;
   font-weight: bold;
-  background: #dddddf
+  font-style: bold;
+  margin-top: 25px;
 }

@@ -3,23 +3,26 @@ import React from 'react';
 function StringChildCodeEx() {
   return (
     <div>
-    <div className="header-tab">StringChildCode.js</div>
-          <div className = "codeExs">
-            <div>{`import React from "./react;`}</div>
-            <br></br>
-            <div>{`function StringChildCode(props) {`}</div>
-            <div style={{marginLeft: "1em"}}>{`return (`}
-            <div>{`<div>`}</div>
-            <div style={{marginLeft: "2em"}}>{`<h4>Hi {props.name}</h4>`}</div>
-            <div>{`</div>`}</div>
-            </div>
-            <div style={{marginLeft: "1em"}}>{`)`}</div>
-            <div>{`}`}</div>
-            <br></br>
-            <div>{`export default StringChildCodeEx`}</div>
-          </div>
-          </div>
+    <a className="header-tab" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/promises/src/StringCodeExs/StringChildCode.js">StringChildCode.js</a>
     
+<pre className = "codeExs">{`
+import React from "react";
+import StringChildCode from "./StringChildCode";
+
+    function App() {
+      return (
+        <h4>Passing a string as props:</h4>
+        <div className = "examples">
+          <StringChildCode name = "Uncle Jonathan"/>
+        </div>
+      )
+    }
+
+export default App
+
+`}
+</pre>
+</div>
   )
 }
 
