@@ -16,7 +16,7 @@ import AppJsBooleanCodeEx from "./BooleanCodeEx/AppJsBooleanCodeEx";
 import BooleanChildCode from "./BooleanCodeEx/BooleanChildCode";
 import BooleanChildCodeEx from "./BooleanCodeEx/BooleanChildCodeEx";
 
-// import Example3 from "./Example3";
+// -------------------------------------------------------------- //
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
       <p>However, for the purposes of this investigation, each example below shows how the App.js file would be written as a stand alone component in App.js. To see the entire App.js file follow the link above.
       </p>
      
-{/* ------------------------------------ */}
+{/* -------------------------------------------------------------------- */}
 
       <hr></hr>
       <h3>
@@ -37,7 +37,7 @@ function App() {
       <div>
         This example renders:
         <div className="examples">
-          <StringChildCode name="Uncle George!"/>
+          <StringChildCode name="Uncle Jonathan!"/>
         </div>
       </div>
       
@@ -46,23 +46,20 @@ function App() {
       <StringChildCodeEx />
       <br></br>
       <hr></hr>
-{/* ------------------------------------ */}
+{/* -------------------------------------------------------------------- */}
       <h3>
         Passing an array as props
       </h3>
       <div>This example renders:</div>
       <div className="examples">
-        <ArrayChildCode name={["George", "Joe"]}/>
-      </div>
-        <div style={{fontStyle:"italic", fontSize:".8em"}}>(Due to the way an array is parsed in React, the name George and Joe are combined in the render. Additional formatting is needed to change this.)</div>
-      <br></br>
-      <AppJsArrayCodeEx />
+        <ArrayChildCode name={["Fred Astaire", "Ginger Rogers"]}/></div>
+        <AppJsArrayCodeEx />
       <br></br>
       <ArrayChildCodeEx />
       <hr></hr>
-{/* ------------------------------------ */}
+{/* --------------------------------------------------------------------- */}
       <h3>
-        <a href="https://github.com/dlanorhirsch/react-examples/tree/master/investigations/promises/src/FunctionCodeEx">Passing a string via a function as props</a>
+        Passing a string via a function as props
       </h3>
       <p>
         Rending functions as props is generally used and is often a preferred method to higher order components (HOC's). 
@@ -73,23 +70,22 @@ function App() {
           function(name) {
             return <h4>Hello there, {name}</h4>
           }
-        }/>
+        }/></div>
         <AppJsFunctionCodeEx />
         <br></br>
-        <BooleanChildCodeEx />
-      </div>
-
+        <FunctionChildCodeEx />
       <hr></hr>
-{/* ------------------------------------ */}
+{/* ---------------------------------------------------------------------- */}
       <h3>
-      <a href="https://github.com/dlanorhirsch/react-examples/tree/master/investigations/promises/src/BooleanCodeEx">Passing a boolean via a function as props</a></h3>
+        Passing a boolean via a function as props
+      </h3>
       <div>This example renders:</div>
       <div className="examples">
-            <BooleanChildCode render={
+        <BooleanChildCode render={
           function(isDayTime) {
             return <h4>{isDayTime ? "Good day" : "Good evening"}, Sally!</h4>
           }
-        }/>
+        }/></div>
         <AppJsBooleanCodeEx />
         <br></br>
         <BooleanChildCodeEx />
@@ -98,7 +94,6 @@ function App() {
         <br></br>
         <br></br>
       </div>  
-    </div>   
   )
 }
 

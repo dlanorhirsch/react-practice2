@@ -3,20 +3,21 @@ import React from 'react';
 function BooleanChildCodeEx() {
   return (
     <div>
-      <div className="header-tab">BooleanChildCode.js</div>
-      <div className="codeExs">
-        <div>{`import React from 'react';`}</div>
-        <br></br>
-        <div>{`function BooleanChildCode(props) {`}</div>
-        <div style={{marginLeft:"1em"}}>{`return (`}</div>
-        <div style={{marginLeft:"2em"}}>{`<div>`}</div>
-        <div style={{marginLeft:"3em"}}>{`{props.render(true)}`}</div>
-        <div style={{marginLeft:"2em"}}>{`</div>`}</div>
-        <div style={{marginLeft:"1em"}}>{`)`}</div>
-        <div>{`}`}</div>
-        <br></br>
-        <div>{`export default BooleanChildCode`}</div>
-      </div>
+    <a className="header-tab" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/promises/src/BooleanCodeEx/BooleanChildCode.js">BooleanChildCode.js</a>
+
+<pre className = "codeExs">{`
+import React from 'react';
+function BooleanChildCode(props) {
+  return (
+    <div>
+      {props.render(true)}
+    </div>
+  )
+}
+
+export default BooleanChildCode
+
+`}</pre>
     </div>
   )
 }

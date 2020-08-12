@@ -1,10 +1,9 @@
 import React from "react"
 
 function FunctionChildCode(props) {
-    // console.log(props.name)
     return (
       <div>
-        {props.render("Bob")}
+        {props.render("President Macron")}
       </div>
     )
 }

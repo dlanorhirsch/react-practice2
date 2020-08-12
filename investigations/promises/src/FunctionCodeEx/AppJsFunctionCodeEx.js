@@ -4,34 +4,39 @@ function AppJsFunctionCodeEx() {
   return (
     <div>
       <div className="header-tab">App.js (parent)</div>
-      <div className="codeExs">
-        <div>{`import React from 'react:`}</div>
-        <br></br>
-        <div>{`function App() {`}</div>
-        <div style={{marginLeft:"1em"}}>{`return (`}</div>
-        <div style={{marginLeft:"2em"}}>{`<h3>`}</div>
-        <div style={{marginLeft:"3em"}}>{`C. Passing a string via a function as props:`}</div>
-        <div style={{marginLeft:"2em"}}>{`</h3>`}</div>
-        <div style={{marginLeft:"2em"}}>{`<p>`}</div>
-        <div style={{marginLeft:"3em"}}>{`Rending functions as props is generally used and`}</div>
-        <div style={{marginLeft:"3em"}}>{`is often preferred method to higher order components. `}</div>
-        <div style={{marginLeft:"2em"}}>{`</p>`}</div>
-        <div style={{marginLeft:"2em"}}>{`<div className="examples">`}</div>
-        <div style={{marginLeft:"3em"}}>{`<FunctionChildCode render={`}</div>
-        <div style={{marginLeft:"4em"}}>{`function(name) {`}</div>
-        <div style={{marginLeft:"5em"}}>{`return <h4>Hello there, {name}</h4>`}</div>
-        <div style={{marginLeft:"4em"}}>{`}`}</div>
-        <div style={{marginLeft:"3em"}}>{`}/>`}</div>
-        <div style={{marginLeft:"3em"}}>{`<AppJsFunctionCodeEx />`}</div>
-        <div style={{marginLeft:"3em"}}>{`<br></br>`}</div>
-        <div style={{marginLeft:"3em"}}>{`<FunctionChildCodeEx />`}</div>
-        <div style={{marginLeft:"2em"}}>{`</div>`}</div>
-        <div style={{marginLeft:"1em"}}>{`)`}</div>
-        <div>{`}`}</div>
-        <br></br>
-        <div>{`export default App`}</div>
-      </div>
+
+<pre className="codeExs">{`
+import React from 'react';
+import FunctionChildCode from './FunctionChildCode';
+
+function App() {
+  return (
+    <h3>
+      Passing a string via a function as props
+    </h3>
+    <p>
+      Rendering functions as props is generally used and is often
+      the preferred method over higher order components (HOC's).
+    </p>
+    <div>This example renders:</div>
+    <div className = "examples">
+      <FunctionChildCode render={
+        function(name) {
+          return <h4>Hello there, {name}</h4>
+        }
+      }/>
+      <AppJsFunctionCodeEx />
+      <br></br>
+      <FunctionChildCodeEx />
     </div>
+    <hr></hr>
+  )
+}
+
+export default App
+
+`}</pre>
+</div>
   )
 }
 

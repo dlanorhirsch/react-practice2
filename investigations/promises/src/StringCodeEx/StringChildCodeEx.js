@@ -7,16 +7,15 @@ function StringChildCodeEx() {
     
 <pre className = "codeExs">{`
 import React from "react";
-import StringChildCode from "./StringChildCode";
 
-    function App() {
-      return (
-        <h4>Passing a string as props:</h4>
-        <div className = "examples">
-          <StringChildCode name = "Uncle Jonathan"/>
-        </div>
-      )
-    }
+function App() {
+  return (
+    <h4>Passing a string as props:</h4>
+    <div className = "examples">
+      <StringChildCode name = "Uncle Jonathan"/>
+    </div>
+  )
+}
 
 export default App
 
