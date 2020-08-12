@@ -7,6 +7,7 @@ function BooleanChildCodeEx() {
 
 <pre className = "codeExs">{`
 import React from 'react';
+
 function BooleanChildCode(props) {
   return (
     <div>

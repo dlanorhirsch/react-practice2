@@ -18,7 +18,9 @@ function App() {
       <BooleanChildCode render={
         function(isDayTime) {
           return (
-            <h4>{isDayTime ? "Good Day" : "Good Evening"}, Sally}</h4>
+            <h4>
+              {isDayTime ? "Good Day" : "Good Evening"}, Sally}
+            </h4>
           )
         }
       }

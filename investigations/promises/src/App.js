@@ -31,8 +31,9 @@ function App() {
 {/* -------------------------------------------------------------------- */}
 
       <hr></hr>
+      <h2>Passing a String and an Array as props</h2>
       <h3>
-        Passing a string as props
+        1. Passing a string as props
       </h3>
       <div>
         This example renders:
@@ -47,8 +48,8 @@ function App() {
       <br></br>
       <hr></hr>
 {/* -------------------------------------------------------------------- */}
-      <h3>
-        Passing an array as props
+<h3>
+        2. Passing an array as props
       </h3>
       <div>This example renders:</div>
       <div className="examples">
@@ -59,7 +60,8 @@ function App() {
       <hr></hr>
 {/* --------------------------------------------------------------------- */}
       <h3>
-        Passing a string via a function as props
+      <h2>Passing functions as props(2 examples)</h2>
+        1. Passing a string (via a function) as props
       </h3>
       <p>
         Rending functions as props is generally used and is often a preferred method to higher order components (HOC's). 
@@ -77,7 +79,7 @@ function App() {
       <hr></hr>
 {/* ---------------------------------------------------------------------- */}
       <h3>
-        Passing a boolean via a function as props
+        2. Passing a boolean (via a function) as props
       </h3>
       <div>This example renders:</div>
       <div className="examples">
@@ -94,6 +96,7 @@ function App() {
         <br></br>
         <br></br>
       </div>  
+
   )
 }
 
