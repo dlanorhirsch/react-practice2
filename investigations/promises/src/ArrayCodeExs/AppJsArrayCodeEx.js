@@ -14,7 +14,7 @@ function App() {
       <h4>Passing an array as props</h4>
     </div>
     <div className = "examples">
-      <ArrayChildCode name = {["Fred Astaire", "Ginger Rogers"]};
+      <ArrayChildCode names = {["Fred Astaire", "Ginger Rogers"]};
     </div>
     </div>
   )

@@ -1,7 +1,11 @@
 import React from "react"
 
 function ArrayChildCode(props) {
-    return <h4>Welcome {props.name}</h4>
+    return <h4>Welcome 
+      {props.names
+        .map((item) => {
+          return <div key="id">{item}</div>}
+    )}</h4>
 }
 
 export default ArrayChildCode

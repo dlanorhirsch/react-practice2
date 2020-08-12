@@ -11,7 +11,7 @@ import React from 'react';
 function ArrayChildCode(props) {
   return (
     <div>
-      <h4>Hi {props.name} </h4>
+      <h4>Hi {props.names} </h4>
     </div>
   )
 }

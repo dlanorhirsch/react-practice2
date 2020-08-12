@@ -4,9 +4,9 @@ import AppJsArrayCodeEx from "./ArrayCodeExs/AppJsArrayCodeEx";
 import ArrayChildCode from "./ArrayCodeExs/ArrayChildCode";
 import ArrayChildCodeEx from "./ArrayCodeExs/ArrayChildCodeEx";
 
-import AppJsStringCodeEx from "./StringCodeExs/AppJsStringCodeEx";
-import StringChildCode from "./StringCodeExs/StringChildCode";
-import StringChildCodeEx from "./StringCodeExs/StringChildCodeEx";
+import AppJsStringCodeEx from "./StringCodeEx/AppJsStringCodeEx";
+import StringChildCode from "./StringCodeEx/StringChildCode";
+import StringChildCodeEx from "./StringCodeEx/StringChildCodeEx";
 
 import AppJsFunctionCodeEx from "./FunctionCodeEx/AppJsFunctionCodeEx";
 import FunctionChildCode from "./FunctionCodeEx/FunctionChildCode";
@@ -52,7 +52,7 @@ function App() {
       </h3>
       <div>This example renders:</div>
       <div className="examples">
-        <ArrayChildCode name={["Fred Astaire", "Ginger Rogers"]}/></div>
+        <ArrayChildCode names={["Fred Astaire", "Ginger Rogers"]}/></div>
         <AppJsArrayCodeEx />
       <br></br>
       <ArrayChildCodeEx />
