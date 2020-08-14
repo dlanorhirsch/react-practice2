@@ -1,11 +1,11 @@
-.pcp-styling {
+.example-styling {
   border: 2px solid #0069d9;
   border-radius: 10px;
   width: 300px;
   padding: 1rem;
   box-shadow: 3px 3px #888888;
   font-size: 1em;
-  margin: .5em 0 .7em 2.5em;
+  margin: 1em 0 .7em 2.5em;
 }
 
 /* h2 {
@@ -14,7 +14,7 @@
 .investigation-doc h1 {
   color: #0069d9;
 }
-.pcp-styling {
+.example-styling {
   color: green;
 }
 .investigation-doc {
@@ -47,38 +47,44 @@ hr {
 }
 button {
   background: #0069d9;
+  
 }
 .codeEx1 {
   color: #fff;
   background: #404045;
-  font-family: monospace;
-  font-size: 1.2em;
-  padding: 1em;
+  padding-left: 20px;
   border: 1px solid #404045;
   border-radius: 15px;
-  margin-left: 2.5em;
   width: 35em;
+  font-family: 'Roboto Mono', monospace;
 }
 .appetizerCodeExs {
   color: #fff;
   background: #404045;
-  font-family: monospace;
-  font-size: 1.2em;
   padding: 1em;
   border: 1px solid #404045;
   border-radius: 15px;
-  margin-left: 2.5em;
   margin-bottom: 2.5em;
-  width: 35em;
+  width: 40em;
+  font-family: 'Roboto Mono', monospace;
+  font-size: .9em;
 }
-.namesTable {
-  border: 1 px black solid;
-  text-align: center;
-  margin-left: 4.5em;
-  margin-bottom: 2em;
-  width: 400px;
+#component-table {
+  margin-top: 2em;
+}
+#component-table th {
+ 
+  border: 1px solid black;
 }
 .note {
   font-size: .8em;
   font-weight: bold;
+}
+a {
+  color: #3f8187;
+}
+.header-tab {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 25px;
 }

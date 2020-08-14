@@ -3,15 +3,18 @@ import './styles.css';
 import {withFavoriteNumber} from "./withFavoriteNumber";
 import PCP from "./parent-child-props";
 
-// import Appetizer2a from "./Appetizers2a";
+import Appetizers1 from "./Appetizers1";
+import Appetizers1CodeEx from "./Appetizers1CodeEx";
 // import MainCourse2a from "./MainCourse2a";
 
-import Appetizer2b from "./Appetizers2b";
+// import Appetizer2b from "./Appetizers2";
 import MainCourse2b from "./MainCourse2b";
 
-import Appetizer2aCodeEx from "./Appetizers2aCodeEx";
+import Appetizer2aCodeEx from "./Appetizers2CodeEx";
 import Appetizer2bCodeEx from "./Appetizers2bCodeEx";
 // import WithTogglerCodeEx from "./WithTogglerCodeEx";
+
+import WFavNumbCodeEx from "./WFavNumbCodeEx";
 
 // --------------------------------------------------//
 
@@ -23,20 +26,15 @@ function App(props) {
   <div className="investigation-doc">
     <h1>Investigation:</h1>
     <h2>Higher Order Components</h2>
+    <p><strong>Definition:</strong> A higher order component (HOC) is a function that takes a component as a parameter and returns a new component wrapping the given component and "supercharging" it by giving it some extra abilities</p>
     <p>
-      <strong>Definition:</strong> A function that takes a component as 
-      its first argument and returns a new component that wraps the given 
-      component, providing it extra capabilities.
-    </p> 
-    <p>
-      Higher order components (HOCs) generally pass properties (props) 
-      from one component to another. The code for the following 3 elements 
-      are based on a single component passing props. It is helpful 
-      to understand how props are passed prior to writing HOCs.
+      HOCs generally pass properties (props) from one component to another. The code for the following 3 examples are based on a single component passing props. It is helpful to understand how props are passed prior to writing HOCs. For more information on passing props, see Investigations/Props.
     </p>
+    
     <hr></hr>
     <div style={{marginBottom: "1.5em"}}>
       <h3>Passing props from parent to child component.</h3>
+      <div>This component displays:</div>
         <PCP>
          Hello World
         </PCP>
@@ -49,70 +47,64 @@ function App(props) {
     </div>
       <hr></hr>
 
-      <h2>Higher Order Component: </h2>
+      <h2>Higher Order Component </h2>
       
-      <h3>Ex. 1: Function component, withFavoriteNumber.js</h3>
+      <h3>Functional HOC component:</h3>
       <p>
-        This is a simple example that demonstrates the code structure and 
-        syntax of a higher order component.
+        This is a simple example that demonstrates the code structure and syntax of a higher order component.
       </p>
-      <h3 style={{color: "#0069d9", marginLeft: "2.5em"}}>
+      <div>This component displays:</div>
+      <h3 className="example-styling">
         My favorite number is: {props.favoriteNumber} 
       </h3>
-
-      <p className="codeEx1">
-        <div>{`function withFavoriteNumber(component){`}</div>
-        <div style={{marginLeft: "1rem"}}>{`const C = component;`}</div>
-        <div style={{marginLeft: "2rem"}}>{`return function(props){`}</div>
-        <div style={{marginLeft: "3rem"}}>
-          {`return <C favoriteNumber={42} {...props}/>}`}
-        </div>
-      </p>
-      
+      <br></br>
+      <WFavNumbCodeEx />
+     
       <hr></hr>
-      <h3>Exs. 2a & 2b: Class and Higher Order Components</h3>
-
+      <h3>Function, Class and Higher Order Components</h3>
       <p>
-        These examples demonstrate two approaches to creating components
-        with React that display and hide menu items as seen below.
+        The examples below demonstrate two approaches to creating components in React that render the same output, displaying and hiding menu items as seen below. 
       </p>
-    
-      <table className="namesTable">
+      <p>
+        The files Appetizers1.js and MainCourses1.js are     class based components that contain a toggle function which relies on the value of state to display or hide the menu items.
+      </p>
+      <p>          
+        The files Appetizers2.js and MainCourses2.js are functional components. Changing the component type (class to function) and removing the toggle() function simplifies the code. A separate HOC function,{`<WithToggler />`} is accessed by both function components. 
+      </p>
+      <div>Addtional information on <a href="https://reactjs.org/docs/components-and-props.html">Function and Class Components</a> can be found in the React documentation.</div>
+      
+      <table id="component-table">
         <tr>
-          <th>Class comps.</th>
-          <th>Class comps. w/HOC</th>
+          <th>Class Components</th>
+          <th>Function Components w/HOC</th>
         </tr>
         <tr>
-          <td>Appetizer2a.js</td>
-          <td>Appetizer2b.js</td>
+          <td>Appetizer1.js</td>
+          <td>Appetizer2.js</td>
         </tr>
         <tr>
-          <td>MainCourse2a.js</td>
-          <td>MainCourse2b.js</td>
+          <td>MainCourse2.js</td>
+          <td>MainCourse2.js</td>
         </tr>
       </table>
-
-      <Appetizer2b />
+      <Appetizers1 />
+      
       {/* Appetizer2b controls the button and display for "Show " */}
 
       <MainCourse2b />
       {/* MainCourse2b controls the button and display for "Show MainCourse" */} 
-      <h3>Ex. 2a:</h3>
+      <h3>Class Components</h3>
       <p>
-        The first example, Appetizer2a.js, is a class component with a 
-        toggler function tied to a button via an event listener. When the
+        The first example, Appetizer1.js, is a class component with a 
+        toggler function tied to a button via an on-click event listener. When the
         button is clicked, state is updated, and the display is shown or 
         hidden depending on the value of state. Each file has its own toggle
-        function.
-      </p>
-
-      <p className="note">
-        (Note: This example below is for the file 
-        Appetizer2a.js. The code for MainCourse2a.js is essentially the same
-        and therefore not displayed.
+        function. 
+        </p>
+        <p>MainCourse1.js has the file structure, only the rended elements have been changed.
       </p>
       
-      <Appetizer2aCodeEx />
+      <Appetizers1CodeEx />
       {/* Appetizer2aCodeEx controls the button and display for this file. */}
 
       <hr></hr>
@@ -131,7 +123,7 @@ function App(props) {
         symplifies the code, and is a common pattern found in React.
       </p>
    
-      <Appetizer2bCodeEx />
+    
       {/* Appetizer2bCodeEx controls the button and display for this 
           //example file. */}
 

@@ -1,13 +1,23 @@
 import React from 'react'
 import { Component } from 'react';
-import {withToggler} from "./withToggler"
 
-class Appetizer extends Component{
+
+class Appetizers1 extends Component{
+  state = {
+    on: false
+  }
+  toggle = () => {
+    this.setState(prevState => {
+      return {
+        on: !prevState.on
+      }
+    })
+  }
   render(){
     return(
       <div>
-        <button onClick={this.props.toggle}>{this.props.on ? "Hide" : "Show"}  </button>
-          <div style={{visibility: this.props.on ? "visible" : "hidden"}}>
+        <button onClick={this.toggle}>{this.state.on ? "Hide" : "Show"}  </button>
+          <div style={{visibility: this.state.on ? "visible" : "hidden"}}>
             <ul className="teasers">
               <li className="items">Stuffed Clams</li>
               <li className="items">Fried Mozzerella Sticks</li>
@@ -20,5 +30,5 @@ class Appetizer extends Component{
   }
 }
 
-const SuperMenu = withToggler(Appetizer)
-export default SuperMenu
+
+export default Appetizers1
