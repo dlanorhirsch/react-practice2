@@ -5,13 +5,15 @@ import PCP from "./parent-child-props";
 
 import Appetizers1 from "./Appetizers1";
 import Appetizers1CodeEx from "./Appetizers1CodeEx";
-// import MainCourse2a from "./MainCourse2a";
 
-// import Appetizer2b from "./Appetizers2";
+import Appetizers2 from "./Appetizers2";
+import Appetizers2CodeEx from "./Appetizers2CodeEx";
+
+
 import MainCourse2b from "./MainCourse2b";
 
-import Appetizer2aCodeEx from "./Appetizers2CodeEx";
-import Appetizer2bCodeEx from "./Appetizers2bCodeEx";
+
+
 // import WithTogglerCodeEx from "./WithTogglerCodeEx";
 
 import WFavNumbCodeEx from "./WFavNumbCodeEx";
@@ -61,7 +63,7 @@ function App(props) {
       <WFavNumbCodeEx />
      
       <hr></hr>
-      <h3>Function, Class and Higher Order Components</h3>
+      <h3>Class Components and Higher Order Components</h3>
       <p>
         The examples below demonstrate two approaches to creating components in React that render the same output, displaying and hiding menu items as seen below. 
       </p>
@@ -71,12 +73,12 @@ function App(props) {
       <p>          
         The files Appetizers2.js and MainCourses2.js are functional components. Changing the component type (class to function) and removing the toggle() function simplifies the code. A separate HOC function,{`<WithToggler />`} is accessed by both function components. 
       </p>
-      <div>Addtional information on <a href="https://reactjs.org/docs/components-and-props.html">Function and Class Components</a> can be found in the React documentation.</div>
+      <div>Addtional information on <a href="https://reactjs.org/docs/react-component.html"> Class Components</a> can be found in the React documentation.</div>
       
       <table id="component-table">
         <tr>
           <th>Class Components</th>
-          <th>Function Components w/HOC</th>
+          <th>Class Components w/HOC</th>
         </tr>
         <tr>
           <td>Appetizer1.js</td>
@@ -93,7 +95,7 @@ function App(props) {
 
       <MainCourse2b />
       {/* MainCourse2b controls the button and display for "Show MainCourse" */} 
-      <h3>Class Components</h3>
+      <h3>Class Components: Appetizers1.js, MainCourses.js</h3>
       <p>
         The first example, Appetizer1.js, is a class component with a 
         toggler function tied to a button via an on-click event listener. When the
@@ -105,12 +107,13 @@ function App(props) {
       </p>
       
       <Appetizers1CodeEx />
+      <br></br>
       {/* Appetizer2aCodeEx controls the button and display for this file. */}
 
       <hr></hr>
       <h3>
-        Ex. 2b: Class components as higher-order components, 2b.js,
-         MainCourse2b.js
+      Class Components with HOC: Appetizers2.js,
+         MainCourses2.js
       </h3>
 
       <p>

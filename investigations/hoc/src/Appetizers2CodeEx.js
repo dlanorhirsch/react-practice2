@@ -1,10 +1,9 @@
-// import Markdown from 'markdown-to-jsx';
 import React from 'react';
-import {Component} from "react"
+import {Component} from "react";
+// import WithTogglerCodeEx from "./WithTogglerCodeEx";
 
-
-class Appetizers2aCodeEx extends Component {
- state = {
+class Appetizers2bCodeEx extends Component {
+  state = {
    show: false
  }
   toggle = () => {
@@ -17,46 +16,47 @@ class Appetizers2aCodeEx extends Component {
   render(){
     return (
       <div>
-      <button style={{marginBottom: "15px"}} onClick={this.toggle}>{this.state.show ? "Hide" : "Show"} Code Example: Appetizers2aCodeEx.js </button>
-        <div style={{display: this.state.show ? "block" : "none"}}>
+        <button 
+          style={{marginBottom: "15px"}}
+          onClick={this.toggle}>
+          {this.state.show ? "Hide" : "Show"}
+          Code Example: Appetizers2bCodeEx.js
+        </button>
+      <div style={{display: this.state.show ? "block" : "none"}}>
+<pre className="appetizerCodeExs">{`
+import React from './react';
 
-  {/* --------------- begin code exampmle ---------------- */}
-          <div className="appetizerCodeExs">{`class Appetizer2aCodeEx extends Component{`}
-            <div style={{marginLeft: "1em"}}>{`state = {`}</div>
-            <div style={{marginLeft: "2em"}}>{`on: false`}</div>
-            <div style={{marginLeft: "1em"}}>{`}`}</div>
-
-            <div style={{marginLeft: "1em"}}>{`toggle = () => {`}</div>
-            <div style={{marginLeft: "2em"}}>{`this.setState(prevState => {`}</div>
-            <div style={{marginLeft: "3em"}}>{`return {`}</div>
-            <div style={{marginLeft: "4em"}}>{`on: !prevState.on`}</div>
-            <div style={{marginLeft: "3em"}}>{`}`}</div>
-            <div style={{marginLeft: "2em"}}>{`})`}</div>
-            <div style={{marginLeft: "1em"}}>{`}`}</div>
-            <div style={{marginLeft: "1em"}}>{`render(){`}</div>
-            <div style={{marginLeft: "2em"}}>{`return(`}</div>
-            <div style={{marginLeft: "3em"}}>{`<div>`}</div>
-            <div style={{marginLeft: "4em"}}>{`<button onClick={this.toggle}>{this.state.on   ?       "Hide" : "Show"}  `} </div>
-            <div style={{marginLeft: "4em"}}>{`</button>`}</div>
-            <div style={{marginLeft: "5em"}}>{`<div style={{visibility: this.state.on ?   "visible"       : "hidden"}}>`}</div>
-            <div style={{marginLeft: "6em"}} >{`<ul className="teasers">`}</div>
-            <div style={{marginLeft: "7em"}}>{`<li className="items">Stuffed Clams</li>`}</div>
-            <div style={{marginLeft: "7em"}}>{`<li className="items">Fried Mozzerella   Sticks</      li>`}</div>         
-            <div style={{marginLeft: "7em"}}>{`<li className="items">Stuff Mushrooms</li>`} </div>
-            <div style={{marginLeft: "7em"}}>{`<li className="items">Fried Clams</li>`}</div>
-            <div style={{marginLeft: "6em"}}>{`</ul>`}</div>
-            <div style={{marginLeft: "5em"}}>{`</div>`}</div>
-            <div style={{marginLeft: "4em"}}>{`</div>`}</div>
-            <div style={{marginLeft: "3em"}}>{`)`}</div>
-            <div style={{marginLeft: "2em"}}>{`}`}</div>
-            <div style={{marginLeft: "1em"}}>{`}`}</div>
-{/* -------------------end code example ---------------------- */}
-          </div>
-        </div>
+class Appetizer2bCodeEx extends Component{
+  render(){
+    return(
+      <div>
+        <button onClick={
+          this.props.toggle}>{
+            this.props.on ? "Hide" : "Show"
+          }  
+        </button>
+      <div style={{
+        visibility: this.props.on ? "visible" : "hidden"
+      }}>
+        <ul className="teasers">
+          <li className="items">Stuffed Clams</li>
+          <li className="items">Fried Mozzerella Sticks</li>
+          <li className="items">Stuff Mushrooms</li>
+          <li className="items">Fried Clams</li>
+        </ul>
       </div>
+    </div>
+  }
+}
+
+export default Appetizer2bCodeEx
+`}
+{/* <WithTogglerCodeEx /> */}
+</pre>
+</div>
+</div>
     )
   }
 }
 
-
-export default Appetizers2aCodeEx
+export default Appetizers2bCodeEx

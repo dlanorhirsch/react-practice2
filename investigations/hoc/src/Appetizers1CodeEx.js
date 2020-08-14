@@ -15,16 +15,15 @@ class Appetizers1CodeEx extends Component{
   render(){
     return(
       <div>
-      <div>Appetizers1.js</div> 
+      <div className="codeExTitle">Appetizers1.js</div> 
       <br></br>
         <button onClick={
           this.toggle}>{
             this.state.show ? "Hide Code" : "Show Code"
           }  
         </button>
-        
-          <div style={{display: this.state.show ? "block" : "none"}}>
-           
+            <div style={{display: this.state.show ? "block" : "none"}}>
+          
             <pre className="appetizerCodeExs">{`import React from 'react'
 import { Component } from 'react';
 
@@ -61,6 +60,8 @@ class Appetizers1 extends Component{
     )
   }
 }
+
+export default Appetizers1
             `}</pre>
           </div>
       </div>

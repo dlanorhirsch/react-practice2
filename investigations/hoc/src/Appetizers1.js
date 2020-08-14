@@ -4,7 +4,7 @@ import { Component } from 'react';
 
 class Appetizers1 extends Component{
   state = {
-    on: false
+    on: true
   }
   toggle = () => {
     this.setState(prevState => {
@@ -29,6 +29,5 @@ class Appetizers1 extends Component{
     )
   }
 }
-
 
 export default Appetizers1
