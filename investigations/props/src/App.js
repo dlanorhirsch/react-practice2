@@ -21,8 +21,9 @@ import BooleanChildCodeEx from "./BooleanCodeEx/BooleanChildCodeEx";
 function App() {
   return (
     <div>
-    <h1 className="investigation-doc">Investigation: Props</h1>
+    <h1 className="investigation-doc">Props Investigation</h1>
       <p>
+      {/* <h2>Props</h2> */}
       This investigation is an excercise in passing various data types as props within components: <strong>strings</strong>, <strong>arrays</strong>, and <strong>functions</strong>. The two function examples pass a string and a boolean respectively. Note that all child files are rendered through one App.js file in the <a href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/promises/src/App.js">react-examples/investigations/render-props/App.js</a>.
       </p>
       <p>However, for the purposes of this investigation, each example below shows how the App.js file would be written as a stand alone component in App.js. To see the entire App.js file follow the link above.
@@ -33,7 +34,7 @@ function App() {
       <hr></hr>
       <h2>Passing a String and an Array as props</h2>
       <h3>
-        1. Passing a string as props
+        A string as props
       </h3>
       <div>
         This example renders:
@@ -48,20 +49,21 @@ function App() {
       <br></br>
       <hr></hr>
 {/* -------------------------------------------------------------------- */}
-<h3>
-        2. Passing an array as props
+    <h3> 
+        An array as props
       </h3>
       <div>This example renders:</div>
       <div className="examples">
-        <ArrayChildCode names={["Fred Astaire", "Ginger Rogers"]}/></div>
-        <AppJsArrayCodeEx />
+        <ArrayChildCode names={["Larry", "Curly", "Mo"]} />
+      </div>
+      <AppJsArrayCodeEx />
       <br></br>
       <ArrayChildCodeEx />
       <hr></hr>
 {/* --------------------------------------------------------------------- */}
       <h3>
       <h2>Passing functions as props(2 examples)</h2>
-        1. Passing a string (via a function) as props
+        1. A string (via a function) as props
       </h3>
       <p>
         Rending functions as props is generally used and is often a preferred method to higher order components (HOC's). 
@@ -79,7 +81,7 @@ function App() {
       <hr></hr>
 {/* ---------------------------------------------------------------------- */}
       <h3>
-        2. Passing a boolean (via a function) as props
+        2. A boolean (via a function) as props
       </h3>
       <div>This example renders:</div>
       <div className="examples">

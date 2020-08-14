@@ -7,7 +7,6 @@ function AppJsFunctionCodeEx() {
 
 <pre className="codeExs">{`
 import React from 'react';
-import FunctionChildCode from './FunctionChildCode';
 
 function App() {
   return (
