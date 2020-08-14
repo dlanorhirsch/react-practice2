@@ -14,48 +14,54 @@ class WithTogglerCodeEx extends Component {
   }
   render(){
     return (
+      
       <div>
-        {/* <button 
+      <a className="codeExTitle" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/withToggler.js">WithToggler.js</a>
+      <br></br>
+      <br></br>
+        <button 
           style={{marginBottom: "15px"}}
           onClick={this.toggle}>
-          {this.state.show ? "Hide" : "Show"}
-          Code Example: withTogglerCodeEx.js
-        </button>
-      <div style={{display: this.state.show ? "block" : "none"}}> */}
+          {this.state.show ? "Hide Code" : "Show Code"}
+                  </button>
+      <div style={{display: this.state.show ? "block" : "none"}}>
 
-{/* NOTE: 7/21/20: Rather than have a seperate button for the WithTogglerCodeEx component, I commented out the button and put the component in the Appetizer2bCodeEx component, so that both code examples render with the button from Appetizer2bCodeEx. I left the commented out code for the button in this file in case we modify the layout. /RJH */}
+    
+<pre className="appetizerCodeExs">{`
+import React from 'react';
 
-    {/*-------------- Code Example ----------------  */}
+class Toggler extends Component{
+  state= {
+    on: true
+  }
+  toggle = () => {
+    this.setState(prevState => {
+      return {
+        on: !prevState.on
+      }
+    })
+  }
+  render() {
+    const C = this.props.component
+    return (
+        <C on={this.state.on} toggle={this.toggle} {...this.props} />
+    )
+  }
+}
 
-        <div className="appetizerCodeExs">{`class Toggler extends Component{`}
-          <div style={{marginLeft: "1em"}}>{`state= {`}</div>
-            <div style={{marginLeft: "2em"}}>{`on: false`}</div>
-            <div style={{marginLeft: "1em"}}>{`}`}</div>
-            <div style={{marginLeft: "1em"}}>{`toggle = () => {`}</div>
-            <div style={{marginLeft: "2em"}}>{`this.setState(prevState => {`}</div>
-            <div style={{marginLeft: "3em"}}>{`return {`}</div>
-            <div style={{marginLeft: "4em"}}>{`on: !prevState.on`}</div>
-            <div style={{marginLeft: "3em"}}>{`}`}</div>
-            <div style={{marginLeft: "2em"}}>{`})`}</div>
-            <div style={{marginLeft: "1em"}}>{`}`}</div>
-            <div style={{marginLeft: "1em"}}>{`render() {`}</div>
-            <div style={{marginLeft: "2em"}}>{`const C = this.props.component`}</div>
-            <div style={{marginLeft: "3em"}}>{`return (`}</div>
-            <div style={{marginLeft: "4em"}}>{`C on={this.state.on} toggle={this.toggle} {...this.props} />`}</div>
-            <div style={{marginLeft: "3em"}}>{`)`}</div>
-            <div style={{marginLeft: "2em"}}>{`}`}</div>
-            <div style={{marginLeft: "1em"}}>{`export function withToggler(component) {`}</div>
-            <div style={{marginLeft: "2em"}}>{`return function(props) {`}</div>
-            <div style={{marginLeft: "3em"}}>{`return (`}</div>
-            <div style={{marginLeft: "4em"}}>{`<Toggler component={component} {...props}/>`}</div>
-            <div style={{marginLeft: "3em"}}>{`)`}</div>
-            <div style={{marginLeft: "2em"}}>{`}`}</div>
-            <div style={{marginLeft: "1em"}}>{`}`}</div>
-            <div>{`}`}</div>
-          </div>
-    {/* ------------- END Code Example ---------------- */}
+export function withToggler(component) {
+  return function(props) {
+    return (
+      <Toggler component={component} {...props}/>
+    )
+  }
+}
+
+`}
+
+    </pre>
         </div>
-      // </div>
+        </div>
     )
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import {Component} from "react";
 // import WithTogglerCodeEx from "./WithTogglerCodeEx";
 
-class Appetizers2bCodeEx extends Component {
+class Appetizers2CodeEx extends Component {
   state = {
    show: false
  }
@@ -16,17 +16,20 @@ class Appetizers2bCodeEx extends Component {
   render(){
     return (
       <div>
+        <a className="codeExTitle" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers2.js">Appetizers2.js</a>
+        <br></br>
+        <br></br>
         <button 
           style={{marginBottom: "15px"}}
           onClick={this.toggle}>
-          {this.state.show ? "Hide" : "Show"}
-          Code Example: Appetizers2bCodeEx.js
+          {this.state.show ? "Hide Code" : "Show Code"}
+          
         </button>
       <div style={{display: this.state.show ? "block" : "none"}}>
 <pre className="appetizerCodeExs">{`
 import React from './react';
 
-class Appetizer2bCodeEx extends Component{
+class Appetizers2 extends Component{
   render(){
     return(
       <div>
@@ -38,20 +41,39 @@ class Appetizer2bCodeEx extends Component{
       <div style={{
         visibility: this.props.on ? "visible" : "hidden"
       }}>
-        <ul className="teasers">
-          <li className="items">Stuffed Clams</li>
-          <li className="items">Fried Mozzerella Sticks</li>
-          <li className="items">Stuff Mushrooms</li>
-          <li className="items">Fried Clams</li>
+      <ul className="teasers">
+        <li className="items">
+          <a href="http://greenevi.com/vegan-tomato-flatbread/">
+            Vegan Tomato Flatbread
+          </a>
+          </li>
+            <li className="items">
+              <a href=
+                "https://minimalistbaker.com/chickpea-shawarma-dip/">
+                Chickpea Shawarma Dip
+              </a>
+            </li>
+          <li className="items">
+            <a href=
+              "https://www.blissfulbasil.com/vegan-caprese-pizza/">
+              Vegan Caprese Pizza
+            </a>
+          </li>
+          <li className="items">
+            <a href=
+              "https://www.lazycatkitchen.com/vegan-thai-corn-fritters/">
+                Vegan Thai Corn Fritters
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   }
 }
 
-export default Appetizer2bCodeEx
+export default Appetizer2
 `}
-{/* <WithTogglerCodeEx /> */}
+<br></br>
 </pre>
 </div>
 </div>
@@ -59,4 +81,4 @@ export default Appetizer2bCodeEx
   }
 }
 
-export default Appetizers2bCodeEx
+export default Appetizers2CodeEx

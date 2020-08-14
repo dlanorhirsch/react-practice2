@@ -1,9 +1,9 @@
 import React from 'react'
 import { Component } from 'react';
 
-class MainCourse2a extends Component{
+class MainCourses1 extends Component{
   state = {
-    on: false
+    on: true
   }
   toggle = () => {
     this.setState(prevState => {
@@ -18,10 +18,10 @@ class MainCourse2a extends Component{
         <button onClick={this.toggle}>{this.state.on ? "Hide" : "Show"} Main Course </button>
           <div style={{visibility: this.state.on ? "visible" : "hidden"}}>
             <ul className="teasers">
-              <li className="items">Fettucini Alfredo</li>
-              <li className="items">Linguini with Clam Sauce</li>
-              <li className="items">Seafood Arrabbiata</li>
-              <li className="items">Beef Braciole</li>
+              <li className="items">Creamy Squash Risotto w/Toasted Pepitas</li>
+              <li className="items">Vegatarian Three-Bean Chili</li>
+              <li className="items">Spanish Frittta w/Herby Yogurt & Greens</li>
+              <li className="items">Veggie Burgers w/Zucchini & Corn</li>
             </ul>
           </div>
       </div>
@@ -29,4 +29,4 @@ class MainCourse2a extends Component{
   }
 }
 
-export default MainCourse2a
+export default MainCourses1

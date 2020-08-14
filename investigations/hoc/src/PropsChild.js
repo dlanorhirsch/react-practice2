@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PCP(props){
+function PropsChild(props){
   return(
     <div className="example-styling">
      {props.children} 
@@ -8,4 +8,4 @@ function PCP(props){
   )
 }
 
-export default PCP
+export default PropsChild
