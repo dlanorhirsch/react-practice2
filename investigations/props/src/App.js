@@ -22,6 +22,7 @@ function App() {
   return (
     <div>
     <h1 className="investigation-doc">Props Investigation</h1>
+    <h2>Passing Props</h2>
       <p>
       {/* <h2>Props</h2> */}
       This investigation is an excercise in passing various data types as props within components: <strong>strings</strong>, <strong>arrays</strong>, and <strong>functions</strong>. The two function examples pass a string and a boolean respectively. Note that all child files are rendered through one App.js file in the <a href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/promises/src/App.js">react-examples/investigations/render-props/App.js</a>.

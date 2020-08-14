@@ -17,7 +17,7 @@ function App(props) {
   <div>
   
   <div className="investigation-doc">
-    <h1>Investigation:</h1>
+    <h1>Components and HOC Investigation:</h1>
     <h2>Higher Order Components</h2>
     <p><strong>Definition:</strong> A higher order component (HOC) is a function that takes a component as a parameter and returns a new component wrapping the given component and "supercharging" it by giving it some extra abilities</p>
     <p>
