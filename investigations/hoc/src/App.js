@@ -1,8 +1,9 @@
+
 import React from 'react';
 import './styles.css';
 import PropsParent from "./PropsParent";
-import {withFavoriteNumber} from "./withFavoriteNumber";
-import WFavNumbCodeEx from "./WFavNumbCodeEx";
+// import {withFavoriteNumber} from "./Display";
+import DisplayFavNum from "./DisplayFavNum";
 import Appetizers1 from "./Appetizers1";
 import MainCourses1 from "./MainCourses1";
 import Appetizers1CodeEx from "./Appetizers1CodeEx";
@@ -40,10 +41,10 @@ function App(props) {
       </p>
       <p>This component displays:</p>
       <h3 className="example-styling">
-        My favorite number is: {props.favoriteNumber} 
+      <DisplayFavNum />
       </h3>
       <br></br>
-      <WFavNumbCodeEx />
+    
      
       <hr></hr>
       <h3>General Information</h3>
@@ -124,8 +125,8 @@ function App(props) {
     </div>
   );
 }
-const favNumbApp = withFavoriteNumber(App)
-export default favNumbApp
+
+export default App
 
 // can also be written as:
 // export default withFavoriteNumber(App)
