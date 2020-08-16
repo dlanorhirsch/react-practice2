@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
+import {withFavoriteNumber} from "./withFavoriteNumber";
 
-
-function DisplayFavNum (props) {
-  return <h3>My favorite number is: {props.number}</h3>;
+function DisplayFavNumb(props) {
+    return (
+        <div>My favorite number is: {props.favoriteNumber}</div>
+    )
 }
 
-export default DisplayFavNum
+export default withFavoriteNumber(DisplayFavNumb)

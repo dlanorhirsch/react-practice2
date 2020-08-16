@@ -1,8 +1,6 @@
 
 import React from 'react';
 import './styles.css';
-import PropsParent from "./PropsParent";
-// import {withFavoriteNumber} from "./Display";
 import DisplayFavNum from "./DisplayFavNum";
 import Appetizers1 from "./Appetizers1";
 import MainCourses1 from "./MainCourses1";
@@ -26,18 +24,11 @@ function App(props) {
     </p>
     
     <hr></hr>
-    <div style={{marginBottom: "1.5em"}}>
-      <h3>Passing props from parent to child component.</h3>
-      <p>This component displays:</p>
-      <PropsParent />
-    </div>
-      <hr></hr>
-
       <h2>Higher Order Component </h2>
       
       <h3>Functional HOC:</h3>
       <p>
-        This is a simple example that demonstrates the code structure and syntax of a higher order component.
+        This example demonstrates the code structure and syntax of a higher order component. The example files are withFavoriteNumber.js and DisplayFavNumb.js.
       </p>
       <p>This component displays:</p>
       <h3 className="example-styling">
