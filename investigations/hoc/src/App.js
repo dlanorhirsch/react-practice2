@@ -2,6 +2,7 @@
 import React from 'react';
 import './styles.css';
 import DisplayFavNum from "./DisplayFavNum";
+import FavNumbCodeEx from "./FavNumbCodeEx";
 import Appetizers1 from "./Appetizers1";
 import MainCourses1 from "./MainCourses1";
 import Appetizers1CodeEx from "./Appetizers1CodeEx";
@@ -20,8 +21,9 @@ function App(props) {
     <h2>Higher Order Components</h2>
     <p><strong>Definition:</strong> A higher order component (HOC) is a function that takes a component as a parameter and returns a new component wrapping the given component and "supercharging" it by giving it some extra abilities</p>
     <p>
-      HOCs generally pass properties (props) from one component to another. The code for the following 3 examples are based on a single component passing props. It is helpful to understand how props are passed prior to writing HOCs. For more information on passing props, see <a href="https://github.com/dlanorhirsch/react-examples/tree/master/investigations/props">React-examples/Investigations/Props.</a>
+      HOCs generally pass properties (props) from one component to another. The code for the following 3 examples are based on a single component passing props. It is helpful to understand how props are passed prior to writing HOCs. For more information on passing props, see <a  href="https://github.com/dlanorhirsch/react-examples/tree/master/investigations/props">React-examples/Investigations/Props.</a>
     </p>
+    <p>Most of the code examples below are the components that are imported into App.js and can be seen<a href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/App.js">here.</a></p>
     
     <hr></hr>
       <h2>Higher Order Component </h2>
@@ -35,8 +37,10 @@ function App(props) {
       <DisplayFavNum />
       </h3>
       <br></br>
+      <FavNumbCodeEx />
+      
     
-     
+      <hr></hr>
       <hr></hr>
       <h3>General Information</h3>
       <p>
@@ -48,7 +52,7 @@ function App(props) {
       <p>          
         The files Appetizers2.js and MainCourses2.js are class components that use a HOC to manage state and the toggle functionality. Removing the toggle() function simplifies the code. A separate HOC function,{`<WithToggler />`} is accessed by both Appetizers2.js and MainCourses2.js components. 
       </p>
-      <p>Addtional information on <a href="https://reactjs.org/docs/react-component.html"> Class Components</a> can be found in the React documentation.</p>
+      <p>Addtional information on <a href="https://reactjs.org/docs/react-component.html">Class Components</a> can be found in the React documentation.</p>
       <br></br>
       <hr></hr>
 {/* -------- COMPONENT TABLE- REMOVE??? -------------- */}
