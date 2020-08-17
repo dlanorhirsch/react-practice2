@@ -15,6 +15,3 @@ function ArrayChildCode(props) {
 
 export default ArrayChildCode
 
-//functional component called ArrayChildCode which takes an props Object (representing the property values from the names property in App.js, <ArrayChildCode />).
-
-//

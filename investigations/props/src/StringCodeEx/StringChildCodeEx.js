@@ -3,7 +3,7 @@ import React from 'react';
 function StringChildCodeEx() {
   return (
     <div>
-    <a className="header-tab" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/promises/src/StringCodeExs/StringChildCode.js">StringChildCode.js</a>
+    <a className="header-tab" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/StringCodeEx/StringChildCode.js" target="_blank" rel="noopener noreferrer" >StringChildCode.js</a>
     
 <pre className = "codeExs">{`
 import React from "react";

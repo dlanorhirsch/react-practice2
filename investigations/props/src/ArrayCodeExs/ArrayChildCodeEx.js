@@ -2,8 +2,13 @@ import React from 'react';
 
 function ArrayChildCodeEx() {
   return (
-      <div>
-        <a className="header-tab" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/promises/src/ArrayCodeExs/ArrayChildCode.js">ArrayChildCode.js</a>
+    <div>
+      <a 
+        className="header-tab" 
+        href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/ArrayCodeExs/ArrayChildCode.js" 
+        target="_blank" rel="noopener noreferrer">
+        ArrayChildCode.js
+      </a>
       
 <pre className = "codeExs">{`
 import React from 'react';
