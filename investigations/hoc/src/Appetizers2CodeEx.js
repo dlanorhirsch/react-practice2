@@ -16,14 +16,17 @@ class Appetizers2CodeEx extends Component {
   render(){
     return (
       <div>
-        <a className="codeExTitle" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers2.js">Appetizers2.js</a>
+        <a className="codeExTitle" 
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers2.js" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          Appetizers2.js</a>
         <br></br>
         <br></br>
         <button 
           style={{marginBottom: "15px"}}
           onClick={this.toggle}>
           {this.state.show ? "Hide Code" : "Show Code"}
-          
         </button>
       <div style={{display: this.state.show ? "block" : "none"}}>
 <pre className="appetizerCodeExs">{`

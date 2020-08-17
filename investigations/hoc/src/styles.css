@@ -73,6 +73,9 @@ hr {
   font-size: .8em;
   font-weight: bold;
 }
+a.embedded-anchor {
+  margin-left: 0;
+}
 a {
   color: #3f8187;
   font-weight: bold;
@@ -83,4 +86,4 @@ a {
   font-size: 1em;
   font-weight: bold;
   margin-top: 25px;
-}
+} 

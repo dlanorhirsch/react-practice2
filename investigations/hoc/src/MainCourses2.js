@@ -7,7 +7,9 @@ class MainCourse2 extends Component{
   render(){
     return(
       <div>
-        <button onClick={this.props.toggle}>{this.props.on ? "Hide" : "Show"} Main Course </button>
+        <button 
+          onClick={this.props.toggle}>{this.props.on ? "Hide" : "Show"} Main Course 
+        </button>
           <div style={{visibility: this.props.on ? "visible" : "hidden"}}>
           <ul className="teasers">
               <li className="items">Creamy Squash Risotto w/Toasted Pepitas</li>

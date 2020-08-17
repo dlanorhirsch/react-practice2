@@ -16,7 +16,11 @@ class Appetizers1CodeEx extends Component{
     return(
       <div>
       <br></br>
-      <a className="codeExTitle" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers1.js">Appetizers1.js</a>
+      <a className="codeExTitle" 
+        href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers1.js" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        Appetizers1.js</a>
       <br></br>
       <br></br>
         <button onClick={
