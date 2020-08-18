@@ -17,8 +17,8 @@ function App(props) {
   <div>
   
   <div className="investigation-doc">
-    <h1>Components and HOC Investigation:</h1>
-    <h2>Higher Order Components</h2>
+    <h1>Components and HOC Investigation</h1>
+    {/* <h2>Higher Order Components</h2> */}
     <p><strong>Definition:</strong> A higher order component (HOC) is a function
      that takes a component as a parameter and returns a new component wrapping
       the given component and "supercharging" it by giving it some extra abilities.</p>
@@ -26,8 +26,8 @@ function App(props) {
       HOCs pass properties (props) from one component to another. The code for the
        following 3 examples are based on a single component passing props. It is 
        helpful to understand how props are passed prior to writing HOCs. For more 
-       information on passing props,  
-      <a className="embedded-anchor" 
+       information on passing props, <a 
+        className="embedded-anchor" 
         href="https://github.com/dlanorhirsch/react-examples/tree/master/investigations/props" 
         target="_blank" 
         rel="noopener noreferrer">
@@ -35,8 +35,8 @@ function App(props) {
       </a>
     </p>
     <p>Most of the code examples below are the components that are imported into 
-      App.js and can be see 
-    <a className="embedded-anchor" 
+      App.js and can be see <a 
+        className="embedded-anchor" 
         href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/App.js" 
         target="_blank" 
         rel="noopener noreferrer"> 
@@ -45,9 +45,9 @@ function App(props) {
     </p>
     
     {/* <hr></hr> */}
-      <h2>Higher Order Component </h2>
+      {/* <h2>Higher Order Component </h2> */}
       
-      <h3>Functional HOC:</h3>
+      <h2>Functional HOC</h2>
       <p>
         This example demonstrates the code structure and syntax of a higher order
          component. The example files are withFavoriteNumber.js and DisplayFavNumb.js.
@@ -60,58 +60,43 @@ function App(props) {
       <FavNumbCodeEx />
          
       {/* <hr></hr> */}
-      <h3>General Information</h3>
+      
+      <br></br>
+      {/* <hr></hr> */}
+
+      <h2>Class Component vs Class Component w/HOC</h2>
+      <h3>Class Component: Appetizers1.js, MainCourses1.js</h3>
+      {/* <h3>General Information</h3> */}
       <p>
         The examples below demonstrate two approaches to creating components in 
         React that render the same output, displaying and hiding menu items 
-        as seen below. 
+        as seen here. 
       </p>
       <p>
-        The files Appetizers1.js and MainCourses1.js are class based components
-         that contain a toggle function which relies on the value of state
-          to display or hide the menu items.
+        The first examples, Appetizers1.js and MainCourses1.js are class based components
+        that contain a toggle function which relies on the value of state
+        to display or hide menu items in each category. The toggler function 
+        is tied to a button via an on-click event listener. When the button is clicked,
+        state is updated, and the display is shown or hidden depending on the value of
+        state. Each file has its own toggle function. 
       </p>
+      <p>
+        Addtional information on <a 
+          className="embedded-anchor" 
+          href="https://reactjs.org/docs/react-component.html" 
+          target="_blank" 
+          rel="noopener noreferrer">Class Components
+        </a> can be found in the React documentation.
+      </p>
+      <h3>Class Component w/HOC</h3>
       <p>          
         The files Appetizers2.js and MainCourses2.js are class components
          that use a HOC to manage state and the toggle functionality. Removing 
-         the toggle() function simplifies the code. A separate HOC function, 
-         {`<WithToggler />`} is accessed by both Appetizers2.js and 
+         the toggle() function from Appetizers1.js and MainCourses1.js simplifies
+         the code. A separate HOC function, 
+         <code style={{fontSize: ".9em"}}> {`<WithToggler />`} </code> is accessed
+          by both Appetizers2.js and 
           MainCourses2.js components. 
-      </p>
-      <p>
-        Addtional information on 
-          <a className="embedded-anchor" 
-          href="https://reactjs.org/docs/react-component.html" 
-          target="_blank" 
-          rel="noopener noreferrer">
-          Class Components
-        </a> can be found in the React documentation.
-      </p>
-      <br></br>
-      {/* <hr></hr> */}
-{/* -------- COMPONENT TABLE- REMOVE??? -------------- */}
-      {/* <table id="component-table">
-        <tr>
-          <th>Class Components</th>
-          <th>Class Components w/HOC</th>
-        </tr>
-        <tr>
-          <td>Appetizer1.js</td>
-          <td>Appetizer2.js</td>
-        </tr>
-        <tr>
-          <td>MainCourse2.js</td>
-          <td>MainCourse2.js</td>
-        </tr>
-      </table> */}
-   
-      <h3>Class Components: Appetizers1.js, MainCourses.js</h3>
-      <p>
-        The first example, Appetizer1.js, is a class component with a 
-        toggler function tied to a button via an on-click event listener. 
-        When the button is clicked, state is updated, and the display is 
-        shown or hidden depending on the value of state. Each file has 
-        its own toggle function. 
       </p>
       <p>MainCourse1.js has the file structure, only the rended elements have
          been changed.

@@ -1,5 +1,9 @@
+
+
 p {
   margin-left: 1em;
+  line-height: 140%;
+  margin-bottom: 1.5em;
 }
 
 .example-styling {
@@ -87,3 +91,6 @@ a {
   font-weight: bold;
   margin-top: 25px;
 } 
+h3 {
+  margin-left: 1em;
+}
