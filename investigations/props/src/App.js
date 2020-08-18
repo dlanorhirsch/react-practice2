@@ -33,8 +33,7 @@ function App() {
           <a 
             href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/App.js" 
             target="_blank" 
-            rel="noopener noreferrer">
-            react-examples/investigations/render-props/App.js
+            rel="noopener noreferrer"> react-examples/investigations/render-props/App.js
           </a>.
       </p>
       <p>However, for the purposes of this investigation, each example below shows
