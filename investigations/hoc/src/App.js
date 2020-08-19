@@ -6,6 +6,7 @@ import FavNumbCodeEx from "./FavNumbCodeEx";
 import Appetizers1 from "./Appetizers1";
 import MainCourses1 from "./MainCourses1";
 import MainCourses1CodeEx from "./MainCourses1CodeEx";
+import MainCourses2CodeEx from "./MainCourses2CodeEx"
 import Appetizers1CodeEx from "./Appetizers1CodeEx";
 import Appetizers2CodeEx from "./Appetizers2CodeEx";
 import WithTogglerCodeEx from "./WithTogglerCodeEx";
@@ -44,9 +45,6 @@ function App(props) {
         here.
       </a>
     </p>
-    
-    {/* <hr></hr> */}
-      {/* <h2>Higher Order Component </h2> */}
       
       <h2>Functional HOC</h2>
       <p>
@@ -59,9 +57,7 @@ function App(props) {
       </h3>
       <br></br>
       <FavNumbCodeEx />
-         
- 
-
+       
       <h2>Class Component vs Class Component w/HOC</h2>
       <p>
         The examples below demonstrate two approaches to creating components in 
@@ -90,73 +86,44 @@ function App(props) {
           target="_blank" 
           rel="noopener noreferrer">
           Appetizers1.js
-        </a> and,
-        <a className="embedded-anchor"
+        </a> and, 
+        <a 
+          className="embedded-anchor"
           href="https://github.com/dlanorhirsch/react-examples/ blob/master/investigations/hoc/src/Appetizers2.js"
           target="_blank"
-          rel="noopener noreferrer">
-          MainCourses1.js
+          rel="noopener noreferrer">MainCourses1.js
         </a> (class components) render the following: 
       </p>
 
         <Appetizers1 />
+        <MainCourses1 />
+        <p>To display the code for each class component, click below.</p>
         <Appetizers1CodeEx />
         <MainCourses1CodeEx />
+
+        
       {/* <p>MainCourse1.js has the file structure, only the rended elements have
          been changed.
       </p> */}
     
       <h3>Class Components w/HOC</h3>
-      <p>          
-        The files Appetizers2.js and MainCourses2.js are class components
-         that use a HOC to manage state and the toggle functionality. Removing 
+      <p><a className="embedded-anchor" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers2.js">Appetizers2.js</a> and <a className="embedded-anchor"href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/MainCourses2.js">MainCourses2.js</a> render the same output as seen in the above  examples. However, these are class components
+         that use a separate HOC to manage state and toggle functionality. Removing 
          the toggle() function from Appetizers1.js and MainCourses1.js simplifies
          the code. A separate HOC function, 
-         <code style={{fontSize: ".9em"}}> {`<WithToggler />`} </code> is accessed
-          by both Appetizers2.js and 
-          MainCourses2.js components. 
+         <code style={{fontSize: ".9em"}}> {`<WithToggler />`} </code> was created and is accessed
+          by both components. 
       </p>
       <p>
-        <a className="embedded-anchor" 
-          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers2.js" 
+        To display the code for each class component and the HOC <a 
+          className="embedded-anchor"
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/withToggler.js" 
           target="_blank" 
-          rel="noopener noreferrer">
-          Appetizers2.js
-        </a> and,
-        <a className="embedded-anchor"
-          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/MainCourses2.js"
-          target="_blank"
-          rel="noopener noreferrer">
-          MainCourses2.js
-        </a> (class components) render the following: 
-      </p>
-    
-      {/* Appetizer1 controls the button and display for "Show " */}
-      <MainCourses1 />
-      {/* MainCourse1 controls the button and display for "Show MainCourse" */} 
-      
-      <br></br>
-      {/* Appetizer1CodeEx.js controls the button and display for this file. */}
-
-      {/* <hr></hr> */}
-      <h3>
-      Class Components with HOC: Appetizers2.js,
-         MainCourses2.js
-      </h3>
-
-      <p>
-        In second example, Appetizers2.js the code from the class components 
-        were re-written as a higher order component. The toggler function 
-        was removed and a new toggler component was created. Both Appetizer2.js 
-        and MainCourses2.js assess the WithToggler.js HOC. State has also been 
-        removed from these files and placed within the new toggler component. 
-        This shortens and symplifies the code, and is a common pattern found 
-        in React.
-      </p>
+          rel="noopener noreferrer">WithToggler.js
+          </a>, click below.</p>
       <Appetizers2CodeEx />
+      <MainCourses2CodeEx />
     
-      {/* Appetizer2CodeEx.js controls the button and display for this 
-          //example file. */}
 
       <WithTogglerCodeEx />
       {/* withTogglerCodeEx controls the button and display for this example file */}
