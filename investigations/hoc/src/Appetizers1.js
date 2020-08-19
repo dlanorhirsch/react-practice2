@@ -48,6 +48,7 @@ class Appetizers1 extends Component{
               </li>
             </ul>
           </div>
+          
       </div>
     )
   }

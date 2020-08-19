@@ -5,6 +5,7 @@ import DisplayFavNum from "./DisplayFavNum";
 import FavNumbCodeEx from "./FavNumbCodeEx";
 import Appetizers1 from "./Appetizers1";
 import MainCourses1 from "./MainCourses1";
+import MainCourses1CodeEx from "./MainCourses1CodeEx";
 import Appetizers1CodeEx from "./Appetizers1CodeEx";
 import Appetizers2CodeEx from "./Appetizers2CodeEx";
 import WithTogglerCodeEx from "./WithTogglerCodeEx";
@@ -15,7 +16,7 @@ function App(props) {
   // console.log(props)
   return (
   <div>
-  
+
   <div className="investigation-doc">
     <h1>Components and HOC Investigation</h1>
     {/* <h2>Higher Order Components</h2> */}
@@ -59,36 +60,53 @@ function App(props) {
       <br></br>
       <FavNumbCodeEx />
          
-      {/* <hr></hr> */}
-      
-      <br></br>
-      {/* <hr></hr> */}
+ 
 
       <h2>Class Component vs Class Component w/HOC</h2>
-      <h3>Class Component: Appetizers1.js, MainCourses1.js</h3>
-      {/* <h3>General Information</h3> */}
       <p>
         The examples below demonstrate two approaches to creating components in 
         React that render the same output, displaying and hiding menu items 
         as seen here. 
       </p>
+      <h3>
+        Class Components: 
+      </h3>
       <p>
         The first examples, Appetizers1.js and MainCourses1.js are class based components
         that contain a toggle function which relies on the value of state
         to display or hide menu items in each category. The toggler function 
         is tied to a button via an on-click event listener. When the button is clicked,
         state is updated, and the display is shown or hidden depending on the value of
-        state. Each file has its own toggle function. 
-      </p>
-      <p>
-        Addtional information on <a 
+        state. Each file has its own toggle function. Addtional information on <a 
           className="embedded-anchor" 
           href="https://reactjs.org/docs/react-component.html" 
           target="_blank" 
           rel="noopener noreferrer">Class Components
-        </a> can be found in the React documentation.
+        </a> can be found in the React documentation. 
       </p>
-      <h3>Class Component w/HOC</h3>
+      <p>
+        <a className="embedded-anchor" 
+          href="https://github.com/dlanorhirsch/react-examplesblob/master/investigations/hoc/src/Appetizers1.js" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          Appetizers1.js
+        </a> and,
+        <a className="embedded-anchor"
+          href="https://github.com/dlanorhirsch/react-examples/ blob/master/investigations/hoc/src/Appetizers2.js"
+          target="_blank"
+          rel="noopener noreferrer">
+          MainCourses1.js
+        </a> (class components) render the following: 
+      </p>
+
+        <Appetizers1 />
+        <Appetizers1CodeEx />
+        <MainCourses1CodeEx />
+      {/* <p>MainCourse1.js has the file structure, only the rended elements have
+         been changed.
+      </p> */}
+    
+      <h3>Class Components w/HOC</h3>
       <p>          
         The files Appetizers2.js and MainCourses2.js are class components
          that use a HOC to manage state and the toggle functionality. Removing 
@@ -98,16 +116,25 @@ function App(props) {
           by both Appetizers2.js and 
           MainCourses2.js components. 
       </p>
-      <p>MainCourse1.js has the file structure, only the rended elements have
-         been changed.
+      <p>
+        <a className="embedded-anchor" 
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers2.js" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          Appetizers2.js
+        </a> and,
+        <a className="embedded-anchor"
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/MainCourses2.js"
+          target="_blank"
+          rel="noopener noreferrer">
+          MainCourses2.js
+        </a> (class components) render the following: 
       </p>
-      <p>The code renders the following:</p>
-      <br></br>
-      <Appetizers1 />
+    
       {/* Appetizer1 controls the button and display for "Show " */}
       <MainCourses1 />
       {/* MainCourse1 controls the button and display for "Show MainCourse" */} 
-      <Appetizers1CodeEx />
+      
       <br></br>
       {/* Appetizer1CodeEx.js controls the button and display for this file. */}
 

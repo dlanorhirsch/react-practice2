@@ -1,13 +1,11 @@
-
-
 p {
   margin-left: 1em;
   line-height: 140%;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.4em;
 }
 
 .example-styling {
-  color: #2269d9;
+  color: #1c5d99;
   border: 1px solid #404045;
   margin: 10px 0 10px 1em;
   padding-top: 1.3em;
@@ -20,7 +18,7 @@ p {
 }
 
 .investigation-doc h1 {
-  color: #0069d9;
+  color: #1c5d99;
 }
 
 .investigation-doc {
@@ -31,18 +29,27 @@ p {
   width: 680px;
 }
 button {
-  width: 320px;
+  width: 22em;
   font-size: 1em;
   color: white;
   border-radius: 3px;
-  background: #0069d9;
+  background: #1c5d99;
   margin-left: 1em;
+}
+.btn-container {
+ 
+
+  
+  
+}
+.code-ex-btn {
+
 }
 .teasers {
   font-size: 1em;
   font-style: italic;
-  border: 1px solid #0069d9;
-  width: 275px;
+  border: 1px solid #639fab;
+  width: 20em;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 1.8em;
@@ -81,7 +88,7 @@ a.embedded-anchor {
   margin-left: 0;
 }
 a {
-  color: #3f8187;
+  color: #639fab;
   font-weight: bold;
   margin-left: 1em;
 }
