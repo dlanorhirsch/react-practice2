@@ -36,33 +36,33 @@ function App(props) {
         see React-examples/Investigations/Props.
       </a>
     </p>
-    <p>Most of the code examples below are the components that are imported into 
-      App.js and can be see <a 
+    <p>The compenents (and examples) below are imported into <a 
         className="embedded-anchor" 
         href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/App.js" 
         target="_blank" 
-        rel="noopener noreferrer"> 
-        here.
-      </a>
+        rel="noopener noreferrer">App.js
+      </a> where they are rendered to the DOM.
     </p>
       
       <h2>Functional HOC</h2>
       <p>
-        This example demonstrates the code structure and syntax of a higher order
-         component. The example files are withFavoriteNumber.js and DisplayFavNumb.js.
+        This first example demonstrates the code structure and syntax of a higher order
+         component. The components are withFavoriteNumber.js and DisplayFavNumb.js.
       </p>
-      <p>This component displays:</p>
+      <p>These component displays:</p>
       <h3 className="example-styling">
       <DisplayFavNum />
       </h3>
       <br></br>
+      <p>Links to the components are provided below along with examples of the code.
+      </p>
       <FavNumbCodeEx />
        
       <h2>Class Component vs Class Component w/HOC</h2>
       <p>
-        The examples below demonstrate two approaches to creating components in 
-        React that render the same output, displaying and hiding menu items 
-        as seen here. 
+        The following examples demonstrate two approaches to creating components in 
+        React that render the same output; displaying and hiding menu items 
+        as seen below. 
       </p>
       <h3>
         Class Components: 
@@ -70,26 +70,26 @@ function App(props) {
       <p>
         The first examples, Appetizers1.js and MainCourses1.js are class based components
         that contain a toggle function which relies on the value of state
-        to display or hide menu items in each category. The toggler function 
-        is tied to a button via an on-click event listener. When the button is clicked,
+        to display or hide menu items in each category. The toggler() function 
+        located within each component is tied to a button via an on-click event listener. (See React docs, <a className="embedded-anchor" href="https://reactjs.org/docs/handling-events.html">Handling Events</a> for more information.) When the button is clicked,
         state is updated, and the display is shown or hidden depending on the value of
-        state. Each file has its own toggle function. Addtional information on <a 
+        state. Addtional information on <a 
           className="embedded-anchor" 
           href="https://reactjs.org/docs/react-component.html" 
           target="_blank" 
           rel="noopener noreferrer">Class Components
-        </a> can be found in the React documentation. 
+        </a> can also be found in the React docs. 
       </p>
       <p>
         <a className="embedded-anchor" 
-          href="https://github.com/dlanorhirsch/react-examplesblob/master/investigations/hoc/src/Appetizers1.js" 
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers1.js" 
           target="_blank" 
           rel="noopener noreferrer">
           Appetizers1.js
         </a> and, 
         <a 
           className="embedded-anchor"
-          href="https://github.com/dlanorhirsch/react-examples/ blob/master/investigations/hoc/src/Appetizers2.js"
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/MainCourses1.js"
           target="_blank"
           rel="noopener noreferrer">MainCourses1.js
         </a> (class components) render the following: 
@@ -107,7 +107,17 @@ function App(props) {
       </p> */}
     
       <h3>Class Components w/HOC</h3>
-      <p><a className="embedded-anchor" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers2.js">Appetizers2.js</a> and <a className="embedded-anchor"href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/MainCourses2.js">MainCourses2.js</a> render the same output as seen in the above  examples. However, these are class components
+      <p>
+        <a 
+          className="embedded-anchor" 
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/Appetizers2.js"
+          target="_blank"
+          rel="noopener noreferrer">Appetizers2.js</a> and <a 
+          className="embedded-anchor" 
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/MainCourses2.js"
+          target="_blank"
+          rel="noopener noreferrer">MainCourses2.js
+        </a> render the same output as seen in the above  examples. However, these are class components
          that use a separate HOC to manage state and toggle functionality. Removing 
          the toggle() function from Appetizers1.js and MainCourses1.js simplifies
          the code. A separate HOC function, 
