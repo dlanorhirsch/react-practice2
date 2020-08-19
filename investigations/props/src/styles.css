@@ -1,9 +1,28 @@
+.color-1 {
+  display: inline-flex;
+  height: 100px;
+  width: 100px;
+  background-color: #1c5d99;
+  color: white;
+}
+.color-2 {
+  display: inline-flex;
+  height: 100px;
+  width: 100px;
+  background-color: #639fab;
+  color: white;
+}
 body {
   width: 700px;
   margin-left: 100px;
 }
+p {
+  line-height: 140%;
+  margin-bottom: 1.4em;
+  margin-left: 1em;
+}
 .investigation-doc {
-  color: #0069d9;
+  color: #1c5d99;
   width: 700px;
   font-size: 2em;
   margin-top: .75em;
@@ -14,14 +33,14 @@ body {
  
 }
 a {
-  color: #cb8205;
+  color: #639fab;
   font-weight: bold;
 }
 .examples {
-  color: #2269d9;
+  color: #0353a4;
   border: 1px solid #404045;
   /* box-shadow: 2px 2px 2px 2px rgba(190, 187, 187); */
-  margin: 10px 0 10px 0;
+  margin: 1em;
   padding-bottom: .8em;
   width: 20em;
   height: 3em;
@@ -37,15 +56,18 @@ a {
   padding-left: 20px;
   border-radius: 10px;
   width: 40em;
+  margin-left: 1em;
 }
 .header-tab {
   font-size: 1em;
   font-weight: bold;
   margin-top: 25px;
+  margin-left: 1em;
 }
 .dotted-break {
   color: #d3d1d1;
 }
 h3 {
   margin-top: 0;
+  margin-left: 1em;
 }
