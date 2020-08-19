@@ -27,7 +27,7 @@ class Appetizers1CodeEx extends Component{
         </div>
             <div style={{display: this.state.show ? "block" : "none"}}>
           
-            <pre className="appetizerCodeExs">{`import React from 'react'
+            <pre className="codeExs">{`import React from 'react'
 import { Component } from 'react';
 
 class Appetizers1 extends Component{

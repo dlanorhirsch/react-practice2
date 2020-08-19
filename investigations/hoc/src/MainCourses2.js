@@ -1,9 +1,7 @@
 import React from 'react'
 import { Component } from 'react';
-import {withToggler} from "./withToggler";
 
-
-class MainCourse2 extends Component{
+class MainCourse2CodeEx extends Component{
   render(){
     return(
       <div>
@@ -22,9 +20,7 @@ class MainCourse2 extends Component{
     )
   }
 }
-const SuperChargedComponent = withToggler(MainCourse2)
 
-export default SuperChargedComponent
-
+export default MainCourse2CodeEx
 
 

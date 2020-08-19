@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from "react";
 
-class Appetizers2CodeEx extends Component {
+class MainCourses2CodeEx extends Component {
   state = {
    show: false
  }
@@ -18,7 +18,7 @@ class Appetizers2CodeEx extends Component {
         <button 
           style={{marginBottom: "15px"}}
           onClick={this.toggle}>
-          {this.state.show ? "Hide Code" : "Display Appetizers2.js Code Ex."}
+          {this.state.show ? "Hide Code" : "Display MainCourses2.js Code Ex."}
         </button>
       <div style={{display: this.state.show ? "block" : "none"}}>
 <pre className="codeExs">{`
@@ -76,4 +76,4 @@ export default Appetizer2
   }
 }
 
-export default Appetizers2CodeEx
+export default MainCourses2CodeEx

@@ -14,43 +14,41 @@ class WithTogglerCodeEx extends Component {
   }
   render(){
     return (
-      
       <div>
-      <a className="codeExTitle" 
-        href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/hoc/src/withToggler.js" 
-        target="_blank" 
-        rel="noopener noreferrer">
-        WithToggler.js</a>
-      <br></br>
-      <br></br>
         <button 
           style={{marginBottom: "15px"}}
           onClick={this.toggle}>
-          {this.state.show ? "Hide Code" : "Show Code"}
+          {this.state.show ? "Hide Code" : "Display WithToggler.js Code Ex."}
         </button>
       <div style={{display: this.state.show ? "block" : "none"}}>
 
-<pre className="appetizerCodeExs">{`
-import React from 'react';
+<pre className="codeExs">{`import React from 'react'
+import { Component } from 'react';
+import {withToggler} from "./withToggler";
 
-class Toggler extends Component{
-  state= {
-    on: true
-  }
-  toggle = () => {
-    this.setState(prevState => {
-      return {
-        on: !prevState.on
-      }
-    })
-  }
-  render() {
-    const C = this.props.component
-    return (
-        <C on={this.state.on} toggle={this.toggle} {...this.props} />
+
+class MainCourse2 extends Component{
+  render(){
+    return(
+      <div>
+        <button 
+          onClick={this.props.toggle}>{this.props.on ? "Hide" : "Show"} Main Course 
+        </button>
+          <div style={{visibility: this.props.on ? "visible" : "hidden"}}>
+          <ul className="teasers">
+              <li className="items">Creamy Squash Risotto w/Toasted Pepitas</li>
+              <li className="items">Vegatarian Three-Bean Chili</li>
+              <li className="items">Spanish Frittta w/Herby Yogurt & Greens</li>
+              <li className="items">Veggie Burgers w/Zucchini & Corn</li>
+            </ul>
+          </div>
+      </div>
     )
   }
 }
+const SuperChargedComponent = withToggler(MainCourse2)
+
+export default SuperChargedComponent
 
 export function withToggler(component) {
   return function(props) {
@@ -59,7 +57,6 @@ export function withToggler(component) {
     )
   }
 }
-
 `}
 
     </pre>
