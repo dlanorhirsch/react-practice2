@@ -1,28 +1,42 @@
 import React from 'react';
+import { Component } from 'react';
 
-function StringChildCodeEx() {
-  return (
+class StringChildCodeEx extends Component {
+  state = {
+    show: false
+  }
+  toggle = () => {
+    this.setState(prevState => {
+      return {
+        show: !prevState.show
+      }
+    })
+  }  
+  render() {
+    return (
     <div>
-    <a className="header-tab" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/StringCodeEx/StringChildCode.js" target="_blank" rel="noopener noreferrer" >StringChildCode.js</a>
+      <button 
+        style={{marginBottom: "15px"}}
+        onClick={this.toggle}>
+        {this.state.show ? "Hide Code" : "Display StringChileCode.js Code Ex. (child)"}
+      </button>
+    <div style={{display: this.state.show ? "block" : "none"}}>
     
 <pre className = "codeExs">{`
-import React from "react";
+import React from "react"
 
-function App() {
-  return (
-    <h4>Passing a string as props:</h4>
-    <div className = "examples">
-      <StringChildCode name = "Uncle Jonathan"/>
-    </div>
-  )
+function StringChildCode(props) {
+    return <h4>Hi {props.name}</h4>
 }
 
-export default App
+export default StringChildCode
 
 `}
 </pre>
-</div>
-  )
+    </div>
+    </div>
+    )
+  }
 }
 
 export default StringChildCodeEx

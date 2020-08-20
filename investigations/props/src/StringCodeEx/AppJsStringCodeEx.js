@@ -1,10 +1,28 @@
-import React from "react";;
+import React from 'react';
+import { Component } from 'react';
 
-function AppJsStringCodeEx() {
+class AppJsStringCodeEx extends Component {
+  state = {
+    show: false
+  }
+  toggle = () => {
+    this.setState(prevState => {
+      return {
+        show: !prevState.show
+      }
+    })
+  }  
+  render() {
     return (
-      <div>
-      <div className="header-tab">App.js (parent)</div>
-<pre className = "codeExs">{`
+    <div>
+      <button 
+        style={{marginBottom: "15px"}}
+        onClick={this.toggle}>
+        {this.state.show ? "Hide Code" : "Display App.js Code Ex.  (parent)"}
+      </button>
+    <div style={{display: this.state.show ? "block" : "none"}}>
+    
+    <pre className = "codeExs">{`
 import React from "react";
 import StringChildCode from "./StringChildCode";
 
@@ -21,8 +39,10 @@ export default App
 
 `}
 </pre>
-</div>  
+    </div>
+    </div>
     )
+  }
 }
 
 export default AppJsStringCodeEx

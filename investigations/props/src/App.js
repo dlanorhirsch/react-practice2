@@ -21,8 +21,7 @@ import BooleanChildCodeEx from "./BooleanCodeEx/BooleanChildCodeEx";
 function App() {
   return (
     <div>
-    <div className="color-1">#1c5d99</div>
-    <div className="color-2">#639fab</div>
+    
     <h1 className="investigation-doc">Props Investigation</h1>
       <p>
         {/* <h2>Props</h2> */}
@@ -35,14 +34,14 @@ function App() {
             href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/App.js" 
             target="_blank" 
             rel="noopener noreferrer"> react-examples/investigations/render-props/App.js
-          </a>.
+          </a>
       </p>
       <p>For the purposes of this investigation, each example below shows
        how the App.js file would be written as a stand alone component in App.js.
         To see the entire App.js file follow the link above.
       </p>
      {/* -------------------------------------------------------------------- */}
-      {/* <h2>Passing a String and an Array as props</h2> */}
+
       <h2>
         A string as props
       </h2>
@@ -53,9 +52,8 @@ function App() {
           <StringChildCode name="Uncle Jonathan!"/>
         </div>
       </div>
-      
+      <p>(need a reference and link to StringChildCodeEx.js)</p>
       <AppJsStringCodeEx />
-      <br></br>
       <StringChildCodeEx />
       <br></br>
       {/* <hr></hr> */}
