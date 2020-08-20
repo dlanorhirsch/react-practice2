@@ -19,7 +19,7 @@ class MainCourses1 extends Component{
           onClick={this.toggle}>{this.state.on ? "Hide" : "Show"} Main Course
         </button>
           <div style={{visibility: this.state.on ? "visible" : "hidden"}}>
-            <ul className="teasers">
+            <ul className="appetizers">
               <li className="items">Creamy Squash Risotto w/Toasted Pepitas</li>
               <li className="items">Vegatarian Three-Bean Chili</li>
               <li className="items">Spanish Frittta w/Herby Yogurt & Greens</li>

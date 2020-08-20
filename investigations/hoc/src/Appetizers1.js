@@ -19,7 +19,7 @@ class Appetizers1 extends Component{
           {this.state.on ? "Hide Appetizers" : "Show Appetizers"}
         </button>
           <div style={{visibility: this.state.on ? "visible" : "hidden"}}>
-            <ul className="teasers">
+            <ul className="appetizers">
               <li className="items">
                 <a href="http://greenevi.com/vegan-tomato-flatbread/" 
                   target="_blank" rel="noopener noreferrer" >

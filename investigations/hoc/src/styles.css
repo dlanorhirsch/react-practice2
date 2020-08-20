@@ -3,7 +3,6 @@ p {
   line-height: 140%;
   margin-bottom: 1.4em;
 }
-
 .example-styling {
   color: #1c5d99;
   border: 1px solid #404045;
@@ -16,11 +15,9 @@ p {
   font-size: 1em;
   font-weight: bold;
 }
-
 .investigation-doc h1 {
   color: #1c5d99;
 }
-
 .investigation-doc {
   margin-left: 100px;
   width: 750px;
@@ -51,7 +48,7 @@ buttons from block to flex. */
 .code-ex-btn {
 
 } */
-.teasers {
+.appetizers {
   font-size: 1em;
   font-style: italic;
   border: 1px solid #639fab;
@@ -61,19 +58,6 @@ buttons from block to flex. */
   padding-left: 1.8em;
   margin-left: 1em;
  }
-hr {
-  width: 700px;
-  margin: 0;
-}
-/* .codeEx1 {
-  color: #fff;
-  background: #404045;
-  padding-left: 20px;
-  border: 1px solid #404045;
-  border-radius: 15px;
-  width: 35em;
-  font-family: 'Roboto Mono', monospace;
-} */
 .codeExs {
   color: #fff;
   background: #404045;
@@ -85,10 +69,6 @@ hr {
   font-family: 'Roboto Mono', monospace;
   font-size: .9em;
   margin-left: 1em;
-}
-.note {
-  font-size: .8em;
-  font-weight: bold;
 }
 a.embedded-anchor {
   margin-left: 0;
@@ -110,7 +90,6 @@ a:hover {
 a:active {
   color: #1c5d99
 }
-
 .header-tab {
   font-size: 1em;
   font-weight: bold;

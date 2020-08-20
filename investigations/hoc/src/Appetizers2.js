@@ -10,7 +10,7 @@ class Appetizer2 extends Component{
           onClick={this.props.toggle}>{this.props.on ? "Hide" : "Show"}
         </button>
           <div style={{visibility: this.props.on ? "visible" : "hidden"}}>
-          <ul className="teasers">
+          <ul className="appetizers">
               <li className="items">
                 <a href="http://greenevi.com/vegan-tomato-flatbread/">
                   Vegan Tomato Flatbread
