@@ -57,6 +57,7 @@ buttons from block to flex. */
   padding-bottom: 10px;
   padding-left: 1.8em;
   margin-left: 1em;
+  border-radius: 5px;
  }
 .codeExs {
   color: #fff;

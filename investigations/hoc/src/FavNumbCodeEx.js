@@ -11,13 +11,15 @@ function FavNumbCodeEx(){
       <pre className="codeExs">{`import React from 'react';
 
 export function withFavoriteNumber(component) {
-  const C = component
+  const Component = component
   return function(props) {
       return (
-          <C favoriteNumber={42} />
+          <Component favoriteNumber={42} />
       )
   }
 }
+
+export default withFavoriteNumber
 `}
 </pre>
   <a 
@@ -34,7 +36,7 @@ function DisplayFavNumb(props) {
     )
 }
 
-export default withFavoriteNumber(DisplayFavNumb)
+export default DisplayFavNumb
 `}
 </pre>
 

@@ -1,10 +1,10 @@
 import React from 'react';
 
 export function withFavoriteNumber(component) {
-  const C = component
+  const Component = component
   return function(props) {
       return (
-          <C favoriteNumber={42} />
+          <Component favoriteNumber={42} />
       )
   }
 }
