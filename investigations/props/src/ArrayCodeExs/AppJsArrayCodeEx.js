@@ -1,30 +1,58 @@
-import React from "react";
-
-function AppJsArrayCodeEx() {
-    return (
-      <div>
-      <div className="header-tab">App.js (parent)</div>
-<pre className = "codeExs">{`
 import React from 'react';
+import { Component } from 'react';
 
-function App() {
-  return (
+class AppJsArrayCodeEx extends Component {
+  state = {
+    show: false
+  }
+  toggle = () => {
+    this.setState(prevState => {
+      return {
+        show: !prevState.show
+      }
+    })
+  }  
+  render() {
+    return (
     <div>
-      <h4>Passing an array as props</h4>
-    </div>
-    <div className = "examples">
-      <ArrayChildCode names = {["Larry", "Curly", "Mo"]};
-    </div>
-    </div>
-  )
+      <button 
+        style={{marginBottom: "15px"}}
+        onClick={this.toggle}>
+        {this.state.show ? "Hide Code" : "App.js CodeEx.js (parent)"}
+      </button>
+    <div style={{display: this.state.show ? "block" : "none"}}>
+    
+<pre className="codeExs">{`
+import React from "react";
+import ArrayChildCode from "./ArrayChildCode;
+
+function ArrayChildCode(props) {
+    return (
+      <h4>
+        Welcome {' '}
+          { props.names
+            .map((name) => {
+              return name  }
+            ).join(", ")
+          }
+      </h4>
+    )  
 }
 
 export default App
 
 `}
+
+
+
+
+
+
 </pre>
-       </div>
+    </div>
+    </div>
     )
+  }
 }
 
 export default AppJsArrayCodeEx

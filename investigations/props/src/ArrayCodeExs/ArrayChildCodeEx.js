@@ -1,14 +1,26 @@
 import React from 'react';
+import { Component } from 'react';
 
-function ArrayChildCodeEx() {
-  return (
-    <div>
-      <a 
-        className="header-tab" 
-        href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/ArrayCodeExs/ArrayChildCode.js" 
-        target="_blank" rel="noopener noreferrer">
-        ArrayChildCode.js
-      </a>
+class ArrayChildCodeEx extends Component {
+  state = {
+    show: false
+  }
+  toggle = () => {
+    this.setState(prevState => {
+      return {
+        show: !prevState.show
+       }
+    })
+  }  
+  render() {
+    return (
+      <div>
+        <button 
+          style={{marginBottom: "15px"}}
+          onClick={this.toggle}>
+          {this.state.show ? "Hide Code" : "ArrayChildCode.js Code Ex.  (parent)"}
+        </button>
+      <div style={{display: this.state.show ? "block" : "none"}}>
       
 <pre className = "codeExs">{`
 import React from 'react';
@@ -25,8 +37,10 @@ export default ArrayChildCode
 
 `}
 </pre>
-</div>  
-  )
+    </div>  
+    </div>
+    )
+  }
 }
 
 export default ArrayChildCodeEx

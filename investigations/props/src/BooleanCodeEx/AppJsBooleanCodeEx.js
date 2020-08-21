@@ -1,19 +1,33 @@
 import React from 'react';
+import { Component } from 'react';
 
-function AppJsBooleanCodeEx() {
-  return(
-    <div>
-      <div className="header-tab">App.js (parent)</div>
+class AppJsBooleanCodeEx extends Component {
+  state = {
+    show: false
+  }
+  toggle = () => {
+    this.setState(prevState => {
+      return {
+        show: !prevState.show
+       }
+    })
+  }  
+  render() {
+    return (
+      <div>
+        <button 
+          style={{marginBottom: "15px"}}
+          onClick={this.toggle}>
+          {this.state.show ? "Hide Code" : "App.js Code Ex.(parent)"}
+        </button>
+      <div style={{display: this.state.show ? "block" : "none"}}>
 
 <pre className = "codeExs">{`
-import React from 'react'
-import BooleanCodeEx from './BooleanChildCode'
+import React from 'react';
+import BooleanChildCode from './BooleanChildCode';
 
 function App() {
   return (
-    <div>
-      <h3>Passing a boolean via a function as props</h3>
-    </div>
     <div className = "examples">
       <BooleanChildCode render={
         function(isDayTime) {
@@ -33,7 +47,8 @@ export default App
 `}
 </pre>
     </div>
-  )
+    </div>
+    )
+  }
 }
-
 export default AppJsBooleanCodeEx

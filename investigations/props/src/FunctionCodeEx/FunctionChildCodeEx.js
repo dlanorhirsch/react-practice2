@@ -1,27 +1,45 @@
 import React from 'react';
+import { Component } from 'react';
 
-function FunctionChildCodeEx() {
-  return(
-    <div>
-      <a className="header-tab" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/FunctionCodeEx/FunctionChildCode.js" target="_blank" rel="noopener noreferrer" >FunctionChildCode.js</a>
+class FunctionChildCodeEx extends Component {
+  state = {
+    show: false
+  }
+  toggle = () => {
+    this.setState(prevState => {
+      return {
+        show: !prevState.show
+       }
+    })
+  }  
+  render() {
+    return (
+      <div>
+        <button 
+          style={{marginBottom: "15px"}}
+          onClick={this.toggle}>
+          {this.state.show ? "Hide Code" : "FunctionChildCode.js Code Ex.(child)"}
+        </button>
+      <div style={{display: this.state.show ? "block" : "none"}}>
       
-<pre className = "codeExs">{`
-import React from 'react';
+<pre className = "codeExs">{`import React from "react"
 
-    function FunctionChildCode(props) {
-      return (
-        <div>
-          {props.render("President Macron")}
-        </div>
-      )
-    }
+function FunctionChildCode(props) {
+    return (
+      <div>
+        {props.render("President Macron")}
+      </div>
+    )
+}
 
 export default FunctionChildCode
 
 `}
 </pre>
-
+    </div>  
     </div>
-  )
+    )
+  }
 }
+
 export default FunctionChildCodeEx

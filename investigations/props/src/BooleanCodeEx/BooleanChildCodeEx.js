@@ -1,14 +1,26 @@
 import React from 'react';
+import { Component } from 'react';
 
-function BooleanChildCodeEx() {
-  return (
-    <div>
-      <a className="header-tab" 
-        href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/BooleanCodeEx/BooleanChildCode.js" 
-        target="_blank" 
-        rel="noopener noreferrer">
-        BooleanChildCode.js
-      </a>
+class BooleanChildCodeEx extends Component {
+  state = {
+    show: false
+  }
+  toggle = () => {
+    this.setState(prevState => {
+      return {
+        show: !prevState.show
+       }
+    })
+  }  
+  render() {
+    return (
+      <div>
+        <button 
+          style={{marginBottom: "15px"}}
+          onClick={this.toggle}>
+          {this.state.show ? "Hide Code" : "BooleanChildCode.js Ex.(child)"}
+        </button>
+      <div style={{display: this.state.show ? "block" : "none"}}>
 
 <pre className = "codeExs">{`
 import React from 'react';
@@ -23,9 +35,13 @@ function BooleanChildCode(props) {
 
 export default BooleanChildCode
 
-`}</pre>
-    </div>
-  )
-}
+export default App
 
+`}
+</pre>
+    </div>
+    </div>
+    )
+  }
+}
 export default BooleanChildCodeEx
