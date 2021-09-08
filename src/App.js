@@ -138,7 +138,13 @@ export class Application extends React.Component{
       </Row>
     </Container>
     <footer>
-      <div className="copywrite">Copywrite: StackStudio, 2020</div>
+    <div id="copyright" class="copyright">
+                Copyright&copy;
+                  <script>
+                    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
+                  </script>
+                Hirschro/React-Examples: V:1.0 
+              </div>
     </footer>
   </div>
   )}          
