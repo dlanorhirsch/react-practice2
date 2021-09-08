@@ -41,12 +41,17 @@ a:hover {
 a:active {
   color: #1c5d99;
 }
+.a-codeEx-link {
+  color: #639fab;
+  font-weight: bold;
+  margin-left: 1em;
+ }
 .examples {
   color: #1c5d99;
   border: 1px solid #404045;
   margin: 1em;
   padding-bottom: .8em;
-  width: 20em;
+  width: 22em;
   height: 3em;
   text-align: center;
   border-radius: 8px;
@@ -85,4 +90,7 @@ button:hover {
 }
 button:active {
   background: #2c7e8f;
+}
+.copyright {
+  text-align: center; 
 }

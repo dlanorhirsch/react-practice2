@@ -18,7 +18,7 @@ class StringChildCodeEx extends Component {
       <button 
         style={{marginBottom: "15px"}}
         onClick={this.toggle}>
-        {this.state.show ? "Hide Code" : "StringChildCode.js Code Ex. (child)"}
+        {this.state.show ? "Hide Code" : "StringChildCode.js Ex."}
       </button>
     <div style={{display: this.state.show ? "block" : "none"}}>
     

@@ -18,7 +18,7 @@ class BooleanChildCodeEx extends Component {
         <button 
           style={{marginBottom: "15px"}}
           onClick={this.toggle}>
-          {this.state.show ? "Hide Code" : "BooleanChildCode.js Ex.(child)"}
+          {this.state.show ? "Hide Code" : "BooleanChildCode.js Ex."}
         </button>
       <div style={{display: this.state.show ? "block" : "none"}}>
 

@@ -38,7 +38,7 @@ function App() {
       </p>
       <p>For the purposes of this investigation, each example below shows
        how the App.js file would be written as a stand alone component in App.js.
-        To see the entire App.js file follow the link above.
+        To see the entire App.js file follow the link above. The links below connect to the gitHub repository for this investigation.
       </p>
      {/* -------------------------------------------------------------------- */}
 
@@ -52,11 +52,15 @@ function App() {
           <StringChildCode name="Uncle Jonathan!"/>
         </div>
       </div>
-      <p>(need a reference and link to StringChildCodeEx.js)</p>
       <AppJsStringCodeEx />
       <StringChildCodeEx />
+      <a className="a-codeEx-link" href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/StringCodeEx/StringChildCode.js"
+      target="_blank"
+      rel="noopener noreferrer">
+      StringChildCode.js</a>
       <br></br>
-      {/* <hr></hr> */}
+      <br></br>
+      <br></br>
 {/* -------------------------------------------------------------------- */}
     <h3> 
         An array as props
@@ -66,9 +70,13 @@ function App() {
         <ArrayChildCode names={["Larry", "Curly", "Mo"]} />
       </div>
       <AppJsArrayCodeEx />
+      <ArrayChildCodeEx /><a className="a-codeEx-link" 
+        href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/ArrayCodeExs/ArrayChildCode.js"
+        target="_blank"
+        rel="noopener noreferrer">
+        ArrayChildCode.js</a>
       <br></br>
-      <ArrayChildCodeEx />
-      {/* <hr></hr> */}
+      <br></br>
 {/* --------------------------------------------------------------------- */}
       <h2>
         Passing functions as props(2 examples)
@@ -76,7 +84,6 @@ function App() {
       <h3>
         1. A string (via a function) as props
       </h3>
-      
       <p>
         Rending functions as props is generally used and is often a preferred
          method to higher order components (HOC's). 
@@ -89,9 +96,17 @@ function App() {
           }
         }/></div>
         <AppJsFunctionCodeEx />
-        <br></br>
         <FunctionChildCodeEx />
-      {/* <hr></hr> */}
+        <a className="a-codeEx-link" 
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/FunctionCodeEx/FunctionChildCode.js"
+        target="_blank"
+        rel="noopener noreferrer">
+        FunctionChildCode.js</a>
+      <br></br>
+      <br></br>
+      <br>
+
+      </br>
 {/* ---------------------------------------------------------------------- */}
       <h3>
         2. A boolean (via a function) as props
@@ -104,8 +119,12 @@ function App() {
           }
         }/></div>
         <AppJsBooleanCodeEx />
-        <br></br>
         <BooleanChildCodeEx />
+        <a className="a-codeEx-link" 
+          href="https://github.com/dlanorhirsch/react-examples/blob/master/investigations/props/src/BooleanCodeEx/BooleanChildCode.js"
+        target="_blank"
+        rel="noopener noreferrer">
+        BooleanChildCode.js</a>
         <br></br>
         <br></br>
         <br></br>

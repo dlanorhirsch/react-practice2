@@ -71,8 +71,13 @@ function App(props) {
         The first examples, Appetizers1.js and MainCourses1.js are class based components
         that contain a toggle function which relies on the value of state
         to display or hide menu items in each category. The toggler() function 
-        located within each component is tied to a button via an on-click event listener. (See React docs, <a className="embedded-anchor" href="https://reactjs.org/docs/handling-events.html" target="_blank"
-        rel="noopener noreferrer">Handling Events</a> for more information.) When the button is clicked,
+        located within each component is tied to a button via an on-click event listener. 
+        (See React docs, <a 
+            className="embedded-anchor" 
+            href="https://reactjs.org/docs/handling-events.html" 
+            target="_blank"
+            rel="noopener noreferrer">Handling events
+          </a> for more information.) When the button is clicked,
         state is updated, and the display is shown or hidden depending on the value of
         state. Addtional information on <a 
           className="embedded-anchor" 
