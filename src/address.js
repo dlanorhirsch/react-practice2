@@ -28,7 +28,6 @@ export class Addresses extends React.Component{
           <div className="addressBox" 
                style={{
                   width: "200px", 
-                  padding: "10px",
                   border: "1px solid gray",
                   margin: ".24em",
                   borderRadius: "5px",

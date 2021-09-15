@@ -45,7 +45,8 @@ previousButton(){
   if(currentStep !==1){
     return (
       <button className="btn btn-secondary"
-        type="button" onClick={this._prev}>
+        type="button" style={{margin: "1em 0 1em 2em"}} 
+        onClick={this._prev}>
         Previous
       </button>
     )
@@ -57,7 +58,9 @@ nextButton(){
   if(currentStep <3){
     return (
       <button className="btn btn-primary float-right"
-      type="button" onClick={this._next}>
+      type="button" 
+      style={{margin: "1em 0 1em 2em"}}
+      onClick={this._next}>
         Next
     </button>
     )
@@ -107,7 +110,7 @@ function Step1(props) {
   return (
     <div className="form-group">
       <label style={{marginLeft: "20px"}} htmlFor="email">Email address</label>
-      <input style={{marginLeft: "20px", width: "380px"}}
+      <input style={{marginLeft: "20px", width: "300px", marginBottom: "1em"}}
       className="form-control"
       id="email"
       type="text"
@@ -124,8 +127,8 @@ function Step2(props){
   }
   return (
     <div className="form-group">
-      <label htmlFor="username">User Name</label>
-      <input 
+      <label style={{marginLeft: "20px"}}  htmlFor="username">User Name</label>
+      <input style={{marginLeft: "20px", width: "300px", marginBottom: "1em"}}
       className="form-control"
       id="username"
       type="text"
@@ -143,8 +146,9 @@ function Step3(props){
   return (
     <React.Fragment>
     <div className="form-group">
-      <label htmlFor="password">Password</label>
-      <input 
+      <label style={{marginLeft: "20px"}}      
+      htmlFor="password">Password</label>
+      <input style={{marginLeft: "20px", width: "300px", marginBottom: "1em"}}
       className="form-control"
       id="password"
       type="text"
@@ -153,7 +157,7 @@ function Step3(props){
       onChange={props.handleChange}  //props from parent
       />
     </div>
-    <button className="btn btn-success btn-block">Sign up</button>
+    <button className="btn btn-success btn-block" style={{margin: "1em 0 1em 2em"}}>Sign up</button>
     </React.Fragment>
   );
 }

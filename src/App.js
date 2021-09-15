@@ -28,69 +28,85 @@ export class Application extends React.Component{
     <Container>
       <Row>
         <h3>Simple  Counter:</h3>
-        <p>The first excercise is a simple counter.  There are many examples and tutorials available including this one from www.freecodecamp.org.  They provide excellent excercises for learning React.  This counter is based on their tutorial.
+        <p>
+          The first excercise is a simple counter.  There are many examples and tutorials available including this one from www.freecodecamp.org.  They provide excellent excercises for learning React.  This counter is based on their tutorial.
         </p>
-        <Counter/>
-        <hr></hr>
-        <Container>
-          <Row>
-            <h3>Render a Simple List:</h3>
-            <p>After watching many React tutorials and completing the freecodecamp tutorials (an excellent educational resource I might add: <a href="https://www.freecodecamp.org/learn/">https://www.freecodecamp.org/learn/</a>), I challenged myself to start creating components in React.  Following the counter, this simple list was my next effort.
-            </p>
-            <NameList/>
-          </Row>
-        </Container>
-        {/* ---------------------------------- */}
-        <hr></hr>
-        <Container>
-         <Row>
-            <h3>Render an Array of Objects:</h3>
-            <p>Then I moved on to rendering arrays.  This presented new challenges; working with arrays in React is a bit more complicated. Here is a good reference: <a href="https://reactjs.org/docs/lists-and-keys.html">(React: Lists and Keys)</a> In this case, I wanted to render an array of addresses.  This section also uses in-line JSX styling (<a href="https://reactjs.org/docs/faq-styling.html">Styling and CSS in React).</a>
-            </p>
-            <Addresses/>
-          </Row>
-        </Container>
-        <hr></hr>
-        {/* -------------------------------------- */}
-        <Container style={{marginTop: "40px"}}>
-          <Row>
-            <h3>Rendering Forms</h3>
-            <p>This challenge revolved around the creation of forms in React (no simple task!).  Actually, rendering the form itself is not difficult, however, updating state requires some additional knowledge.  Here is a link to <a href="https://reactjs.org/docs/faq-state.html">Component State.</a>
-            </p>
-            <AddressForm/>
-          </Row>
-        </Container>
-        {/* -------------------------------------- */}
-        <hr></hr>
-        <Container style={{marginTop: "40px"}}>
-          <h3>Rendering a List of Cards</h3>
-          <p>This excercise was not too difficult.  This excercise is from Nathan Sebhastian at Hackernoon.com <a href="https://hackernoon.com/hands-on-projects-to-learn-the-basics-of-react-3a06726514a8">(link)</a>.  It is well written and easy to follow.  However, I had difficult with the import/export.  Eventually I rewrote the functions as functional expressions and assigned the functions to variables.  I was then able to export the variable.  This was a helpful excercise in applying props.  It also became clearer to me that it is the parent component that is exported and imported.
+      <Counter/>
+      <hr></hr>
+    <Container>
+      <Row>
+        <h3>Render a Simple List:</h3>
+          <p>
+            After watching many React tutorials and completing the freecodecamp tutorials (an excellent educational resource I might add: <a href="https://www.freecodecamp.org/learn/">https://www.freecodecamp.org/learn/</a>), I challenged myself to start creating components in React.  Following the counter, this simple list was my next effort.
           </p>
-          <CardList/>
-        </Container>
-        {/* -------------------------------------- */}
-        <Container style={{marginTop: "40px"}}>
-          <h3>Creating a Search Wizard</h3>
-          <p>This example was again taken from hackernoon.com (link above). This excercise helped me become familiar with React fragments <a href="https://reactjs.org/docs/react-api.html#reactfragment">(see React Fragments)</a>.</p>
-          <MasterForm/>
-        </Container>
-        {/* -------------------------------------- */}
-        <Container>
-          <h3>Rendering A Carousel</h3>
-          <p>There are a variety of methods for creating carousels (also known as sliders). The Bootstrap framework offers a carousel. There are numerous npm packages available as well. They range from very simple to complicated; the functionality and degree of responsiveness coincides with code complexity. Reading the documentation assosciated with the package will provide some information that is helpful when chosing the right package for you project.</p>
-
-          <p>Not all packages are created equal. The initial package used for this example had functionality that including a continuous loop which could be stopped at any point. However, despite its claim to be responsive, there were problems with it rendering properly on mobile devices (tumbs extended beyond the page).</p>
-
-          <p>The next package, and the one used for this example, had less functionality but there were no issues with the functionality. One could optionally add functionality if needed.</p>
-
-          <p>The npm package can be found here: <a href="https://www.npmjs.com/package/pure-react-carousel">(npm pure-react-carousel).</a>  It literally took minutes to put together, including adjustments to the CSS. Thanks to the folks who created it!
+        <NameList/>
+      </Row>
+    </Container>
+    {/* ---------------------------------- */}
+    <hr></hr>
+    <Container>
+      <Row>
+        <h3>Render an Array of Objects:</h3>
+        <p>
+          Then I moved on to rendering arrays.  This presented new challenges; working with arrays in React is a bit more complicated. Here is a good reference: <a href="https://reactjs.org/docs/lists-and-keys.html">(React: Lists and Keys)</a> In this case, I wanted to render an array of addresses.  This section also uses in-line JSX styling (<a href="https://reactjs.org/docs/faq-styling.html">Styling and CSS in React).</a>
+        </p>
+        <Addresses/>
+      </Row>
+    </Container>
+    {/* -------------------------------------- */}
+    <hr></hr>
+    <Container>
+      <Row>
+        <h3>Rendering Forms</h3>
+          <p>
+            This challenge revolved around the creation of forms in React (no simple task!).  Actually, rendering the form itself is not difficult, however, updating state requires some additional knowledge.  Here is a link to <a href="https://reactjs.org/docs/faq-state.html">Component State.</a>
+            <div style={{fontWeight: "bold"}}>Enter Info:</div>
           </p>
-          <Row className="carouselParent">
-            <Carousel/>
-          </Row>
-        </Container>
-        {/* -------------------------------------- */}
-        <Container>
+          {/* <div>Enter Name and Address:</div> */}
+        <AddressForm/>
+      </Row>
+    </Container>
+    {/* -------------------------------------- */}
+    <hr></hr>
+    <Container>
+      <h3>Rendering a List of Cards</h3>
+        <p>
+          This excercise was not too difficult.  This excercise is from Nathan Sebhastian at Hackernoon.com <a href="https://hackernoon.com/hands-on-projects-to-learn-the-basics-of-react-3a06726514a8">(link)</a>.  It is well written and easy to follow.  However, I had difficult with the import/export.  Eventually I rewrote the functions as functional expressions and assigned the functions to variables.  I was then able to export the variable.  This was a helpful excercise in applying props.  It also became clearer to me that it is the parent component that is exported and imported.
+        </p>
+      <CardList/>
+    </Container>
+    {/* -------------------------------------- */}
+    <hr></hr>
+    <Container>
+      <h3>Creating a Search Wizard</h3>
+          <p>
+            This example was again taken from hackernoon.com (link above). This excercise helped me become familiar with React fragments <a href="https://reactjs.org/docs/react-api.html#reactfragment">(see React Fragments)</a>
+          </p>
+        <MasterForm/>
+    </Container>
+    {/* -------------------------------------- */}
+    <hr></hr>
+    <Container>
+      <h3>Rendering A Carousel</h3>
+        <p>
+          There are a variety of methods for creating carousels (also known as sliders). The Bootstrap framework offers a carousel. There are numerous npm packages available as well. They range from very simple to complicated; the functionality and degree of responsiveness coincides with code complexity. Reading the documentation assosciated with the package will provide some information that is helpful when chosing the right package for you project.
+        </p>
+        <p>
+          Not all packages are created equal. The initial package used for this example had functionality that including a continuous loop which could be stopped at any point. However, despite its claim to be responsive, there were problems with it rendering properly on mobile devices (tumbs extended beyond the page).
+        </p>
+        <p>
+          The next package, and the one used for this example, had less functionality but there were no issues with the functionality. One could optionally add functionality if needed.
+        </p>
+        <p>
+          The npm package can be found here: <a href="https://www.npmjs.com/package/pure-react-carousel">(npm pure-react-carousel).</a>  It literally took minutes to put together, including adjustments to the CSS. Thanks to the folks who created it!
+        </p>
+      <Row className="carouselParent">
+        <Carousel/>
+      </Row>
+    </Container>
+    {/* -------------------------------------- */}
+    <hr></hr>
+    <Container>
           <h3>React Forms/Todo Lists</h3>
           <p>This is an excercise in the creation of  forms using older and newer coding methods.  The forms below are identical in appearance.  However, the example on the left using hooks while the example on the right uses classes and state <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks.</a>
           </p>
@@ -103,6 +119,7 @@ export class Application extends React.Component{
         <Container>
         </Container>
         {/* -------------------------------- */}
+        <hr></hr>
         <Container>
           <Row>
             <h3>Two Examples for Maintaining State in a React Component</h3>

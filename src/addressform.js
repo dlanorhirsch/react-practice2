@@ -32,12 +32,11 @@ export class AddressForm extends React.Component{
       <div>
         <form style={{
           display: "flex",
-          fontSize: 18,
+          fontSize: 14,
           fontWeight: "bold",
-          marginLeft: "2em"
           
         }}
-          onSubmit={this.handleSubmit}>Enter Name and Address:
+        onSubmit={this.handleSubmit}>
           <div className="container">
             <div className="col">  
               <label>
@@ -89,13 +88,13 @@ export class AddressForm extends React.Component{
                 onChange={this.handleChange} />
           </label>
                 
-          <p>Hello: {" "}{this.state.firstname}{" "}{this.state.lastname}</p>
-          <p>Your address is:{" "}
-            {this.state.street}{" "}
+          <p>Hello:{<br></br>}{" "}{this.state.firstname}{" "}{this.state.lastname}</p>
+          <p>Your address is:{" "}{<br></br>}
+            {this.state.street}{" "}{<br></br>}
             {this.state.city}{" "}{this.state.state}{"  "}{this.state.zip}
           </p>
         </div>
-        <button type="submit" style={{width: "100px"}}>Submit
+        <button type="submit" style={{width: "100px", margin: "1.5em 0 1.5em 2em"}}>Submit
         </button>
       </div>
         

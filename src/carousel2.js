@@ -5,11 +5,11 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 export class Carousel extends React.Component {
   render() {
     return (
-      <CarouselProvider className="carousel-size"
+      <CarouselProvider className="carousel-size" style={{marginLeft: "1em"}}
         naturalSlideWidth={500}
-        naturalSlideHeight={250}
-        totalSlides={3}
-      >
+        naturalSlideHeight={270}
+        totalSlides={3}>
+
         <Slider className="slider">
           <Slide index={0}>
             <img src="https://source.unsplash.com/random/500x249/?architecture" alt=""/>
@@ -21,8 +21,8 @@ export class Carousel extends React.Component {
             <img src="https://source.unsplash.com/random/500x251/?architecture" alt=""/>
           </Slide>
         </Slider>
-        <ButtonBack className='btn-back'>Back</ButtonBack>
-        <ButtonNext className='btn-forward'>Next</ButtonNext>
+        <ButtonBack className='btn-back' style={{margin: "2em 0 2em 3em", padding: ".5em"}}>Back</ButtonBack>
+        <ButtonNext className='btn-forward' style={{margin: "2em 0 2em 3em", padding: ".5em"}}>Next</ButtonNext>
       </CarouselProvider>
     );
   }
