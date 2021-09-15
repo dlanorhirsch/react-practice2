@@ -19,14 +19,11 @@ export class AddressForm extends React.Component{
     this.setState({[event.target.name]: event.target.value}
     );
   }
-  
-
   handleSubmit(event) {
     alert("A name and address were submitted: ");
     event.preventDefault();
   
   }
-  
   render(){
     const styles = {
       margin: 10
@@ -34,12 +31,12 @@ export class AddressForm extends React.Component{
     return (
       <div>
         <form style={{
+          display: "flex",
           fontSize: 18,
           fontWeight: "bold",
-          marginLeft: 100,
-          display: "block",
+          marginLeft: "2em"
           
-          }}
+        }}
           onSubmit={this.handleSubmit}>Enter Name and Address:
           <div className="container">
             <div className="col">  
@@ -98,11 +95,10 @@ export class AddressForm extends React.Component{
             {this.state.city}{" "}{this.state.state}{"  "}{this.state.zip}
           </p>
         </div>
-      </div>
-        <button 
-          style={styles}
-          type="submit">Submit
+        <button type="submit" style={{width: "100px"}}>Submit
         </button>
+      </div>
+        
       </form>
     </div>
     )

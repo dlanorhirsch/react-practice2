@@ -1,4 +1,5 @@
 import React from 'react';
+import "./index.css";
 
 export class Addresses extends React.Component{
   constructor(props){
@@ -15,24 +16,33 @@ export class Addresses extends React.Component{
   }
   render(){
     const styles = {
-      fontSize: 18,
-      marginLeft: 50,
+      fontSize: 14,
+      marginLeft: 20,
       marginTop: 5,
       marginBottom: 5,
       maxWidth: "300px"
     }
     return (
-      <div>
-        <div >
-            {this.state.addresses.map(address => 
-            <div className="addressBox" key={address.id}> 
-              <div style={styles}>{address.fname}{address.lname}</div>
-              <div style={styles}>{address.street}</div>
-              <div style={styles}>{address.city}{address.st}{address.zip}</div>
+      <div style={{display: "flex", flexWrap:"wrap", marginBottom: "2em", justifyContent: "center"}}>
+        {this.state.addresses.map(address => 
+          <div className="addressBox" 
+               style={{
+                  width: "200px", 
+                  padding: "10px",
+                  border: "1px solid gray",
+                  margin: ".24em",
+                  borderRadius: "5px",
+                  background: "#e5e5e5"
+                  
+               
+               }} key={address.id}> 
+            <div style={styles}>{address.fname}{address.lname}</div>
+            <div style={styles}>{address.street}</div>
+            <div style={styles}>{address.city}{address.st}{address.zip}</div>
           </div>
-          )}
+        )}
       </div> 
-    </div>
+    
     )
   }
 }

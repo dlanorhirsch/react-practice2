@@ -28,20 +28,20 @@ export class Counter extends React.Component{
     }
     render(){
       return (
-        <div>
+        <div style={{textAlign: "center"}}>
           <button className="btn btn-primary"
-            style={{height: 40, width: 120, margin: 10}}
+            style={{height: 40, width: 100, margin: 10}}
             onClick={this.increment}>Increment
           </button>
           <button className="btn btn-primary" 
-            style={{height: 40, width: 120, margin: 10}} 
+            style={{height: 40, width: 100, margin: 10}} 
             onClick={this.decrement}>Decrement
           </button>
           <button className="btn btn-primary" 
-            style={{height: 40, width: 120, margin: 10}}
+            style={{height: 40, width: 100, margin: 10}}
             onClick={this.reset}>Reset
           </button>
-          <h2 style={{fontSize: 24, margin: 20}}>Current Count: {this.state.count}</h2>
+          <h2 style={{fontSize: 20, margin: 20}}>Current Count: {this.state.count}</h2>
 
         </div>
       )
