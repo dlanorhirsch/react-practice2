@@ -35,7 +35,7 @@ export const CardList = () => {
           link="https://reactjs.org/docs/components-and-props.html"
         />
       </div>
-      <div className="col-sm-6 col-md-4"  style={{marginTop: "15px"}}>
+      <div className="col-sm-6 col-md-4"  style={{marginTop: "15px", marginBottom: "1em"}}>
         <Card featureImage="https://source.unsplash.com/random/600x251/?technology" alt="random image"
           title="React JS(functional and stateless components)"
           description="Let's have even MORE fun with React JS!"

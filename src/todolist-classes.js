@@ -26,15 +26,15 @@ export class TodoList extends React.Component{
   render(){
       return(
         <div className="todoapp">
-        <h5 style={{color: "black"}}>This is an example using classes and state.</h5>
-      <div className="todo-list">{this.state.todos.map((todo,index) => 
+        <h4 style={{color: "black", fontSize: "1.1em", marginLeft: ".8em"}}>This is an example using classes and state.</h4>
+      <div className="todo-list" style={{marginLeft: "2em"}}>{this.state.todos.map((todo,index) => 
         
           <div className="todo" key={index}>{todo}</div>
         
       
     )}
         <form onSubmit={this.handleSubmit}>
-          <input style={{width: "100%"}} 
+          <input style={{width: "100%", marginTop: "1em"}} 
             id ="todo"
             type="text" 
             name="todo" 

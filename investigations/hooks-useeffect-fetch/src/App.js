@@ -14,7 +14,7 @@ class App extends React.Component {
           <li>Lifecycle method</li>
           <li>map()</li>
         </ul>
-          <div><MyData /></div>
+          <div><MyData/></div>
       
         <h3>TEST 2</h3>
           <ul>

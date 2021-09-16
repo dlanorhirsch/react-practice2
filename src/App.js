@@ -128,24 +128,21 @@ export class Application extends React.Component{
             <p>The code mounts a group of user data cards to the DOM, using two different methods, lifecycles, and hooks.  The API data used in both cases came from typicode's jsonplaceholder API on GitHub: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users.</a> </p>
             
             <PeopleData />
-            
-            
-            
-
             {/* <p>The lifecycle methods used are componentDidMount() and componentDidUnmount(). </p> */}
             {/* <PracticeData /> */}
           </Row>
         </Container>  
+        {/* -------------------------------- */}
+        <hr></hr>
         <Container>
           <Row>
-            <h4>Lifecycle Methods:</h4>
+            <h4 style={{marginLeft: ".7em"}}>Lifecycle Methods:</h4>
             <p>
-              This section is a discussion of lifecylce methods used, including the discovery of multiple ways of writing the code that was discovered when the "memory leaks" error occured, and the resulting investigation of different code to accomplish the desired goal, and resolve the error.  The "in-depth" investigation of coding alternatives and various methods of error resolution to be discussed at more length in the following HackMD article:<a href="https://hackmd.io/zrKlbybdQ66lz1hRW1qsTA"> Investigations: Lifecycles, state, hooks and memory leaks.</a> 
+              This section is a discussion of life cycle methods used, including the discovery of multiple ways of writing the code that was discovered when the "memory leaks" error occured, and the resulting investigation of different code to accomplish the desired goal, and resolve the error.  The "in-depth" investigation of coding alternatives and various methods of error resolution to be discussed at more length in the following HackMD article:<a href="https://hackmd.io/zrKlbybdQ66lz1hRW1qsTA"> Investigations: Lifecycles, state, hooks and memory leaks.</a> 
             </p>
 
-          <h4>Hooks Methods:</h4>
+          <h4 style={{marginLeft: ".7em"}}>Hooks Methods:</h4>
           <p>This section is a discussion of the function component/hooks used to acheive the goal of fetching data and duplicate the results of the lifecycle methods.  See same HackMD article referenced above.</p>
-          <p><strong>Note:</strong> The discussion of the methods used in this section should be high-level, and reference <strong>Investigation I</strong> where the error is explored and discussed in detail.</p>
           
           
           </Row>
@@ -159,13 +156,7 @@ export class Application extends React.Component{
       </Row>
     </Container>
     <footer>
-    <div id="copyright" class="copyright">
-                Copyright&copy;
-                  <script>
-                    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
-                  </script>
-                Hirschro/React-Examples: V:1.0 
-              </div>
+
     </footer>
   </div>
   )}          
