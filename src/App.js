@@ -24,12 +24,12 @@ export class Application extends React.Component{
           <img src="/React-icon-dark.png" alt="" className="logo"></img>
         </header>
         <h1>React Examples</h1>
-        <hr></hr>
+      
     <Container>
       <Row>
         <h3>Simple  Counter:</h3>
         <p>
-          The first excercise is a simple counter.  There are many examples and tutorials available including this one from www.freecodecamp.org.  They provide excellent excercises for learning React.  This counter is based on their tutorial.
+          There are many examples and tutorials available including this one from www.freecodecamp.org (an excellent choice for learning web development). This counter is based on their tutorial.
         </p>
       <Counter/>
       <hr></hr>

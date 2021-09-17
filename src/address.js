@@ -20,16 +20,16 @@ export class Addresses extends React.Component{
       marginLeft: 20,
       marginTop: 5,
       marginBottom: 5,
-      maxWidth: "300px"
+      maxWidth: "300px"      
     }
     return (
-      <div style={{display: "flex", flexWrap:"wrap", marginBottom: "2em", justifyContent: "center"}}>
+      <div style={{display: "flex", flexWrap:"wrap", margin: "2em 0 3em 0", justifyContent: "center"}}>
         {this.state.addresses.map(address => 
           <div className="addressBox" 
                style={{
                   width: "200px", 
                   border: "1px solid gray",
-                  margin: ".24em",
+                  margin: ".5em",
                   borderRadius: "5px",
                   background: "#e5e5e5"
                   
