@@ -21,7 +21,7 @@ export const CardList = () => {
   return (
     
     <div className="row">
-      <div className="col-sm-6 col-md-4" style={{marginTop: "15px"}}>
+      <div className="col-sm-6 col-md-4" style={{marginTop: "15px", marginBottom: "25px"}}>
         <Card featureImage="https://source.unsplash.com/random/600x249/?technology" alt="random image"
           title="How To Make Interactive ReactJS Form"
           description="Let's create some interactive forms with React"
