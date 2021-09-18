@@ -26,17 +26,16 @@ export class Application extends React.Component{
         <h1>React Examples</h1>
     <Container>
       <Row>
-        <p>This is an exploratory investigation to learn React. Numerous components were created with the intention of using the knowledge gained on a related project <a href="https://hirschro.study-groups.org/color-charts/public/">Color Charts</a>. The two investigations form the basis of a React application under development and involves aspects of color. Additional investigations may be developed in an effort to settle on the most appropriate frameworks for the project. In the spirit of sharing, it is also hoped that others beginning their journey to learn web development might benefit from these investigations.
+        <p>This is an exploratory investigation to learn React. Numerous components were created with the intention of using the knowledge gained on a related project <a href="https://hirschro.study-groups.org/color-charts/public/">Color Charts</a>. The two investigations form the basis of a React application under development and involves aspects of color. Additional investigations may be developed in an effort to settle on the most appropriate frameworks for the project. In the spirit of sharing, it is also hoped that others beginning their journey to learn web development might benefit from these investigations. The code for all of the following examples is available here: <a href="https://github.com/hirschro/react-examples/tree/master/src">React Examples/src directory</a>
         </p>
       </Row>
       <hr></hr>
       <Container>
         <Row>
           <h3>Simple  Counter:</h3>
-          <p>This counter, aquired from <a href="https://www.freecodecamp.org">Free Code Camp<sup>1</sup></a>, is simple and easy to implement and can be further developed for more complex applications. This counter is based on their tutorial available <a href="https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-write-a-simple-counter/301425">here</a>.
+          <p>This counter, aquired from <a href="https://www.freecodecamp.org">Free Code Camp</a> (an excellent resource for learning web development), is simple and easy to implement. It can be developed further for more complex applications. This counter is based on their tutorial available <a href="https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-write-a-simple-counter/301425">here</a>.
           </p>
           <Counter/>
-          <sup>1: Free Code Camp is an excellent resource for learning web development. If you are new to web development, this is a great place to start.</sup>
         </Row>
       </Container>
       <hr></hr>
@@ -44,7 +43,7 @@ export class Application extends React.Component{
         <Row>
           <h3>Render a Simple List:</h3>
             <p>
-            The components one can create with React are limitless, from simple to complex. This example renders a simple list, the code is available <a href="https://github.com/hirschro/react-examples/blob/master/src/namelist.js">here</a>.
+            The components one can create with React are limitless, from simple to complex. This example renders a simple list. The code is available at the link in the opening paragraph.
             </p>
           <NameList/>
         </Row>
@@ -74,7 +73,9 @@ export class Application extends React.Component{
         <Row>
           <h3>Rendering Forms</h3>
             <p>
-            This challenge revolved around the creation of forms in React (no simple task!).  Actually, rendering the form itself is not difficult,       however, updating state requires some additional knowledge.  Here is a link to <a href="https://reactjs.org/docs/faq-state.html">Component  State.</a>
+            Rending forms in React is simple enough, however, like many frameworks, it requires updating and maintaining state. Follow this link to learn more about state <a href="https://reactjs.org/docs/faq-state.html">Componenet State</a>
+
+      
             <div style={{fontWeight: "bold"}}>Enter Info:</div>
             </p>
             {/* <div>Enter Name and Address:</div> */}
@@ -87,7 +88,7 @@ export class Application extends React.Component{
         <Row>
           <h3>Rendering a List of Cards</h3>
             <p>
-            This excercise was not too difficult.  This excercise is from Nathan Sebhastian at Hackernoon.com <a href="https://hackernoon.com/hands-on-    projects-to-learn-the-basics-of-react-3a06726514a8">(link)</a>.  It is well written and easy to follow.  However, I had difficult with the      import/export.  Eventually I rewrote the functions as functional expressions and assigned the functions to variables.  I was then able to export     the variable.  This was a helpful excercise in applying props.  It also became clearer to me that it is the parent component that is exported    and  imported.
+            This investigation orininated with Nathan Sebhastian at Hackernoon.com <a href="https://hackernoon.com/hands-on-projects-to-learn-the-basics-of-react-3a06726514a8">(link)</a> It is well written and easy to follow. This investigation was very helpful in learning about props in React. It is essential to understand props in React. Follow this link to understand what it means to <a href="https://reactjs.org/docs/render-props.html">Render Props</a>.
             </p>
           <CardList/>
         </Row>
