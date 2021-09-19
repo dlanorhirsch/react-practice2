@@ -21,7 +21,15 @@ export class Application extends React.Component{
     return (
       <div className="main-div">
         <header>
-          <img src="/React-icon-dark.png" alt="" className="logo"></img>
+          <img src="/React-icon-dark.png"
+               alt="React Icon"
+               className="logo"
+               style={{width: "20%",
+                      display: "block",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                      padding: "2em 0 1em 0"}}>
+          </img>
         </header>
         <h1>React Examples</h1>
     <Container>
@@ -159,18 +167,7 @@ export class Application extends React.Component{
       </Container>  
       {/* -------------------------------- */}
       <hr></hr>
-      {/* <Container>
-        <Row>
-          <h4 style={{marginLeft: ".7em"}}>Lifecycle Methods:</h4>
-          <p>
-          This section is a discussion of life cycle methods used, including the discovery of multiple ways of writing the code that was discovered when the "memory leaks" error occured, and the resulting investigation of different code to accomplish the desired goal, and resolve the error.  The "in-depth" investigation of coding alternatives and various methods of error resolution to be discussed at more length in the following HackMD article:<a href="https://hackmd.io/zrKlbybdQ66lz1hRW1qsTA"> Investigations: Lifecycles, state, hooks and memory leaks.</a> 
-          </p>
-          <h4 style={{marginLeft: ".7em"}}>Hooks Methods:</h4>
-          <p>
-          This section is a discussion of the function component/hooks used to acheive the goal of fetching data and duplicate the results of the lifecycle methods.  See same HackMD article referenced above.
-          </p>
-        </Row>
-      </Container> */}
+      
     </Container>
     <footer>
 
