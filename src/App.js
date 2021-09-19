@@ -26,7 +26,7 @@ export class Application extends React.Component{
         <h1>React Examples</h1>
     <Container>
       <Row>
-        <p>This is an exploratory investigation to learn React. Numerous components were created with the intention of using the knowledge gained on a related project <a href="https://hirschro.study-groups.org/color-charts/public/">Color Charts</a>. The two investigations form the basis of a React application under development and involves aspects of color. Additional investigations may be developed in an effort to settle on the most appropriate frameworks for the project. In the spirit of sharing, it is also hoped that others beginning their journey to learn web development might benefit from these investigations. The code for all of the following examples is available here: <a href="https://github.com/hirschro/react-examples/tree/master/src">React Examples/src directory</a>
+        <p>This is an exploratory investigation to learn React. Numerous components were created with the intention of using the knowledge gained and applying it to a related project <a href="https://hirschro.study-groups.org/color-charts/public/">Color Charts</a>. The two investigations form the basis of a React application under development and involves aspects of color. Additional investigations may be developed in an effort to settle on the most appropriate frameworks for the project. In the spirit of sharing, it is hoped that others beginning their journey to learn web development might benefit from these investigations. The code for all of the following examples is available here: <a href="https://github.com/hirschro/react-examples/tree/master/src">React Examples/src directory</a>
         </p>
       </Row>
       <hr></hr>
@@ -73,7 +73,7 @@ export class Application extends React.Component{
         <Row>
           <h3>Rendering Forms</h3>
             <p>
-            Rending forms in React is simple enough, however, like many frameworks, it requires updating and maintaining state. Follow this link to learn more about state <a href="https://reactjs.org/docs/faq-state.html">Componenet State</a>
+            Rending forms in React is simple enough, however, like many frameworks, it requires updating and maintaining state. Follow this link to learn more about <a href="https://reactjs.org/docs/faq-state.html">Component State</a>.
 
       
             <div style={{fontWeight: "bold"}}>Enter Info:</div>
@@ -88,7 +88,7 @@ export class Application extends React.Component{
         <Row>
           <h3>Rendering a List of Cards</h3>
             <p>
-            This investigation orininated with Nathan Sebhastian at Hackernoon.com <a href="https://hackernoon.com/hands-on-projects-to-learn-the-basics-of-react-3a06726514a8">(link)</a> It is well written and easy to follow. This investigation was very helpful in learning about props in React. It is essential to understand props in React. Follow this link to understand what it means to <a href="https://reactjs.org/docs/render-props.html">Render Props</a>.
+            This investigation orininated with Nathan Sebhastian at Hackernoon.com <a href="https://hackernoon.com/hands-on-projects-to-learn-the-basics-of-react-3a06726514a8">(link)</a> It is well written and easy to follow. It is helpful for learning about and understanding this essential aspect of React. Follow this link to understand what it means to <a href="https://reactjs.org/docs/render-props.html">Render Props</a>.
             </p>
           <CardList/>
         </Row>
@@ -99,7 +99,7 @@ export class Application extends React.Component{
         <Row>
           <h3>Creating a Search Wizard</h3>
             <p>
-            This example was again taken from hackernoon.com (link above). This excercise helped me become familiar with React fragments <a   href="https://reactjs.org/docs/react-api.html#reactfragment">(see React Fragments)</a>
+            This example was also taken from hackernoon.com (link above). This investigation involves the use of React fragments <a href="https://reactjs.org/docs/react-api.html#reactfragment">(see React Fragments)</a> This example is a bit more involved an warrants the effort to review and understand the code involved.
             </p>
           <MasterForm/>
         </Row>
@@ -113,10 +113,10 @@ export class Application extends React.Component{
             There are a variety of methods for creating carousels (also known as sliders). The Bootstrap framework offers a carousel. There are numerous    npm  packages available as well. They range from very simple to complicated; the functionality and degree of responsiveness coincides with    code   complexity. Reading the documentation assosciated with the package will provide some information that is helpful when chosing the right   package   for you project.
             </p>
             <p>
-            Not all packages are created equal. The initial package used for this example had functionality that including a continuous loop which could    be   stopped at any point. However, despite its claim to be responsive, there were problems with it rendering properly on mobile devices    (tumbs  extended beyond the page).
+            Not all packages are created equal. The initial package used for this example had functionality that including a continuous loop which could    be   stopped at any point. However, despite its claim to be responsive, there were problems with it rendering properly on mobile devices    (thumbs  extended beyond the page).
             </p>
             <p>
-            The next package, and the one used for this example, had less functionality but there were no issues with the functionality. One could    optionally   add functionality if needed.
+            The next package, the one used for this example had less functionality, though its functionality was efficient and unproblematic. One could optionally add functionality if needed.
             </p>
             <p>
             The npm package can be found here: <a href="https://www.npmjs.com/package/pure-react-carousel">(npm pure-react-carousel).</a>  It literally     took  minutes to put together, including adjustments to the CSS. Thanks to the folks who created it!
@@ -131,7 +131,10 @@ export class Application extends React.Component{
         <Row>
           <h3>React Forms/Todo Lists</h3>
             <p>
-            This is an excercise in the creation of  forms using older and newer coding methods.  The forms below are identical in appearance.  However,  the example on the left using hooks while the example on the right uses classes and state <a href="https://reactjs.org/docs/hooks- intro.html">React Hooks.</a>
+            This investigation is an exploration/comparison in methodology, old and new. It involves the creation of forms by using technology associated with each.
+            </p>
+            <p>
+            The forms below are identical in appearance.  However, the first example uses <a href="https://reactjs.org/docs/hooks- intro.html">React Hooks</a>, while the second uses React <a href="https://reactjs.org/docs/state-and-lifecycle.html">State and Lifecycle</a> methods. 
             </p>
           <TodoApp/>
           <TodoList/>
@@ -143,10 +146,10 @@ export class Application extends React.Component{
         <Row>
           <h3>Two Examples for Maintaining State in a React Component</h3>
           <p>
-          Associating an open source API user database to React using <code>fetch()</code> is the goal of this exercise.
+          This investigation involved using the data from an open source API database using React <code>fetch()</code>.
           </p>
           <p>
-          The code mounts a group of user data cards to the DOM, using two different methods, lifecycles, and hooks.  The API data used in both cases came from typicode's jsonplaceholder API on GitHub: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users.</a>
+          The code mounts a group of user data cards to the DOM using two methods, lifecycles and hooks.  The API data used in both cases came from typicode's json placeholder API on GitHub: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users</a>.
           </p>
           <PeopleData />
             {/* <p>The lifecycle methods used are componentDidMount() and componentDidUnmount(). </p> */}
@@ -155,7 +158,7 @@ export class Application extends React.Component{
       </Container>  
       {/* -------------------------------- */}
       <hr></hr>
-      <Container>
+      {/* <Container>
         <Row>
           <h4 style={{marginLeft: ".7em"}}>Lifecycle Methods:</h4>
           <p>
@@ -166,7 +169,7 @@ export class Application extends React.Component{
           This section is a discussion of the function component/hooks used to acheive the goal of fetching data and duplicate the results of the lifecycle methods.  See same HackMD article referenced above.
           </p>
         </Row>
-      </Container>
+      </Container> */}
     </Container>
     <footer>
 

@@ -58,7 +58,7 @@ const addTodo = text => {
 return (
   
   <div className="todoapp">
-  <h4 style={{color: "black", fontSize: "1.1em", marginLeft: ".8em"}}>This is an example using React hooks.</h4>
+  <h4 style={{color: "black", fontSize: "1.1em", marginLeft: ".8em"}}>Example using React hooks.</h4>
     <div className="todo-list" style={{marginLeft: "2em"}}>
       {todos.map((todo, index) => (
         <Todo key={index} index={index} todo={todo} />

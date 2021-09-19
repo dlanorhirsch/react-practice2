@@ -26,7 +26,7 @@ export class TodoList extends React.Component{
   render(){
       return(
         <div className="todoapp">
-        <h4 style={{color: "black", fontSize: "1.1em", marginLeft: ".8em"}}>This is an example using classes and state.</h4>
+        <h4 style={{color: "black", fontSize: "1.1em", marginLeft: ".8em"}}>Example using classes and state.</h4>
       <div className="todo-list" style={{marginLeft: "2em"}}>{this.state.todos.map((todo,index) => 
         
           <div className="todo" key={index}>{todo}</div>
