@@ -21,7 +21,7 @@ export class Application extends React.Component{
     return (
       <div className="main-div">
         <header>
-          <img src="/React-icon-dark.png"
+          <img src="https://user-images.githubusercontent.com/39444378/133944046-53b061c4-c51a-4568-aaea-1055816983eb.png"
                alt="React Icon"
                className="logo"
                style={{width: "20%",
