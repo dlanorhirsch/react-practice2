@@ -55,6 +55,7 @@ export class Application extends React.Component{
           <h3>Render an Array of Objects:</h3>
             <p>
             A more complex challenge than rendering simple lists is working with arrays. Though more complicated, some additional knowledge will go a long way. A helpful resource is available here: <a href="https://reactjs.org/docs/lists-and-keys.html">(React: Lists and Keys)</a>.
+            <br></br>
             </p>
             <p>There is a bit more emphasis on styling in this example. This link provides general information about <a href="https://reactjs.org/docs/faq-styling.html">Styling and CSS in  React).</a>
             </p>
@@ -149,7 +150,7 @@ export class Application extends React.Component{
           This investigation involved using the data from an open source API database using React <code>fetch()</code>.
           </p>
           <p>
-          The code mounts a group of user data cards to the DOM using two methods, lifecycles and hooks.  The API data used in both cases came from typicode's json placeholder API on GitHub: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users</a>.
+          The code mounts a group of user data cards to the DOM. The API data used came from typicode's json placeholder API on GitHub: <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users</a>.
           </p>
           <PeopleData />
             {/* <p>The lifecycle methods used are componentDidMount() and componentDidUnmount(). </p> */}
