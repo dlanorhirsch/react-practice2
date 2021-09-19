@@ -26,7 +26,7 @@ export class Application extends React.Component{
         <h1>React Examples</h1>
     <Container>
       <Row>
-        <p>This is an exploratory investigation to learn React. Numerous components were created with the intention of using the knowledge gained and applying it to a related project <a href="https://hirschro.study-groups.org/color-charts/public/">Color Charts</a>. The two investigations form the basis of a React application under development and involves aspects of color. Additional investigations may be developed in an effort to settle on the most appropriate frameworks for the project. In the spirit of sharing, it is hoped that others beginning their journey to learn web development might benefit from these investigations. The code for all of the following examples is available here: <a href="https://github.com/hirschro/react-examples/tree/master/src">React Examples/src directory</a>
+        <p>This is an exploratory investigation to learn React. Numerous components were created with the intention of using the knowledge gained and applying it to a related project <a href="https://hirschro.study-groups.org/color-charts/public/">Color Charts</a>. The two investigations form the basis of a React application under development involving aspects of color. Additional investigations may be developed in an effort to settle on the most appropriate frameworks for the project. In the spirit of sharing, it is hoped that others beginning their journey to learn web development might benefit from these investigations. The code for all of the following examples is available here: <a href="https://github.com/hirschro/react-examples/tree/master/src">React Examples/src directory</a>
         </p>
       </Row>
       <hr></hr>
