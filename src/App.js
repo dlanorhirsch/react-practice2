@@ -15,16 +15,17 @@ import {TodoList} from './todolist-classes';
 // import {PracticeData} from './userdata';
 import PeopleData from './userdata2.js';
 import "./index.css";
+import image from './react-logo.png';
 
 export class Application extends React.Component{
   render(){
     return (
       <div className="main-div">
         <header>
-          <img src="https://user-images.githubusercontent.com/39444378/133944046-53b061c4-c51a-4568-aaea-1055816983eb.png"
-               alt="React Icon"
+          <img src={image}
+               alt="React logo"
                className="logo"
-               style={{width: "10%",
+               style={{width: "20%",
                       height: "auto",
                       display: "block",
                       marginLeft: "auto",
