@@ -24,16 +24,18 @@ export class Application extends React.Component{
           <img src="https://user-images.githubusercontent.com/39444378/133944046-53b061c4-c51a-4568-aaea-1055816983eb.png"
                alt="React Icon"
                className="logo"
-               style={{width: "20%",
+               style={{width: "10%",
+                      height: "auto",
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto",
                       padding: "2em 0 1em 0"}}>
           </img>
         </header>
-        <h1>React Examples</h1>
+        
     <Container>
-      <Row>
+    <Row>
+      <h1 style={{textAlign: "center", marginBottom: "1.5em"}}>React Examples</h1>
         <p>This is an exploratory investigation to learn React. Numerous components were created with the intention of using the knowledge gained and applying it to a related project <a href="https://hirschro.study-groups.org/color-charts/public/">Color Charts</a>. The two investigations form the basis of a React application under development involving aspects of color. Additional investigations may be developed in an effort to settle on the most appropriate frameworks for the project. In the spirit of sharing, it is hoped that others beginning their journey to learn web development might benefit from these investigations. The code for all of the following examples is available here: <a href="https://github.com/hirschro/react-examples/tree/master/src">React Examples/src directory</a>
         </p>
       </Row>
@@ -128,7 +130,7 @@ export class Application extends React.Component{
             The next package, the one used for this example had less functionality, though its functionality was efficient and unproblematic. One could optionally add functionality if needed.
             </p>
             <p>
-            The npm package can be found here: <a href="https://www.npmjs.com/package/pure-react-carousel">(npm pure-react-carousel).</a>  It literally     took  minutes to put together, including adjustments to the CSS. Thanks to the folks who created it!
+            The npm package can be found here: <a href="https://www.npmjs.com/package/pure-react-carousel">(npm pure-react-carousel).</a>  It took minutes to put together, including adjustments to the CSS. Thanks to the folks who created it!
             </p>
             {/* <Row className="carouselParent"> */}
           <Carousel/>
