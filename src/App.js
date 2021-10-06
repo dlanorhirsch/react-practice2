@@ -26,6 +26,7 @@ export class Application extends React.Component{
                alt="React logo"
                className="logo"
                style={{width: "20%",
+                      maxWidth: "300px",
                       height: "auto",
                       display: "block",
                       marginLeft: "auto",
