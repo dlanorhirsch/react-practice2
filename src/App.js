@@ -29,7 +29,8 @@ export class Application extends React.Component{
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto",
-                      padding: "2em 0 1em 0"}}>
+                      padding: "2em 0 1em 0",
+                      transform: "scale(1)"}}>
           </img>
         </header>
         
