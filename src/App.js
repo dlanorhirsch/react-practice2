@@ -39,7 +39,7 @@ export class Application extends React.Component{
     <Container>
     <Row>
       <h1 style={{textAlign: "center", marginBottom: "1.5em"}}>React Examples</h1>
-        <p>This is an exploratory investigation of React. Numerous components were created with the intention of using some of them in a future version of the <a href="https://hirschro.study-groups.org/color-charts/public/">Color Charts</a> project. The two investigations form the basis of a React application under development involving aspects of color. Additional investigations may be developed in an effort to settle on the most appropriate frameworks. The code for all of the following examples is available here: <a href="https://github.com/hirschro/react-examples/tree/master/src">React Examples/src directory</a>
+        <p>This is an exploratory investigation of React. Numerous components were created with the intention of using some of them in a future version of the <a href="https://hirschro.study-groups.org/color-charts/public/">Color Charts</a> project. The two investigations form the basis of a React application under development involving aspects of color. Additional investigations may be developed in an effort to settle on the most appropriate frameworks. The code for all of the following examples is available here: <a href="https://github.com/hirschro/react-examples/tree/master/src">React Examples/src directory</a>.
         </p>
       </Row>
       <hr></hr>
