@@ -137,7 +137,7 @@ export class Application extends React.Component{
             This exploration is a comparison of methodologies, old and new. It involves the creation of forms by using these methodologies.
             </p>
             <p>
-            The forms below are identical in appearance.  However, the first example uses <a href="https://reactjs.org/docs/hooks- intro.html">React Hooks</a>, while the second uses React <a href="https://reactjs.org/docs/state-and-lifecycle.html">State and Lifecycle</a> methods. 
+            The forms below are identical in appearance.  However, the first example uses <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a>, while the second uses React <a href="https://reactjs.org/docs/state-and-lifecycle.html">State and Lifecycle</a> methods. 
             </p>
           <TodoApp/>
           <a href="https://github.com/hirschro/react-examples/blob/master/src/todolist-hooks.js" target="_blank" rel="noopener noreferrer">Source code</a>.
